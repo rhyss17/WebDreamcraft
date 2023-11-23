@@ -62,7 +62,7 @@ const LoginPage = () => {
                       className="md:text-3xl sm:text-[28px] text-[32px] text-white-A700 tracking-[0.16px] w-auto"
                       size="txtSyneSemiBold32"
                     >
-                      Login
+                      Loginn
                       
                     </Text>
                     <Text
