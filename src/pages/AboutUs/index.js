@@ -7,9 +7,12 @@ import Header from "components/Header";
 
 const AboutUsPage = () => {
   const navigate = useNavigate();
+  const [frame1000004318value, setFrame1000004318value] = React.useState("");
+  const [frameninetyonevalue, setFrameninetyonevalue] = React.useState("");
+  const sliderRef = React.useRef(null);
+  const [sliderState, setsliderState] = React.useState(0);
   
-
-  return (
+return (
     <>
       <div className="bg-white-A700 flex flex-col font-manrope items-center justify-start mx-auto w-full">
         <div className="sm:h-[1058px] md:h-[1125px] h-[1443px] md:px-5 relative w-full">
@@ -175,7 +178,7 @@ const AboutUsPage = () => {
                     >
                       About Us
                     </Text>
-                    <Text
+                    <Text 
                       className="leading-[130.00%] max-w-[460px] md:max-w-full sm:text-[35px] md:text-[41px] text-[45px] text-white-A700 tracking-[-0.45px]"
                       size="txtPlayfairDisplayRomanBold45WhiteA700"
                     >
@@ -604,6 +607,7 @@ const AboutUsPage = () => {
                   className="absolute h-[105px] left-[16%] object-cover top-[11%] w-[18%]"
                   src="images/img_21.png"
                   alt="TwentyOne"
+                  
                 />
               </div>
               <div className="bg-blue_gray-600 flex flex-col items-center justify-end p-[25px] sm:px-5 w-full">
