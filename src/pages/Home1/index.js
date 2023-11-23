@@ -206,8 +206,8 @@ const Home1Page = () => {
                     />
                     <Img
                       className="h-[304px] md:h-auto object-cover w-full"
-                      src="images/img_rectangle10_293x215.png"
-                     alt="rectangleTen"
+                      src="images/img_rectangle10.png"
+                      alt="rectangleTen"
                     />
                   </div>
                   <div className="flex flex-col gap-6 h-[632px] md:h-auto items-start justify-center w-[212px]">
@@ -218,7 +218,7 @@ const Home1Page = () => {
                     />
                     <Img
                       className="h-[304px] md:h-auto object-cover w-full"
-                      src="images/img_rectangle10_304x212.png"
+                      src="images/img_rectangle10_293x215.png"
                       alt="rectangleTen"
                     />
                   </div>
