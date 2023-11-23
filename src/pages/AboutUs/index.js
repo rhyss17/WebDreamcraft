@@ -379,11 +379,7 @@ const AboutUsPage = () => {
                 <div className="flex md:flex-col flex-row md:gap-10 items-end justify-between w-[94%] md:w-full">
                   <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between md:pr-10 sm:pr-5 pr-[68px] w-[76%] md:w-full">
                     <div className="h-[229px] md:h-[250px] mb-[21px] relative w-[21%] md:w-full">
-                      <Img
-                        className="h-[229px] m-auto object-cover w-full"
-                        src="images/img_ellipse5.png"
-                        alt="ellipseFive"
-                      />
+                      
                       <Img
                         className="absolute h-[229px] inset-[0] justify-center m-auto object-cover w-full"
                         src="images/img_ellipse1.png"
@@ -391,51 +387,54 @@ const AboutUsPage = () => {
                       />
                     </div>
                     <Img
-                      className="h-[229px] md:h-auto md:mt-0 mt-[21px] object-cover"
+                      className="h-[230px] md:h-auto md:mt-2 mt-[21px] object-cover"
+
                       src="images/img_ellipse2.png"
                       alt="ellipseTwo"
                     />
                     <Img
-                      className="h-[229px] md:h-auto md:mt-0 mt-[21px] object-cover"
+                      className="h-[230px] md:h-auto md:mt-0 mt-[21px] object-cover"
                       src="images/img_ellipse3.png"
                       alt="ellipseThree"
                     />
                   </div>
                   <Img
-                    className="h-[229px] md:h-auto md:mt-0 mt-[21px] object-cover"
+                    className="h-[230px] md:h-auto md:mt-0 mt-[21px] object-cover"
                     src="images/img_ellipse5.png"
                     alt="ellipseFour"
                   />
                 </div>
-                <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start mt-7 w-[99%] md:w-full">
+                <div className="flex md:flex-col flex-row md:gap- items-start justify-start mt-7 w-[99%] md:w-full">
                   <Text
                     className="md:mt-0 mt-[13px] md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
-                    size="txtManropeBold32"
+                    size="txtManropeBold24"
                   >
                     Rhyss Gianne Almeda{" "}
                   </Text>
                   <Text
                     className="mb-[11px] md:ml-[0] ml-[94px] md:mt-0 mt-0.5 md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
-                    size="txtManropeBold32"
+                    size="txtManropeBold24"
                   >
-                    Christzia Marie Ata
+                    Christzia Marie Atay
                   </Text>
                   <Text
-                    className="mb-[13px] md:ml-[0] ml-[206px] md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
-                    size="txtManropeBold32"
+                    className="mb-[11px] md:ml-[0] ml-[94px] md:mt-0 mt-0.5 md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
+                    size="txtManropeBold24"
                   >
                     Jobeth Albert Cala
                   </Text>
                   <Text
-                    className="mb-[9px] ml-36 md:ml-[0] md:mt-0 mt-1 md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
-                    size="txtManropeBold32"
+                     className="mb-[11px] md:ml-[0] ml-[94px] md:mt-0 mt-0.5 md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
+                     size="txtManropeBold24"
+                   >
+      
+                     Ellan Jude Estandarte
+                  </Text>
+                  <Text
+                    className="mb-[11px] md:ml-[0] ml-[94px] md:mt-0 mt-0.5 md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
+                    size="txtManropeBold24"
                   >
-                    <span className="text-white-A700 font-manrope text-left font-bold">
-                      Ellan Jude{" "}
-                    </span>
-                    <span className="text-white-A700 font-manrope text-left font-bold">
-                      Estandarte
-                    </span>
+
                   </Text>
                 </div>
                 <div className="flex sm:flex-col flex-row sm:gap-5 items-center justify-start mt-[29px] w-full">
