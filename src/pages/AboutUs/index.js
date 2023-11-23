@@ -374,58 +374,60 @@ const AboutUsPage = () => {
                 </Text>
               </div>
             </div>
-            <div className="bg-blue_gray-800 flex flex-col font-manrope items-center justify-start p-[18px] rounded-[40px] w-[89%] md:w-full">
-              <div className="flex flex-col items-center justify-start mb-[546px] mt-[66px] w-[99%] md:w-full">
-                <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between pb-1.5 w-[92%] md:w-full">
-                  <div className="h-[229px] md:h-[241px] mb-3 relative w-[16%] md:w-full">
+            <div className="bg-blue_gray-800 flex flex-col font-manrope items-center justify-start md:ml-[0] ml-[69px] mt-14 p-[13px] rounded-[40px] w-[97%] md:w-full">
+              <div className="flex flex-col items-center justify-start mb-[286px] mt-[71px] w-[98%] md:w-full">
+                <div className="flex md:flex-col flex-row md:gap-10 items-end justify-between w-[94%] md:w-full">
+                  <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between md:pr-10 sm:pr-5 pr-[68px] w-[76%] md:w-full">
+                    <div className="h-[229px] md:h-[250px] mb-[21px] relative w-[21%] md:w-full">
+                      <Img
+                        className="h-[229px] m-auto object-cover w-full"
+                        src="images/img_ellipse5.png"
+                        alt="ellipseFive"
+                      />
+                      <Img
+                        className="absolute h-[229px] inset-[0] justify-center m-auto object-cover w-full"
+                        src="images/img_ellipse1.png"
+                        alt="ellipseOne"
+                      />
+                    </div>
                     <Img
-                      className="h-[229px] m-auto object-cover w-full"
-                      src="images/img_ellipse5.png"
-                      alt="ellipseFive"
+                      className="h-[229px] md:h-auto md:mt-0 mt-[21px] object-cover"
+                      src="images/img_ellipse2.png"
+                      alt="ellipseTwo"
                     />
                     <Img
-                      className="absolute h-[229px] inset-[0] justify-center m-auto object-cover w-full"
-                      src="images/img_ellipse1_229x237.png"
-                      alt="ellipseOne"
+                      className="h-[229px] md:h-auto md:mt-0 mt-[21px] object-cover"
+                      src="images/img_ellipse3.png"
+                      alt="ellipseThree"
                     />
                   </div>
                   <Img
-                    className="h-[229px] md:h-auto md:mt-0 mt-3 object-cover"
-                    src="images/img_ellipse2.png"
-                    alt="ellipseTwo"
-                  />
-                  <Img
-                    className="h-[229px] md:h-auto md:mt-0 mt-3 object-cover"
-                    src="images/img_ellipse3.png"
-                    alt="ellipseThree"
-                  />
-                  <Img
-                    className="h-[229px] md:h-auto md:mt-0 mt-3 object-cover"
+                    className="h-[229px] md:h-auto md:mt-0 mt-[21px] object-cover"
                     src="images/img_ellipse5.png"
                     alt="ellipseFour"
                   />
                 </div>
-                <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start mt-[33px] w-[99%] md:w-full">
+                <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start mt-7 w-[99%] md:w-full">
                   <Text
-                    className="md:mt-0 mt-[11px] md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
+                    className="md:mt-0 mt-[13px] md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
                     size="txtManropeBold32"
                   >
                     Rhyss Gianne Almeda{" "}
                   </Text>
                   <Text
-                    className="mb-[11px] md:ml-[0] ml-[94px] md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
+                    className="mb-[11px] md:ml-[0] ml-[94px] md:mt-0 mt-0.5 md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
                     size="txtManropeBold32"
                   >
                     Christzia Marie Ata
                   </Text>
                   <Text
-                    className="mb-[11px] md:ml-[0] ml-[175px] md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
+                    className="mb-[13px] md:ml-[0] ml-[206px] md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
                     size="txtManropeBold32"
                   >
                     Jobeth Albert Cala
                   </Text>
                   <Text
-                    className="md:ml-[0] ml-[94px] md:mt-0 mt-2.5 md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
+                    className="mb-[9px] ml-36 md:ml-[0] md:mt-0 mt-1 md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
                     size="txtManropeBold32"
                   >
                     <span className="text-white-A700 font-manrope text-left font-bold">
@@ -436,39 +438,42 @@ const AboutUsPage = () => {
                     </span>
                   </Text>
                 </div>
-                <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start mt-[26px] w-[99%] md:w-full">
+                <div className="flex sm:flex-col flex-row sm:gap-5 items-center justify-start mt-[29px] w-full">
                   <Text
                     className="text-2xl md:text-[22px] text-white-A700 sm:text-xl"
                     size="txtManropeBold24"
                   >
-                    “No game, no life (2)”{" "}
+                    <>&quot;The best code is no code at all.&quot;</>
                   </Text>
                   <Text
-                    className="ml-52 md:ml-[0] md:mt-0 mt-[18px] text-2xl md:text-[22px] text-white-A700 sm:text-xl"
+                    className="sm:ml-[0] ml-[133px] text-2xl md:text-[22px] text-white-A700 sm:text-xl"
                     size="txtManropeBold24"
                   >
-                    “Enjoy Life”{" "}
+                    “No sleep, code is life”{" "}
                   </Text>
                   <Text
-                    className="md:ml-[0] ml-[318px] md:mt-0 mt-8 text-2xl md:text-[22px] text-white-A700 sm:text-xl"
-                    size="txtManropeBold24"
-                  >
-                    “No game, no life”
-                  </Text>
-                  <Text
-                    className="leading-[140.00%] md:ml-[0] ml-[69px] md:mt-0 mt-[15px] text-2xl md:text-[22px] text-white-A700 sm:text-xl"
+                    className="leading-[140.00%] mb-[3px] sm:ml-[0] ml-[163px] text-2xl md:text-[22px] text-white-A700 sm:text-xl"
                     size="txtManropeBold24"
                   >
                     <>
-                      “Sleep my child, they dont know your
-                      <br /> wars.”
+                      &quot;Programming is the closest
+                      <br /> thing we have to magic.&quot;
+                    </>
+                  </Text>
+                  <Text
+                    className="leading-[140.00%] ml-32 sm:ml-[0] sm:mt-0 mt-[3px] text-2xl md:text-[22px] text-white-A700 sm:text-xl"
+                    size="txtManropeBold24"
+                  >
+                    <>
+                      &quot;If at first, you don&#39;t succeed,
+                      <br /> call it version 1.0.&quot;
                     </>
                   </Text>
                 </div>
               </div>
             </div>
             <Img
-              className="h-[52px] w-[119px]"
+              className="h-[52px] mb-3.5 md:ml-[0] ml-[835px] mt-[330px] w-[119px]"
               src="images/img_frame1000004329.svg"
               alt="frame1000004329"
             />

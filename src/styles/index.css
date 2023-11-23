@@ -183,3 +183,51 @@ ul li a{
   background: #6b6b6b;
   border-radius: 10px;
 }
+/* Hide the default checkbox */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  border: 1px solid #ffffff;
+}
+
+/* Style for the custom checkbox and label */
+.custom-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adjust the gap as needed */
+}
+
+.custom-checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  border: 1px solid #ffffff;
+}
+.custom-checkbox input[type="checkbox"]::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 3px; /* Adjust the positioning */
+  left: 3px; /* Adjust the positioning */
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+.custom-checkbox input[type="checkbox"]:not(:checked)::before {
+  content: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked::before {
+  content: "";
+  background-color: #ffffff;
+}

@@ -9,6 +9,7 @@ import { Button, Img, Input, Text } from "components";
 const LoginPage = () => {
   const navigate = useNavigate();
   const googleSignIn = useGoogleLogin({
+  
     onSuccess: (res) => {
       console.log("res", res);
       alert("Login successfull. 😍");
@@ -62,6 +63,7 @@ const LoginPage = () => {
                       size="txtSyneSemiBold32"
                     >
                       Login
+                      
                     </Text>
                     <Text
                       className="leading-[150.00%] max-w-[435px] md:max-w-full text-[17px] text-gray-100"
@@ -105,14 +107,17 @@ const LoginPage = () => {
                         Log in with Google
                       </Text>
                     </div>
-                    <div className="border border-solid border-white-A700_3f flex sm:flex-col flex-row font-inter gap-2.5 items-start justify-center p-3.5 rounded-sm w-full">
+                    <div
+                      className="common-pointer border border-solid border-white-A700_3f flex sm:flex-col flex-row font-inter gap-[11px] items-start justify-center p-[18px] rounded-sm w-full"
+                      onClick={() => googleSignIn()}
+                    >
                       <Img
                         className="h-6 mb-2 sm:ml-[0] ml-[124px] w-6"
                         src="images/img_iconfacebook.svg"
                         alt="iconfacebook"
                       />
                       <Text
-                        className="mr-[87px] sm:mt-0 mt-[3px] text-base text-white-A700"
+                        className="mr-[99px] sm:mt-0 my-0.5 text-base text-white-A700"
                         size="txtInterRegular16"
                       >
                         Log in with Facebook

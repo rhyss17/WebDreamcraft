@@ -10,22 +10,6 @@ const SignUpPage = () => {
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-poppins gap-8 items-start justify-start mx-auto p-10 sm:px-5 w-full">
-        <Button
-          className="common-pointer bg-transparent cursor-pointer flex items-center justify-center min-w-[143px] md:ml-[0] ml-[60px]"
-          onClick={() => navigate("/home1")}
-          leftIcon={
-            <Img
-              className="mt-1 mb-[7px] mr-2"
-              src="images/img_frame.svg"
-              alt="Frame"
-            />
-          }
-          size="xs"
-        >
-          <div className="font-semibold text-blue_gray-900_cc text-left text-xl tracking-[0.10px]">
-            Homepage
-          </div>
-        </Button>
         <div className="flex font-montserrat mb-[61px] md:ml-[0] ml-[60px] md:px-5 relative w-[90%] md:w-full">
           <div className="h-[697px] my-auto w-[72%] md:w-full">
             <div className="h-[697px] m-auto w-full">
@@ -102,6 +86,23 @@ const SignUpPage = () => {
                   size="md"
                   variant="outline"
                 ></Input>
+                <Input
+                name="termsOfService"
+                type="checkbox"
+                label="I agree to all statements in terms of service"
+                className="text-white-A700_99 text-left text-lg w-full"
+                wrapClassName="rounded-sm w-full"
+                color="white_A700_3f"
+                size="md"
+                variant="plain"
+                style={{
+                  backgroundColor: 'transparent',
+                  border: '1px solid white',
+                  padding: '2px', // Adjusted padding around the checkbox
+                  marginLeft: '8px', // Adding left margin, adjust value as needed
+                }}
+
+              ></Input>
               </div>
               <div className="flex flex-col gap-8 items-center justify-start w-auto sm:w-full">
                 <Button
