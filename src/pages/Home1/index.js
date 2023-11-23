@@ -15,339 +15,289 @@ const Home1Page = () => {
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col items-start justify-start mx-auto w-full">
-        <div className="flex flex-col font-manrope items-center max-w-[2287px] mx-auto md:px-5 w-full">
-          <div className="h-[1028px] md:h-[1451px] sm:h-[817px] relative w-full">
-            <div className="flex flex-col mx-auto w-full">
-              <header className="flex md:flex-col md:gap-5 items-center justify-center mx-auto w-full">
+      <div className="bg-white-A700 flex flex-col font-manrope items-center justify-start mx-auto w-full">
+        <div className="flex flex-col md:px-5 relative w-full">
+          <div className="flex flex-col items-center justify-start mx-auto pr-[3px] py-[3px] w-full">
+            <div className="flex flex-col gap-[15px] justify-start mb-[27px] mt-[35px] w-full">
+              <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between md:ml-[0] ml-[148px] w-[91%] md:w-full">
                 <Img
-                  className="md:flex-1 h-[100px] sm:h-auto mr-[393px] object-cover w-[83%] md:w-full"
-                  src="images/img_background_100x1894.png"
-                  alt="background"
+                  className="h-[105px] md:h-auto object-cover"
+                  src="images/img_21.png"
+                  alt="TwentyOne"
                 />
-                <div className="flex flex-1 md:flex-col flex-row md:gap-10 h-[52px] md:h-auto items-center justify-between max-w-[1677px] md:ml-[0] ml-[610px] md:mt-0 my-6 w-full">
-                  <div className="flex md:flex-1 md:flex-col flex-row gap-9 items-center justify-end w-auto md:w-full">
-                    <ul className="flex flex-row gap-[46px] sm:hidden items-center justify-end w-[444px] sm:w-full common-row-list">
-                      <li>
-                        <a
-                          href="javascript:"
-                          className="text-base text-blue_gray-800"
-                        >
-                          <Text size="txtManropeMedium16Bluegray800">Home</Text>
-                        </a>
-                      </li>
-                      <li>
-                        <a className="text-base text-blue_gray-800">
-                          <Text
-                            className="common-pointer"
-                            size="txtManropeMedium16Bluegray800"
-                            onClick={() => navigate("/aboutus")}
-                          >
-                            About Us
-                          </Text>
-                        </a>
-                      </li>
-                      <li>
-                        <a className="text-base text-blue_gray-800">
-                          <Text
-                            className="common-pointer"
-                            size="txtManropeMedium16Bluegray800"
-                            onClick={() => navigate("/contactus")}
-                          >
-                            Contact Us
-                          </Text>
-                        </a>
-                      </li>
-                    </ul>
-                    <div className="flex flex-row items-center justify-center px-4 py-2 rounded-lg w-auto">
-                      <Text
-                        className="text-base text-blue_gray-800"
-                        size="txtManropeBold16Bluegray800"
-                      >
-                        EN
-                      </Text>
-                      <Img
-                        className="h-6 w-6"
-                        src="images/img_arrowdown.svg"
-                        alt="arrowdown"
-                      />
-                    </div>
-                    <div className="flex flex-col items-start justify-start w-auto">
-                      <Button
-                        className="common-pointer cursor-pointer font-bold min-w-[91px] rounded-[5px] text-base text-center"
-                        onClick={() => navigate("/")}
-                        shape="round"
-                        color="blue_gray_800"
-                        size="md"
-                        variant="outline"
-                      >
-                        Login
-                      </Button>
-                    </div>
-                  </div>
+                <div className="flex sm:flex-col flex-row sm:gap-10 items-start justify-between md:mt-0 mt-2 w-[28%] md:w-full">
+                  <Text
+                    className="sm:mt-0 mt-4 text-base text-blue_gray-800"
+                    size="txtManropeMedium16"
+                  >
+                    Home
+                  </Text>
+                  <Text
+                    className="common-pointer sm:mt-0 mt-4 text-base text-blue_gray-800"
+                    size="txtManropeMedium16"
+                    onClick={() => navigate("/aboutus")}
+                  >
+                    About Us
+                  </Text>
+                  <a className="sm:mt-0 mt-4 text-base text-blue_gray-800">
+                    <Text
+                      className="common-pointer"
+                      size="txtManropeMedium16"
+                      onClick={() => navigate("/aboutus")}
+                    >
+                      Contact Us
+                    </Text>
+                  </a>
                   <Button
-                    className="common-pointer border border-blue_gray-800 border-solid cursor-pointer font-bold h-[52px] min-w-[106px] rounded-[5px] text-base text-center"
+                    className="common-pointer bg-transparent cursor-pointer font-bold min-w-[91px] text-base text-blue_gray-800 text-center"
+                    onClick={() => navigate("/")}
+                  >
+                    Login
+                  </Button>
+                  <Button
+                    className="common-pointer border border-blue_gray-800 border-solid cursor-pointer font-bold h-[49px] min-w-[106px] rounded-[5px] text-base text-center"
                     onClick={() => navigate("/signup")}
-                    shape="round"
                     color="blue_gray_800"
-                    size="md"
                     variant="fill"
                   >
                     Sign up
                   </Button>
                 </div>
-              </header>
-              <div className="md:h-[1451px] sm:h-[817px] h-[833px] mt-[-1px] w-[84%] md:w-full z-[1]">
-                <div className="absolute bg-blue_gray-800_7f flex flex-col h-max inset-[0] items-end justify-center m-auto md:pl-10 sm:pl-5 pl-[628px] w-full">
-                  <div className="bg-blue_gray-800 flex flex-col items-end justify-start p-[34px] sm:px-5 w-full">
-                    <div className="flex flex-col h-[657px] md:h-auto items-center justify-end max-w-[693px] mb-[67px] mt-10 py-4 w-full">
-                      <div className="flex flex-col h-[611px] md:h-auto items-center justify-start rounded-[40px] w-full">
-                        <div className="flex md:flex-col flex-row gap-6 h-full items-center justify-start rounded-[40px] w-full">
-                          <Img
-                            className="flex-1 md:flex-none md:h-[611px] sm:h-auto h-full max-h-[611px] object-cover sm:w-[] md:w-[]"
-                            src="images/img_rectangle7.png"
-                            alt="rectangleSeven"
-                          />
-                          <List
-                            className="md:flex-1 sm:flex-col flex-row gap-6 grid sm:grid-cols-1 grid-cols-2 w-[66%] md:w-full"
-                            orientation="horizontal"
-                          >
-                            <div className="flex flex-col gap-6 items-start justify-center w-full">
-                              <Img
-                                className="h-[293px] md:h-auto object-cover w-full"
-                                src="images/img_rectangle11.png"
-                                alt="rectangleEleven"
-                              />
-                              <Img
-                                className="h-[293px] md:h-auto object-cover w-full"
-                                src="images/img_rectangle10.png"
-                                alt="rectangleTen"
-                              />
-                            </div>
-                            <div className="flex flex-col gap-6 items-start justify-center w-full">
-                              <Img
-                                className="h-[293px] md:h-auto object-cover w-full"
-                                src="images/img_rectangle11_293x215.png"
-                                alt="rectangleEleven"
-                              />
-                              <Img
-                                className="h-[293px] md:h-auto object-cover w-full"
-                                src="images/img_rectangle10_293x215.png"
-                                alt="rectangleTen"
-                              />
-                            </div>
-                          </List>
-                        </div>
-                      </div>
+              </div>
+              <div className="bg-blue_gray-800_7f flex md:flex-col flex-row md:gap-5 items-start justify-start p-[55px] md:px-10 sm:px-5 w-full">
+                <div className="bg-blue_gray-800_7f flex flex-1 flex-col gap-[52px] h-[513px] md:h-auto items-start justify-start max-w-[936px] mb-[33px] ml-16 md:ml-[0] md:mt-0 mt-[137px] w-full">
+                  <div className="flex flex-col gap-6 items-start justify-start max-w-[712px] w-full">
+                    <div className="flex flex-col gap-[7px] items-start justify-start max-w-[712px] w-full">
+                      <Text
+                        className="text-[15px] text-white-A700 tracking-[1.50px] uppercase w-auto"
+                        size="txtManropeSemiBold15"
+                      >
+                        YOGA STUDIO, Wellness center, Beauty Salon, massage
+                      </Text>
+                      <Text
+                        className="leading-[115.00%] max-w-[655px] md:max-w-full md:text-5xl text-[70px] text-lime-100_01 tracking-[-0.70px]"
+                        size="txtPlayfairDisplayRomanBold70"
+                      >
+                        Find The Best Establishment Nearby
+                      </Text>
+                    </div>
+                    <div className="flex flex-col items-start justify-start w-[508px] sm:w-full">
+                      <Text
+                        className="text-lg text-white-A700 w-[307px]"
+                        size="txtManropeRegular18"
+                      >
+                        Yourself deserves to be taken care of.{" "}
+                      </Text>
                     </div>
                   </div>
-                </div>
-                <div className="absolute bg-blue_gray-800 flex flex-col h-full inset-y-[0] items-end justify-end left-[0] my-auto p-[19px] w-[61%]">
-                  <div className="bg-blue_gray-800_7f flex flex-col gap-[52px] items-start justify-start mb-[111px] mt-[188px] w-auto md:w-full">
-                    <div className="flex flex-col gap-6 items-start justify-start max-w-[655px] w-full">
-                      <div className="flex flex-col gap-[7px] items-start justify-start max-w-[655px] w-full">
-                        <div className="flex flex-col font-manrope items-center justify-start">
+                  <div className="bg-gray-50 flex flex-col h-[105px] md:h-auto items-center justify-start max-w-[919px] rounded-[52px] w-full">
+                    <div className="bg-white-A700 flex md:flex-col flex-row gap-[46px] h-[88px] md:h-auto items-center justify-start max-w-[919px] pl-10 sm:pl-5 pr-3.5 py-5 rounded-[44px] shadow-bs w-full">
+                      <div className="flex md:flex-1 md:flex-col flex-row font-inter gap-6 items-start justify-start w-auto md:w-full">
+                        <div className="flex flex-col gap-3.5 items-start justify-start w-auto">
                           <Text
-                            className="text-[15px] text-white-A700 tracking-[1.50px] uppercase"
-                            size="txtManropeSemiBold15"
+                            className="text-blue_gray-600 text-lg w-auto"
+                            size="txtInterBold18"
                           >
-                            YOGA STUDIO, Wellness center, Beauty Salon, massage
+                            Establishment Name
                           </Text>
-                        </div>
-                        <Text
-                          className="leading-[115.00%] max-w-[655px] md:max-w-full md:text-5xl text-[70px] text-lime-100 tracking-[-0.70px]"
-                          size="txtPlayfairDisplayRomanBold70"
-                        >
-                          Find The Best Establishment Nearby
-                        </Text>
-                      </div>
-                      <div className="flex flex-col items-start justify-start w-[508px] sm:w-full">
-                        <Text
-                          className="text-lg text-white-A700 w-[307px]"
-                          size="txtManropeRegular18"
-                        >
-                          Yourself deserves to be taken care of.{" "}
-                        </Text>
-                      </div>
-                    </div>
-                    <div className="bg-gray-50 flex flex-col items-center justify-start rounded-[44px] w-auto md:w-full">
-                      <div className="bg-white-A700 flex md:flex-col flex-row gap-[46px] h-[88px] md:h-auto items-center justify-start pl-10 sm:pl-5 pr-3.5 py-5 rounded-[44px] shadow-bs w-auto">
-                        <div className="flex md:flex-col flex-row font-inter gap-6 items-start justify-start w-auto md:w-full">
-                          <div className="flex flex-col gap-3.5 items-start justify-start w-auto">
-                            <Text
-                              className="text-blue_gray-600 text-lg w-auto"
-                              size="txtInterBold18"
-                            >
-                              Establishment Name
-                            </Text>
-                            <Input
-                              name="frame1000004318"
-                              placeholder="Book your services..."
-                              value={frame1000004318value}
-                              onChange={(e) => setFrame1000004318value(e)}
-                              className="!placeholder:text-gray-900 !text-gray-900 font-roboto leading-[normal] p-0 text-left text-sm w-full"
-                              wrapClassName="flex w-[307px]"
-                              suffix={
-                                frame1000004318value?.length > 0 ? (
-                                  <CloseSVG
-                                    className="mt-auto mb-px cursor-pointer h-4 ml-[35px]"
-                                    onClick={() => setFrame1000004318value("")}
-                                    fillColor="#141414"
-                                    height={16}
-                                    width={16}
-                                    viewBox="0 0 16 16"
-                                  />
-                                ) : (
-                                  <Img
-                                    className="mt-auto mb-px cursor-pointer h-4 ml-[35px]"
-                                    src="images/img_search.svg"
-                                    alt="search"
-                                  />
-                                )
-                              }
-                              shape="square"
-                              color="gray_900"
-                              size="xs"
-                              variant="outline"
-                            ></Input>
-                          </div>
-                          <div className="flex flex-col gap-3.5 items-start justify-start w-auto">
-                            <Text
-                              className="text-blue_gray-600 text-lg w-auto"
-                              size="txtInterBold18"
-                            >
-                              Address
-                            </Text>
-                            <div className="font-roboto h-6 pb-2 relative w-[307px]">
-                              <div className="absolute md:h-6 h-[23px] inset-[0] justify-center m-auto w-full">
-                                <div className="border-b border-gray-900 border-solid h-6 m-auto w-full"></div>
-                                <Img
-                                  className="absolute h-4 right-[0] top-[0] w-4"
-                                  src="images/img_location.svg"
-                                  alt="location"
+                          <Input
+                            name="frame1000004318"
+                            placeholder="Book your services..."
+                            value={frame1000004318value}
+                            onChange={(e) => setFrame1000004318value(e)}
+                            className="!placeholder:text-gray-900 !text-gray-900 font-roboto leading-[normal] p-0 text-left text-sm w-full"
+                            wrapClassName="flex w-[307px]"
+                            suffix={
+                              frame1000004318value?.length > 0 ? (
+                                <CloseSVG
+                                  className="mt-auto mb-px cursor-pointer h-4 ml-[35px]"
+                                  onClick={() => setFrame1000004318value("")}
+                                  fillColor="#141414"
+                                  height={16}
+                                  width={16}
+                                  viewBox="0 0 16 16"
                                 />
-                              </div>
-                              <Text
-                                className="absolute left-[0] text-gray-900 text-sm top-[0] w-auto"
-                                size="txtRobotoRegular14"
-                              >
-                                Location
-                              </Text>
+                              ) : (
+                                <Img
+                                  className="mt-auto mb-px cursor-pointer h-4 ml-[35px]"
+                                  src="images/img_search.svg"
+                                  alt="search"
+                                />
+                              )
+                            }
+                            shape="square"
+                            color="gray_900"
+                            size="sm"
+                            variant="outline"
+                          ></Input>
+                        </div>
+                        <div className="flex flex-col gap-3.5 items-start justify-start w-auto">
+                          <Text
+                            className="text-blue_gray-600 text-lg w-auto"
+                            size="txtInterBold18"
+                          >
+                            Address
+                          </Text>
+                          <div className="font-roboto h-6 pb-2 relative w-[307px]">
+                            <div className="absolute md:h-6 h-[23px] inset-[0] justify-center m-auto w-full">
+                              <div className="border-b border-gray-900 border-solid h-6 m-auto w-full"></div>
+                              <Img
+                                className="absolute h-4 right-[0] top-[0] w-4"
+                                src="images/img_location.svg"
+                                alt="location"
+                              />
                             </div>
+                            <Text
+                              className="absolute left-[0] text-gray-900 text-sm top-[0] w-auto"
+                              size="txtRobotoRegular14"
+                            >
+                              Location
+                            </Text>
                           </div>
                         </div>
-                        <Input
-                          name="frameNinetyOne"
-                          placeholder="Search"
-                          value={frameninetyonevalue}
-                          onChange={(e) => setFrameninetyonevalue(e)}
-                          className="!placeholder:text-gray-50 !text-gray-50 font-manrope font-semibold leading-[normal] md:text-[22px] p-0 sm:text-xl text-2xl text-left w-full"
-                          wrapClassName="flex w-[211px] md:w-full"
-                          suffix={
-                            frameninetyonevalue?.length > 0 ? (
-                              <CloseSVG
-                                className="mt-0.5 mb-1 cursor-pointer h-[26px] ml-[23px]"
-                                onClick={() => setFrameninetyonevalue("")}
-                                fillColor="#f8f8f8"
-                                height={26}
-                                width={26}
-                                viewBox="0 0 26 26"
-                              />
-                            ) : (
-                              <Img
-                                className="mt-0.5 mb-1 cursor-pointer h-[26px] ml-[23px]"
-                                src="images/img_search_white_a700.svg"
-                                alt="search"
-                              />
-                            )
-                          }
-                          shape="round"
-                          color="blue_gray_600"
-                          size="sm"
-                          variant="fill"
-                        ></Input>
                       </div>
+                      <Input
+                        name="frameNinetyOne"
+                        placeholder="Search"
+                        value={frameninetyonevalue}
+                        onChange={(e) => setFrameninetyonevalue(e)}
+                        className="!placeholder:text-gray-50 !text-gray-50 font-manrope font-semibold leading-[normal] md:text-[22px] p-0 sm:text-xl text-2xl text-left w-full"
+                        wrapClassName="flex md:flex-1 w-[178px] md:w-full"
+                        suffix={
+                          frameninetyonevalue?.length > 0 ? (
+                            <CloseSVG
+                              className="mt-0.5 mb-1 cursor-pointer h-[26px] ml-[23px]"
+                              onClick={() => setFrameninetyonevalue("")}
+                              fillColor="#f8f8f8"
+                              height={26}
+                              width={26}
+                              viewBox="0 0 26 26"
+                            />
+                          ) : (
+                            <Img
+                              className="mt-0.5 mb-1 cursor-pointer h-[26px] ml-[23px]"
+                              src="images/img_search_white_a700.svg"
+                              alt="search"
+                            />
+                          )
+                        }
+                        shape="round"
+                        color="blue_gray_600"
+                        size="lg"
+                        variant="fill"
+                      ></Input>
                     </div>
                   </div>
                 </div>
+                <Img
+                  className="md:flex-1 h-[609px] sm:h-auto ml-6 md:ml-[0] md:mt-0 mt-[62px] object-cover w-[12%] md:w-full"
+                  src="images/img_rectangle7.png"
+                  alt="rectangleSeven"
+                />
+                <List
+                  className="md:flex-1 sm:flex-col flex-row gap-[23px] grid sm:grid-cols-1 grid-cols-2 md:ml-[0] ml-[23px] md:mt-0 mt-[51px] w-1/4 md:w-full"
+                  orientation="horizontal"
+                >
+                  <div className="flex flex-col gap-6 h-[632px] md:h-auto items-start justify-center w-[212px]">
+                    <Img
+                      className="h-[304px] md:h-auto object-cover w-full"
+                      src="images/img_rectangle11.png"
+                      alt="rectangleEleven"
+                    />
+                    <Img
+                      className="h-[304px] md:h-auto object-cover w-full"
+                      src="images/img_rectangle10.png"
+                      alt="rectangleTen"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-6 h-[632px] md:h-auto items-start justify-center w-[212px]">
+                    <Img
+                      className="h-[304px] md:h-auto object-cover w-full"
+                      src="images/img_rectangle11_293x215.png"
+                      alt="rectangleEleven"
+                    />
+                    <Img
+                      className="h-[304px] md:h-auto object-cover w-full"
+                      src="images/img_rectangle10_304x212.png"
+                      alt="rectangleTen"
+                    />
+                  </div>
+                </List>
               </div>
             </div>
-            <Img
-              className="absolute h-[105px] left-[5%] object-cover top-[0] w-[15%]"
-              src="images/img_21.png"
-              alt="TwentyOne"
-            />
           </div>
-        </div>
-        <div className="flex flex-col font-manrope items-start justify-start md:px-5 w-[83%] md:w-full">
-          <div className="flex flex-col h-[168px] md:h-auto items-center justify-center max-w-[1681px] md:px-10 sm:px-5 px-[120px] w-full">
-            <div className="flex md:flex-col flex-row gap-[53px] h-[168px] md:h-auto items-center justify-center max-w-[1676px] w-full">
-              <div
-                className="common-pointer flex flex-col gap-6 h-[147px] md:h-auto items-center justify-start w-60"
-                onClick={() => navigate("/yogastudio")}
-              >
-                <div className="h-[104px] relative w-[141px]">
-                  <div className="absolute bg-lime-100_7f h-24 left-[0] rounded-[50%] top-[0] w-24"></div>
-                  <Img
-                    className="absolute h-[104px] inset-y-[0] my-auto object-cover right-[0] w-[104px]"
-                    src="images/img_icons8yoga501.png"
-                    alt="icons8yoga501"
-                  />
+          <div className="flex flex-col items-center justify-start mt-[-29px] mx-auto w-full z-[1]">
+            <div className="flex flex-col items-start justify-start pb-10 pr-10 sm:pr-5 w-full">
+              <div className="flex flex-col h-[168px] md:h-auto items-center justify-center max-w-[1681px] md:px-10 sm:px-5 px-[120px] w-full">
+                <div className="flex md:flex-col flex-row gap-[53px] h-[168px] md:h-auto items-center justify-center max-w-[1676px] w-full">
+                  <div
+                    className="common-pointer flex flex-col gap-6 h-[147px] md:h-auto items-center justify-start w-60"
+                    onClick={() => navigate("/yogastudiothree")}
+                  >
+                    <div className="h-[104px] relative w-[141px]">
+                      <div className="absolute bg-lime-100_7f h-24 left-[0] rounded-[50%] top-[0] w-24"></div>
+                      <Img
+                        className="absolute h-[104px] inset-y-[0] my-auto object-cover right-[0] w-[104px]"
+                        src="images/img_icons8yoga501.png"
+                        alt="icons8yoga501"
+                      />
+                    </div>
+                    <Text
+                      className="text-center text-gray-800 text-lg w-[105px]"
+                      size="txtManropeBold18"
+                    >
+                      Yoga Studio
+                    </Text>
+                  </div>
+                  <div
+                    className="common-pointer flex flex-col gap-6 items-center justify-start w-60"
+                    onClick={() => navigate("/wellnesscenter")}
+                  >
+                    <Img
+                      className="h-24 w-[126px]"
+                      src="images/img_frame1000004333.svg"
+                      alt="frame1000004333"
+                    />
+                    <Text
+                      className="text-center text-gray-800 text-lg w-auto"
+                      size="txtManropeBold18"
+                    >
+                      Wellness Center
+                    </Text>
+                  </div>
+                  <div
+                    className="common-pointer flex flex-col gap-6 items-center justify-start w-60"
+                    onClick={() => navigate("/beautysalon")}
+                  >
+                    <Img
+                      className="h-24 w-[119px]"
+                      src="images/img_frame1000004335.svg"
+                      alt="frame1000004335"
+                    />
+                    <Text
+                      className="text-center text-gray-800 text-xl w-auto"
+                      size="txtManropeBold20"
+                    >
+                      Beauty Salon
+                    </Text>
+                  </div>
+                  <div
+                    className="common-pointer flex flex-col gap-6 items-center justify-start w-60"
+                    onClick={() => navigate("/massage")}
+                  >
+                    <Img
+                      className="h-24 w-[126px]"
+                      src="images/img_frame1000004334.svg"
+                      alt="frame1000004334"
+                    />
+                    <Text
+                      className="text-center text-gray-800 text-lg w-auto"
+                      size="txtManropeBold18"
+                    >
+                      Massage
+                    </Text>
+                  </div>
                 </div>
-                <Text
-                  className="text-center text-gray-800 text-lg w-[105px]"
-                  size="txtManropeBold18"
-                >
-                  Yoga Studio
-                </Text>
-              </div>
-              <div
-                className="common-pointer flex flex-col gap-6 items-center justify-start w-60"
-                onClick={() => navigate("/wellnesscenter")}
-              >
-                <Img
-                  className="h-24 w-[126px]"
-                  src="images/img_frame1000004333.svg"
-                  alt="frame1000004333"
-                />
-                <Text
-                  className="text-center text-gray-800 text-lg w-auto"
-                  size="txtManropeBold18"
-                >
-                  Wellness Center
-                </Text>
-              </div>
-              <div
-                className="common-pointer flex flex-col gap-6 items-center justify-start w-60"
-                onClick={() => navigate("/beautysalon")}
-              >
-                <Img
-                  className="h-24 w-[119px]"
-                  src="images/img_frame1000004335.svg"
-                  alt="frame1000004335"
-                />
-                <Text
-                  className="text-center text-gray-800 text-xl w-auto"
-                  size="txtManropeBold20"
-                >
-                  Beauty Salon
-                </Text>
-              </div>
-              <div
-                className="common-pointer flex flex-col gap-6 items-center justify-start w-60"
-                onClick={() => navigate("/massage")}
-              >
-                <Img
-                  className="h-24 w-[126px]"
-                  src="images/img_frame1000004334.svg"
-                  alt="frame1000004334"
-                />
-                <Text
-                  className="text-center text-gray-800 text-lg w-auto"
-                  size="txtManropeBold18"
-                >
-                  Massage
-                </Text>
               </div>
             </div>
           </div>
