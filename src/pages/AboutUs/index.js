@@ -7,6 +7,7 @@ import Header from "components/Header";
 
 const AboutUsPage = () => {
   const navigate = useNavigate();
+  
 
   return (
     <>
@@ -115,7 +116,7 @@ const AboutUsPage = () => {
               className="common-pointer absolute h-[105px] left-[4%] object-cover top-[1%] w-[18%]"
               src="images/img_21.png"
               alt="TwentyThree"
-              onClick={() => navigate("/home1")}
+              onClick={() => navigate("/")}
             />
             <div className="absolute flex flex-col h-full inset-[0] items-center justify-center m-auto w-full">
               <div className="h-[1058px] relative w-full">
@@ -132,7 +133,7 @@ const AboutUsPage = () => {
                         className="text-[15px] text-center text-pink-100 tracking-[1.50px] uppercase w-auto"
                         size="txtManropeSemiBold15Pink100"
                       >
-                        SHORT STORY ABOUT US
+                       SHORT STORY ABOUT US
                       </Text>
                       <Text
                         className="leading-[120.00%] max-w-[649px] md:max-w-full sm:text-[41px] md:text-[47px] text-[55px] text-center text-lime-100 tracking-[-0.55px]"
@@ -147,8 +148,9 @@ const AboutUsPage = () => {
                       color="blue_gray_800"
                       size="xl"
                       variant="fill"
+                     onClick={() => navigate("/contactus")}
                     >
-                      CoNTACT US
+                      CONTACT US
                     </Button>
                   </div>
                 </div>
