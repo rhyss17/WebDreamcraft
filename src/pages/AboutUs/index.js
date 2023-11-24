@@ -567,15 +567,15 @@ const AboutUsPage = () => {
                         size="txtManropeMedium17"
                       >
                         <>
-                          Home
-                          <br />
-                          About Us
-                          <br />
-                          Services
-                          <br />
-                          Blog
-                          <br />
-                          Contact Us
+                        <span onClick={() => navigate("/home1")}>Home</span>
+                        <br />
+                        <span onClick={() => navigate("/aboutus")}>About Us</span>
+                        <br />
+                        <span onClick={() => navigate("/")}>Services</span>
+                        <br />
+                        <span onClick={() => navigate("/contactus")}>Contact Us</span>
+                        <br />
+                        <span onClick={() => navigate("/")}>Blog</span>
                         </>
                       </Text>
                     </div>

@@ -655,7 +655,7 @@ const Home1Page = () => {
               </List>
               <Img
                 className="h-12 w-12"
-                src="images/img_arrowleft.svg"
+                src="images/img_arrowright.svg"
                 alt="arrowright"
               />
             </div>
@@ -922,7 +922,7 @@ const Home1Page = () => {
           </List>
           <Img
             className="h-12 w-12"
-            src="images/img_arrowleft.svg"
+            src="images/img_arrowright.svg"
             alt="arrowright_One"
           />
         </div>

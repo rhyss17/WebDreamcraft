@@ -110,4 +110,8 @@ li:hover{
   display: flex;
   justify-content: space-between;
 }
-
+.footer {
+  position: fixed; /* or 'absolute', depending on your layout needs */
+  bottom: 0;
+  width: 100%; /* Ensure it spans the entire width */
+}
