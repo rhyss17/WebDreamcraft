@@ -55,7 +55,7 @@ const Home1Page = () => {
                     </div>
                     <Button
                       className="common-pointer cursor-pointer font-bold min-w-[96px] rounded text-base text-center"
-                      onClick={() => navigate("/login")}
+                      onClick={() => navigate("/")}
                       color="black_900"
                       size="xs"
                       variant="outline"
