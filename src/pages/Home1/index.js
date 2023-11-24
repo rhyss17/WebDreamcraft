@@ -81,7 +81,7 @@ const Home1Page = () => {
                         className="text-[15px] text-white-A700 tracking-[1.50px] uppercase w-auto"
                         size="txtManropeSemiBold15"
                       >
-                        YOGA STUDIO, Wellness center, Beauty Salon, massage
+                        Yoga Studio, Wellness Center, Beauty Salon, massage
                       </Text>
                       <Text
                         className="leading-[115.00%] max-w-[655px] md:max-w-full md:text-5xl text-[70px] text-lime-100_01 tracking-[-0.70px]"

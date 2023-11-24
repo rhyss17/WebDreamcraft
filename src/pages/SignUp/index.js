@@ -23,7 +23,7 @@ const SignUpPage = () => {
             deserve.
           </Text>
           </div>
-          <div className="bg-blue_gray-800 flex flex-col font-montserrat items-center justify-end ml-[-198px] my-auto p-[79px] md:px-5 w-[47%] z-[1]">
+          <div className="bg-blue_gray-800 flex flex-col font-montserrat items-center justify-end ml-[-1px] my-auto p-[83px] md:px-5 w-[60%] z-[1]">
             <div className="flex flex-col gap-10 items-start justify-start w-[459px] sm:w-full">
               <div className="flex flex-col gap-2.5 items-start justify-start w-auto sm:w-full">
                 <Text
