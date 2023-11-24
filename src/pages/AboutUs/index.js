@@ -458,7 +458,7 @@ const AboutUsPage = () => {
                               />
                               <Img
                                 className="absolute h-[229px] inset-[0] justify-center m-auto object-cover w-full"
-                                src="images/img_ellipse1.png"
+                                src="images/img_ellipse1_229x237.png"
                                 alt="ellipseOne"
                               />
                             </div>
@@ -474,7 +474,7 @@ const AboutUsPage = () => {
                             />
                             <Img
                               className="h-[229px] sm:h-auto mb-[9px] md:ml-[0] ml-[149px] md:mt-0 mt-3 object-cover w-[16%] md:w-full"
-                              src="images/img_ellipse5.png"
+                              src="images/img_ellipse6.jpg"
                               alt="ellipseFour"
                             />
                           </div>
