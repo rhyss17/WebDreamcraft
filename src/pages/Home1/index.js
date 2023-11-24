@@ -12,6 +12,9 @@ const Home1Page = () => {
 
   const [frame1000004318value, setFrame1000004318value] = React.useState("");
   const [frameninetyonevalue, setFrameninetyonevalue] = React.useState("");
+  const sliderRef = React.useRef(null);
+  const [sliderState, setsliderState] = React.useState(0);
+
 
   return (
     <>
@@ -20,50 +23,56 @@ const Home1Page = () => {
           <div className="flex flex-col items-center justify-start mx-auto pr-[3px] py-[3px] w-full">
             <div className="flex flex-col gap-[15px] justify-start mb-[27px] mt-[35px] w-full">
               <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between md:ml-[0] ml-[148px] w-[91%] md:w-full">
-                <Img
-                  className="h-[105px] md:h-auto object-cover"
-                  src="images/img_21.png"
-                  alt="TwentyOne"
-                />
-                <div className="flex sm:flex-col flex-row sm:gap-10 items-start justify-between md:mt-0 mt-2 w-[28%] md:w-full">
-                  <Text
-                    className="sm:mt-0 mt-4 text-base text-blue_gray-800"
-                    size="txtManropeMedium16"
-                  >
-                    Home
-                  </Text>
-                  <Text
-                    className="common-pointer sm:mt-0 mt-4 text-base text-blue_gray-800"
-                    size="txtManropeMedium16"
-                    onClick={() => navigate("/aboutus")}
-                  >
-                    About Us
-                  </Text>
-                  <a className="sm:mt-0 mt-4 text-base text-blue_gray-800">
-                    <Text
-                      className="common-pointer"
-                      size="txtManropeMedium16"
-                      onClick={() => navigate("/aboutus")}
+              <Img
+                    className="h-[105px] md:h-auto object-cover"
+                    src="images/img_21.png"
+                    alt="TwentyOne"
+                  />
+                  <div className="flex sm:flex-col flex-row sm:gap-10 items-start justify-between md:mt-0 mt-[7px] w-[28%] md:w-full">
+                    <div className="flex flex-row gap-2.5 items-center justify-center p-2.5 w-auto">
+                      <Text
+                        className="text-base text-blue_gray-800 text-center w-auto"
+                        size="txtManropeBold16"
+                      >
+                        Home
+                      </Text>
+                      <Text
+                        className="common-pointer text-base text-blue_gray-800 text-center w-auto"
+                        size="txtManropeBold16"
+                        onClick={() => navigate("/aboutus")}
+                      >
+                        About Us
+                      </Text>
+                      <a className="text-base text-blue_gray-800 text-center w-auto">
+                        <Text
+                          className="common-pointer"
+                          size="txtManropeBold16"
+                          onClick={() => navigate("/contactus")}
+                        >
+                          Contact Us
+                        </Text>
+                      </a>
+                    </div>
+                    <Button
+                      className="common-pointer cursor-pointer font-bold min-w-[96px] rounded text-base text-center"
+                      onClick={() => navigate("/login")}
+                      color="black_900"
+                      size="xs"
+                      variant="outline"
                     >
-                      Contact Us
-                    </Text>
-                  </a>
-                  <Button
-                    className="common-pointer bg-transparent cursor-pointer font-bold min-w-[91px] text-base text-blue_gray-800 text-center"
-                    onClick={() => navigate("/")}
-                  >
-                    Login
-                  </Button>
-                  <Button
-                    className="common-pointer border border-blue_gray-800 border-solid cursor-pointer font-bold h-[49px] min-w-[106px] rounded-[5px] text-base text-center"
-                    onClick={() => navigate("/signup")}
-                    color="blue_gray_800"
-                    variant="fill"
-                  >
-                    Sign up
-                  </Button>
+                      Logout
+                    </Button>
+                    <Button
+                      className="common-pointer cursor-pointer mb-6 min-w-[92px] rounded text-base text-center"
+                      onClick={() => navigate("/signup")}
+                      color="blue_gray_800"
+                      size="txtManropeSemiBold15"
+                      variant="fill"
+                    >
+                      Signup
+                    </Button>
+                  </div>
                 </div>
-              </div>
               <div className="bg-blue_gray-800_7f flex md:flex-col flex-row md:gap-5 items-start justify-start p-[55px] md:px-10 sm:px-5 w-full">
                 <div className="bg-blue_gray-800_7f flex flex-1 flex-col gap-[52px] h-[513px] md:h-auto items-start justify-start max-w-[936px] mb-[33px] ml-16 md:ml-[0] md:mt-0 mt-[137px] w-full">
                   <div className="flex flex-col gap-6 items-start justify-start max-w-[712px] w-full">
@@ -72,7 +81,7 @@ const Home1Page = () => {
                         className="text-[15px] text-white-A700 tracking-[1.50px] uppercase w-auto"
                         size="txtManropeSemiBold15"
                       >
-                        YOGA STUDIO, Wellness center, Beauty Salon, massage
+                        Yoga Studio, Wellness Center, Beauty Salon, massage
                       </Text>
                       <Text
                         className="leading-[115.00%] max-w-[655px] md:max-w-full md:text-5xl text-[70px] text-lime-100_01 tracking-[-0.70px]"
@@ -646,7 +655,7 @@ const Home1Page = () => {
               </List>
               <Img
                 className="h-12 w-12"
-                src="images/img_arrowleft.svg"
+                src="images/img_arrowright.svg"
                 alt="arrowright"
               />
             </div>
@@ -913,189 +922,200 @@ const Home1Page = () => {
           </List>
           <Img
             className="h-12 w-12"
-            src="images/img_arrowleft.svg"
+            src="images/img_arrowright.svg"
             alt="arrowright_One"
           />
         </div>
-        <div className="bg-gradient  flex flex-col font-manrope gap-14 items-center justify-start max-w-[1920px] mt-[139px] md:px-5 py-16 w-full">
-          <div className="flex flex-col items-center justify-start md:px-10 sm:px-5 px-[120px] py-[11px] w-full">
-            <div className="flex flex-col gap-0.5 items-center justify-start w-[552px] sm:w-full">
-              <Text
-                className="text-[15px] text-blue_gray-800 text-center tracking-[1.50px] uppercase w-auto"
-                size="txtManropeSemiBold15Bluegray800"
-              >
-                Testimonials
-              </Text>
-              <Text
-                className="sm:text-[35px] md:text-[41px] text-[45px] text-center text-gray-900 tracking-[-0.45px] w-auto"
-                size="txtPlayfairDisplayRomanBold45"
-              >
-                What our Customers says...
-              </Text>
-            </div>
-          </div>
-          <div className="bg-blue_gray-800 flex flex-col items-center justify-center max-w-[1682px] py-24 rounded-[40px] w-full">
-            <div className="flex md:flex-col flex-row md:gap-10 gap-16 items-center justify-center sm:px-5 px-8 w-auto md:w-full">
-              <div className="flex sm:flex-col flex-row gap-3.5 items-start justify-center p-3.5 w-[48%] md:w-full">
-                <div className="bg-white-A700 h-[228px] mb-60 sm:ml-[0] ml-[69px] rounded-[35px] w-[13%]"></div>
-                <div className="flex mb-[25px] mr-[103px] relative w-[54%] sm:w-full">
-                  <div className="bg-white-A700 h-[443px] my-auto rounded-[35px] w-[24%]"></div>
-                  <Img
-                    className="h-[280px] mb-[49px] ml-[-58px] mt-auto rounded-[50%] w-[280px] z-[1]"
-                    src="images/img_ellipse1.png"
-                    alt="ellipseOne"
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col items-start justify-start w-[594px] sm:w-full">
-                <div className="flex flex-col gap-5 h-[348px] md:h-auto items-start justify-start w-full">
-                  <Img
-                    className="h-5 w-[576px]"
-                    src="images/img_frame13.svg"
-                    alt="frameThirteen"
-                  />
-                  <div className="flex flex-col items-start justify-start w-full">
-                    <Text
-                      className="text-light_green-50 text-xl tracking-[-0.40px] w-full"
-                      size="txtManropeSemiBold20"
-                    >
-                      Leslie Alexander
-                    </Text>
-                    <Text
-                      className="text-base text-white-A700 w-full"
-                      size="txtManropeSemiBold16WhiteA700"
-                    >
-                      Moncton, Canada
-                    </Text>
-                  </div>
-                  <div className="flex flex-col gap-3 items-start justify-start w-full">
-                    <Text
-                      className="text-4xl sm:text-[32px] md:text-[34px] text-light_green-50 tracking-[-0.72px] w-auto"
-                      size="txtPlayfairDisplayRomanSemiBold36"
-                    >
-                      Helpful{" "}
-                    </Text>
-                    <Text
-                      className="leading-[180.00%] max-w-[594px] md:max-w-full text-[19px] text-white-A700"
-                      size="txtManropeRegular19"
-                    >
-                      <>
-                        &quot;DreamCraft has made finding stress relief so much
-                        easier. Their platform simplifies the search for
-                        wellness establishments, making my journey to relaxation
-                        a breeze. Thanks to DreamCraft, I&#39;ve found my
-                        perfect sanctuary for stress relief.&quot;
-                      </>
-                    </Text>
-                  </div>
-                  <Img
-                    className="h-5 w-[576px]"
-                    src="images/img_frame14.svg"
-                    alt="frameFourteen"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <Img
-            className="h-[52px] w-[119px]"
-            src="images/img_frame1000004329.svg"
-            alt="frame1000004329"
-          />
-        </div>
-        <div className="bg-blue_gray-50_38 flex flex-col font-manrope h-[414px] md:h-auto items-center justify-center max-w-[1448px] md:ml-[0] ml-[237px] mt-[86px] px-24 md:px-5 py-[34px] rounded-[30px] w-full">
-          <div className="flex md:flex-col flex-row gap-14 items-center justify-start max-w-[1328px] w-full">
-            <div className="flex md:flex-1 flex-col items-center justify-start w-[47%] md:w-full">
-              <Img
-                className="h-[353px] md:h-auto object-cover rounded-bl-[12px] rounded-br-[12px] w-full"
-                src="images/img_image10.png"
-                alt="imageTen"
-              />
-            </div>
-            <div className="flex flex-1 flex-col gap-[46px] items-start justify-start max-w-[652px] w-full">
-              <div className="flex flex-col gap-[15px] items-start justify-start max-w-[635px] w-full">
+        <div className="flex flex-col font-manrope items-center justify-start w-full">
+          <div className="bg-gradient  flex flex-col gap-14 items-center justify-start max-w-[1906px] py-16 w-full">
+            <div className="flex flex-col items-center justify-start md:px-10 sm:px-5 px-[120px] py-[11px] w-full">
+              <div className="flex flex-col gap-0.5 items-center justify-start w-[552px] sm:w-full">
+                <Text
+                  className="text-[15px] text-blue_gray-800 text-center tracking-[1.50px] uppercase w-auto"
+                  size="txtManropeSemiBold15Bluegray800"
+                >
+                  Testimonials
+                </Text>
                 <Text
                   className="sm:text-[35px] md:text-[41px] text-[45px] text-center text-gray-900 tracking-[-0.45px] w-auto"
                   size="txtPlayfairDisplayRomanBold45"
                 >
-                  Subscribe to newsletter
-                </Text>
-                <Text
-                  className="leading-[137.50%] max-w-[635px] md:max-w-full text-gray-700 text-lg"
-                  size="txtManropeRegular18Gray700"
-                >
-                  Sign up for our newsletter to stay up-to-date on the latest
-                  promotions, discounts, and new features releases.
+                  What our Customers says...
                 </Text>
               </div>
-              <div className="bg-white-A700 border border-pink-100 border-solid flex flex-row sm:gap-10 gap-[204px] items-center justify-start p-[9px] rounded-[34px] w-[84%] md:w-full">
-                <div className="flex flex-row gap-1.5 items-end justify-center ml-[19px] w-[30%]">
-                  <Img
-                    className="h-8 w-8"
-                    src="images/img_email1.svg"
-                    alt="emailOne"
-                  />
-                  <Text
-                    className="mb-[3px] mt-1.5 text-base text-cyan-900"
-                    size="txtManropeRegular16Cyan900"
-                  >
-                    Enter your email
-                  </Text>
+            </div>
+            <div className="bg-blue_gray-800 flex flex-col items-center justify-center max-w-[1682px] mx-auto md:px-5 py-24 rounded-[40px] w-full">
+              <div className="flex md:flex-col flex-row md:gap-10 gap-16 items-center justify-center sm:px-5 px-8 w-auto md:w-full">
+                <div className="flex sm:flex-col flex-row gap-3.5 items-start justify-center p-3.5 w-[48%] md:w-full">
+                  <div className="bg-white-A700 h-[228px] mb-60 sm:ml-[0] ml-[69px] rounded-[35px] w-[13%]"></div>
+                  <div className="flex mb-[25px] mr-[106px] relative w-[53%] sm:w-full">
+                    <div className="bg-white-A700 h-[443px] my-auto rounded-[35px] w-1/4"></div>
+                    <Img
+                      className="h-[246px] mb-[83px] ml-[-35.5px] mt-auto rounded-[50%] w-[89%] z-[1]"
+                      src="images/img_gurl.png"
+                      alt="gurl"
+                    />
+                  </div>
                 </div>
-                <Button
-                  className="cursor-pointer font-semibold leading-[normal] min-w-[144px] rounded-[25px] text-base text-center"
-                  color="gray_900"
-                  size="md"
-                  variant="fill"
-                >
-                  Subscribe
-                </Button>
+                <div className="flex flex-col items-start justify-start w-[594px] sm:w-full">
+                  <div className="flex flex-col gap-5 h-[348px] md:h-auto items-start justify-start w-full">
+                    <Img
+                      className="h-5 w-[576px]"
+                      src="images/img_frame13.svg"
+                      alt="frameThirteen"
+                    />
+                    <div className="flex flex-col items-start justify-start w-full">
+                      <Text
+                        className="text-light_green-50 text-xl tracking-[-0.40px] w-full"
+                        size="txtManropeSemiBold20"
+                      >
+                        Leslie Alexander
+                      </Text>
+                      <Text
+                        className="text-base text-white-A700 w-full"
+                        size="txtManropeSemiBold16"
+                      >
+                        Moncton, Canada
+                      </Text>
+                    </div>
+                    <div className="flex flex-col gap-3 items-start justify-start w-full">
+                      <Text
+                        className="text-4xl sm:text-[32px] md:text-[34px] text-light_green-50 tracking-[-0.72px] w-auto"
+                        size="txtPlayfairDisplayRomanSemiBold36"
+                      >
+                        Helpful{" "}
+                      </Text>
+                      <Text
+                        className="leading-[180.00%] max-w-[594px] md:max-w-full text-[19px] text-white-A700"
+                        size="txtManropeRegular19"
+                      >
+                        <>
+                          &quot;DreamCraft has made finding stress relief so
+                          much easier. Their platform simplifies the search for
+                          wellness establishments, making my journey to
+                          relaxation a breeze. Thanks to DreamCraft, I&#39;ve
+                          found my perfect sanctuary for stress relief.&quot;
+                        </>
+                      </Text>
+                    </div>
+                    <Img
+                      className="h-5 w-[576px]"
+                      src="images/img_frame14.svg"
+                      alt="frameFourteen"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <Img
+              className="h-[52px] w-[119px]"
+              src="images/img_frame1000004329.svg"
+              alt="frame1000004329"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col font-manrope items-center justify-start w-full">
+          <div className="bg-blue_gray-50_38 flex flex-col h-[586px] md:h-auto items-center justify-center max-w-[1906px] md:px-10 px-24 sm:px-5 py-[34px] rounded-[30px] w-full">
+            <div className="flex flex-col items-center justify-start max-w-[1328px] mx-auto w-full">
+              <div className="flex md:flex-col flex-row gap-14 items-center justify-start max-w-[1328px] w-full">
+                <div className="flex md:flex-1 flex-col items-center justify-start w-[47%] md:w-full">
+                  <Img
+                    className="h-[353px] md:h-auto object-cover rounded-bl-[12px] rounded-br-[12px] w-full"
+                    src="images/img_image10.png"
+                    alt="imageTen"
+                  />
+                </div>
+                <div className="flex flex-1 flex-col gap-[46px] items-start justify-start max-w-[652px] w-full">
+                  <div className="flex flex-col gap-[15px] items-start justify-start max-w-[635px] w-full">
+                    <Text
+                      className="sm:text-[35px] md:text-[41px] text-[45px] text-center text-gray-900 tracking-[-0.45px] w-auto"
+                      size="txtPlayfairDisplayRomanBold45"
+                    >
+                      Subscribe to newsletter
+                    </Text>
+                    <Text
+                      className="leading-[137.50%] max-w-[635px] md:max-w-full text-gray-700 text-lg"
+                      size="txtManropeRegular18Gray700"
+                    >
+                      Sign up for our newsletter to stay up-to-date on the
+                      latest promotions, discounts, and new features releases.
+                    </Text>
+                  </div>
+                  <div className="bg-white-A700 border border-pink-100 border-solid flex flex-row sm:gap-10 gap-[211px] items-center justify-start p-[9px] rounded-[34px] w-[84%] md:w-full">
+                    <div className="flex flex-row gap-1.5 items-end justify-center ml-[19px] w-[29%]">
+                      <Img
+                        className="h-8 w-8"
+                        src="images/img_email1.svg"
+                        alt="emailOne"
+                      />
+                      <Text
+                        className="my-[5px] text-[15px] text-cyan-900"
+                        size="txtManropeRegular15"
+                      >
+                        Enter your email
+                      </Text>
+                    </div>
+                    <Button
+                      className="cursor-pointer font-semibold leading-[normal] min-w-[144px] rounded-[25px] text-base text-center"
+                      color="gray_900"
+                      variant="fill"
+                    >
+                      Subscribe
+                    </Button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <HomeFooter
-          className="flex flex-col font-manrope items-start justify-start mt-[86px] md:px-5 w-auto md:w-full"
-          privacypolicytermsofusetext={
-            <Text className="font-medium leading-[200.00%] text-[17px] text-black-900 tracking-[-0.17px]">
-              <span className="text-black-900 font-manrope text-left">
-                Privacy Policy
-              </span>
-              <span className="text-black-900 font-manrope text-left">
+        <footer className="flex font-manrope items-center justify-center md:px-5 w-full">
+          <div className="sm:h-[532px] h-[635px] md:h-[935px] relative w-full">
+            <HomeFooter
+              className="flex flex-col h-full items-center justify-start m-auto max-w-[1906px] w-full"
+              utilitypagescontent={
+                <Text className="font-medium leading-[200.00%] text-[17px] text-black-900 tracking-[-0.17px]">
+                  <span className="text-black-900 font-manrope text-left">
+                    Privacy Policy
+                  </span>
+                  <span className="text-black-900 font-manrope text-left">
+                    <>
+                      {" "}
+                      <br />
+                    </>
+                  </span>
+                  <span className="text-black-900 font-manrope text-left">
+                    Terms of Use
+                  </span>
+                </Text>
+              }
+              exploretext="Explore"
+              explorecontent={
                 <>
-                  {" "}
+                  Home
                   <br />
+                  About Us
+                  <br />
+                  Services
+                  <br />
+                  Blog
+                  <br />
+                  Contact Us
                 </>
-              </span>
-              <span className="text-black-900 font-manrope text-left">
-                Terms of Use
-              </span>
-            </Text>
-          }
-          exploretext="Explore"
-          homeaboutusservicestext={
-            <>
-              Home
-              <br />
-              About Us
-              <br />
-              Services
-              <br />
-              Blog
-              <br />
-              Contact Us
-            </>
-          }
-          utilitypagestext="Utility Pages"
-          keepintouchtext="Keep in Touch"
-          addresstext="Address :"
-          mariendalsvejfiftytext="Bliss Labangon, Cebu City "
-          mailtext="Mail :"
-          emailtext="support@dreamcraft.com"
-          phonetext="Phone :"
-          phonenumbertext="(+63) 92 - 2253 - 234"
-          copyrightimage="images/img_2023servicemarketdk.svg"
-        />
+              }
+              utilitypagestext="Utility Pages"
+              keepintouchtext="Keep in Touch"
+              addressOne="Address :"
+              addresscontent="Bliss Labangon, Cebu City "
+              mail="Mail :"
+              mailcontent="support@dreamcraft.com"
+              phone="Phone :"
+              phonecontent="(+63) 92 -  2253  - 234"
+              copyrightimage="images/img_2023servicemarketdk.svg"
+            />
+            <div className="absolute flex flex-col items-start justify-start right-[0] top-[8%] w-[86%]">
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   );
