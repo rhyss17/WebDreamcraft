@@ -163,7 +163,23 @@ import { Button, Img, Input, Text } from "components";
                     size="md"
                     variant="outline"
                   />
-                   
+                  
+                   <Input
+                    name="termsOfService"
+                    type="checkbox"
+                    label="I agree to all statements in terms of service"
+                    className="text-white-A700_99 text-left text-lg w-full"
+                    wrapClassName="rounded-sm w-full"
+                    color="white_A700_3f"
+                    size="md"
+                    variant="plain"
+                    style={{
+                      backgroundColor: 'transparent',
+                      border: '1px solid white',
+                      padding: '2px', // Adjusted padding around the checkbox
+                      marginLeft: '8px', // Adding left margin, adjust value as needed
+                    }}
+                  />
                   
                 </div>
               
@@ -174,9 +190,11 @@ import { Button, Img, Input, Text } from "components";
                 <Button type="submit"
                   className="common-pointer cursor-pointer font-montserrat font-semibold min-w-[435px] sm:min-w-full rounded-sm text-center text-lg tracking-[0.09px]"
                   //onClick={() => navigate("/")}
+                  
                   color="white_A700"
                   size="md"
                   variant="fill"
+                  
                 >
                   Register
                 </Button>
