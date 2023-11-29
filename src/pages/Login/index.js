@@ -1,19 +1,69 @@
-import React from "react";
+import React, { useState } from 'react';
 
 import { useNavigate } from "react-router-dom";
 
-import { useGoogleLogin } from "@react-oauth/google";
+//import { useGoogleLogin } from "@react-oauth/google";
 
 import { Button, Img, Input, Text } from "components";
 
 const LoginPage = () => {
   const navigate = useNavigate();
-  const googleSignIn = useGoogleLogin({ 
-    onSuccess: (res) => {
-      console.log("res", res);
-      alert("Login successfull. 😍");
-    },
-  });
+  //const googleSignIn = useGoogleLogin({ 
+  //  onSuccess: (res) => {
+   //   console.log("res", res);
+  //    alert("Login successfull. 😍");
+ //   },
+ // });
+
+ const [formData, setFormData] = useState({
+  email: "",
+  password: "",
+});
+const [error, setError] = useState("");
+
+const handleChange = (e) => {
+  const { name, value } = e.target;
+  setFormData((prevFormData) => ({
+    ...prevFormData,
+    [name]: value,
+  }));
+};
+
+const handleLogin = async () => {
+  if (!formData.email || !formData.password) {
+    setError("Please enter both email and password.");
+    return;
+  }
+
+  try {
+    const response = await fetch("http://localhost:8092/User/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      const data = await response.text(); // Assuming the response is a text-based message
+      if (data === "Login successful") {
+        // Login successful - navigate to home or dashboard
+        navigate("/home1");
+      } else {
+        // Login failed - show error message
+        setError("Invalid email or password.");
+        alert("Login failed. Invalid email or password.");
+      }
+    } else {
+      // Handle other HTTP errors if needed
+      setError("An error occurred while logging in.");
+    }
+  } catch (error) {
+    console.error("Error occurred during login:", error);
+    setError("An error occurred while logging in.");
+  }
+};
+
 
   return (
     <>
@@ -73,9 +123,16 @@ const LoginPage = () => {
                         </Text>
                       </div>
                       <div className="flex flex-col gap-5 items-start justify-start w-auto sm:w-full">
-                        <Input
+                        <Input //inpuuuuuuuuuuuuuuuuuuuuuuuuuuuuuut
                           name="email"
-                          placeholder="Username"
+                          placeholder="Email"
+                          value={formData.email}
+                          onChange={(value) =>
+                            setFormData((prevFormData) => ({
+                              ...prevFormData,
+                              email: value, // Update the firstname in formData
+                            }))
+                          }
                           className="p-0 placeholder:text-white-A700_99 text-left text-lg w-full"
                           wrapClassName="w-full"
                           type="text"
@@ -85,8 +142,15 @@ const LoginPage = () => {
                           variant="outline"
                         ></Input>
                         <Input
-                          name="email_One"
+                          name="password"
                           placeholder="Password"
+                          value={formData.password}
+                          onChange={(value) =>
+                            setFormData((prevFormData) => ({
+                              ...prevFormData,
+                              password: value, // Update the firstname in formData
+                            }))
+                          }
                           className="p-0 placeholder:text-white-A700_99 text-left text-lg w-full"
                           wrapClassName="w-full"
                           type="password"
@@ -97,7 +161,7 @@ const LoginPage = () => {
                         ></Input>
                         <div
                           className="common-pointer border border-solid border-white-A700_3f flex sm:flex-col flex-row font-inter gap-[11px] items-start justify-center p-[18px] rounded-sm w-full"
-                          onClick={() => googleSignIn()}
+                          //onClick={() => googleSignIn()}
                         >
                           <Img
                             className="h-[18px] sm:ml-[0] ml-[129px] w-[18px]"
@@ -128,7 +192,8 @@ const LoginPage = () => {
                       <div className="flex flex-col gap-8 items-center justify-start w-auto sm:w-full">
                         <Button
                           className="common-pointer cursor-pointer font-montserrat font-semibold min-w-[435px] sm:min-w-full rounded-sm text-center text-lg tracking-[0.09px]"
-                          onClick={() => navigate("/home1")}
+                          //onClick={() => navigate("/home1")}
+                          onClick={handleLogin}
                           color="white_A700"
                           size="md"
                           variant="fill"
@@ -147,6 +212,16 @@ const LoginPage = () => {
                             {" "}
                             Register
                           </span>
+                        </Text>
+                        <Text
+                          className="common-pointer text-center text-lg text-white-A700 tracking-[0.09px] w-full"
+                          size="txtManropeRegular18"
+                          onClick={() => navigate("/home1")}
+                        >
+                          <span className="text-white-A700 font-manrope font-normal">
+                            temp to home
+                          </span>
+
                         </Text>
                       </div>
                     </div>
