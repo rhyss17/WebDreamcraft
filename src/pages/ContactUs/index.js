@@ -15,8 +15,9 @@ const ContactUsPage = () => {
             <div className="flex flex-col items-center justify-start w-full">
               <div className="bg-white-A700 flex flex-col gap-[31px] items-center justify-end pt-4 w-full">
                 <div className="md:h-[233px] sm:h-[253px] h-[294px] md:px-5 relative w-full">
+
                   <Img
-                    className="common-pointer h-11 ml-3 object-cover w-[12%]"
+                    className="common-pointer h-13 ml-3 object-cover w-[12%]"
                     src="images/img_21.png"
                     alt="TwentyTwo"
                     onClick={() => navigate("/home1")}

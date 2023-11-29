@@ -1,9 +1,56 @@
-import React from "react";
+
+import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { Button, Img, Input, Text } from "components";
 
-const SignUpPage = () => {
+//const SignUpPage = () => {
+ // const navigate = useNavigate();
+ const SignUpPage = () => {
   const navigate = useNavigate();
+
+   const [formData, setFormData] = useState({
+    firstname: '',
+    lastname: '',
+    email: '',
+    password: '',
+  });
+
+  const handleChange = (e) => {
+    if (e && e.target && e.target.name) {
+      const { name, value } = e.target;
+      console.log(`Updating ${name} with value: ${value}`);
+      setFormData((prevFormData) => ({
+        ...prevFormData,
+        [name]: value,
+      }));
+    }
+  };
+  
+  
+  
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("http://localhost:8092/User/insertUser", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        navigate("/"); // Redirect on successful registration
+      } else {
+        // Handle registration error
+        console.error("Registration failed");
+      }
+    } catch (error) {
+      // Handle fetch or other errors
+      console.error("Error occurred during registration:", error);
+    }
+  };
 
   return (
     <>
@@ -40,67 +87,118 @@ const SignUpPage = () => {
                   to distress.
                 </Text>
               </div>
-              <div className="flex flex-col gap-5 items-start justify-start w-auto sm:w-full">
-                <Input
-                  name="username"
-                  placeholder="Username"
-                  className="p-0 placeholder:text-white-A700_99 text-left text-lg w-full"
-                  wrapClassName="w-full"
-                  type="text"
-                  shape="round"
-                  color="white_A700_3f"
-                  size="md"
-                  variant="outline"
-                />
-                <Input
-                  name="email"
-                  placeholder="Email"
-                  className="p-0 placeholder:text-white-A700_99 text-left text-lg w-full"
-                  wrapClassName="w-full"
-                  type="email"
-                  shape="round"
-                  color="white_A700_3f"
-                  size="md"
-                  variant="outline"
-                />
-                <Input
-                  name="password"
-                  placeholder="Password"
-                  className="p-0 placeholder:text-white-A700_99 text-left text-lg w-full"
-                  wrapClassName="w-full"
-                  type="password"
-                  shape="round"
-                  color="white_A700_3f"
-                  size="md"
-                  variant="outline"
-                />
-                <Input
-                  name="termsOfService"
-                  type="checkbox"
-                  label="I agree to all statements in terms of service"
-                  className="text-white-A700_99 text-left text-lg w-full"
-                  wrapClassName="rounded-sm w-full"
-                  color="white_A700_3f"
-                  size="md"
-                  variant="plain"
-                  style={{
-                    backgroundColor: 'transparent',
-                    border: '1px solid white',
-                    padding: '2px', // Adjusted padding around the checkbox
-                    marginLeft: '8px', // Adding left margin, adjust value as needed
-                  }}
-                />
-              </div>
+
+              <form onSubmit={handleSubmit}>
+                <div className="flex flex-col gap-5 items-start justify-start w-auto sm:w-full">
+                
+                  <Input
+                    name="firstname"
+                    placeholder="Firstname"
+                    value={formData.firstname}
+                    onChange={(value) =>
+                      setFormData((prevFormData) => ({
+                        ...prevFormData,
+                        firstname: value, // Update the firstname in formData
+                      }))
+                    }
+                    className="p-0 placeholder:text-white-A700_99 text-left text-lg w-full"
+                    wrapClassName="w-full"
+                    type="text"
+                    shape="round"
+                    color="white_A700_3f"
+                    size="md"
+                    variant="outline"
+                  />
+                  <Input
+                    name="lastname"
+                    placeholder="Lastname"
+                    value={formData.lastname}
+                    onChange={(value) =>
+                      setFormData((prevFormData) => ({
+                        ...prevFormData,
+                        lastname: value, // Update the firstname in formData
+                      }))
+                    }
+                    className="p-0 placeholder:text-white-A700_99 text-left text-lg w-full"
+                    wrapClassName="w-full"
+                    type="text"
+                    shape="round"
+                    color="white_A700_3f"
+                    size="md"
+                    variant="outline"
+                  />                  
+                  <Input
+                    name="email"
+                    placeholder="Email"
+                    value={formData.email}
+                    onChange={(value) =>
+                      setFormData((prevFormData) => ({
+                        ...prevFormData,
+                        email: value, // Update the firstname in formData
+                      }))
+                    }
+                    className="p-0 placeholder:text-white-A700_99 text-left text-lg w-full"
+                    wrapClassName="w-full"
+                    type="email"
+                    shape="round"
+                    color="white_A700_3f"
+                    size="md"
+                    variant="outline"
+                  />
+                  <Input
+                    name="password"
+                    placeholder="Password"
+                    value={formData.password}
+                    onChange={(value) =>
+                      setFormData((prevFormData) => ({
+                        ...prevFormData,
+                        password: value, // Update the firstname in formData
+                      }))
+                    }
+                    className="p-0 placeholder:text-white-A700_99 text-left text-lg w-full"
+                    wrapClassName="w-full"
+                    type="password"
+                    shape="round"
+                    color="white_A700_3f"
+                    size="md"
+                    variant="outline"
+                  />
+                  
+                   <Input
+                    name="termsOfService"
+                    type="checkbox"
+                    label="I agree to all statements in terms of service"
+                    className="text-white-A700_99 text-left text-lg w-full"
+                    wrapClassName="rounded-sm w-full"
+                    color="white_A700_3f"
+                    size="md"
+                    variant="plain"
+                    style={{
+                      backgroundColor: 'transparent',
+                      border: '1px solid white',
+                      padding: '2px', // Adjusted padding around the checkbox
+                      marginLeft: '8px', // Adding left margin, adjust value as needed
+                    }}
+                  />
+                  
+                </div>
+              
+
+
               <div className="flex flex-col gap-8 items-center justify-start w-auto sm:w-full">
-                <Button
+              
+                <Button type="submit"
                   className="common-pointer cursor-pointer font-montserrat font-semibold min-w-[435px] sm:min-w-full rounded-sm text-center text-lg tracking-[0.09px]"
-                  onClick={() => navigate("/")}
+                  //onClick={() => navigate("/")}
+                  
                   color="white_A700"
                   size="md"
                   variant="fill"
+                  
                 >
                   Register
                 </Button>
+               
                 <Text
                   className="common-pointer text-center text-lg text-white-A700 tracking-[0.09px] w-full"
                   size="txtPoppinsRegular18"
@@ -117,6 +215,7 @@ const SignUpPage = () => {
                   </a>
                 </Text>
               </div>
+              </form>        
             </div>
           </div>
         </div>
