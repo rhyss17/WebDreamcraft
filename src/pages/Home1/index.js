@@ -18,224 +18,224 @@ const Home1Page = () => {
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-manrope items-center justify-start mx-auto w-full">
-        <div className="flex flex-col md:px-5 relative w-full">
-          <div className="flex flex-col items-center justify-start mx-auto pr-[3px] py-[3px] w-full">
-            <div className="flex flex-col gap-[15px] justify-start mb-[27px] mt-[35px] w-full">
-              <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between md:ml-[0] ml-[148px] w-[91%] md:w-full">
-              <Img
-                    className="h-[105px] md:h-auto object-cover"
-                    src="images/img_21.png"
-                    alt="TwentyOne"
-                  />
-                  <div className="flex sm:flex-col flex-row sm:gap-10 items-start justify-between md:mt-0 mt-[7px] w-[28%] md:w-full">
-                    <div className="flex flex-row gap-2.5 items-center justify-center p-2.5 w-auto">
-                      <Text
-                        className="text-base text-blue_gray-800 text-center w-auto"
-                        size="txtManropeBold16"
-                      >
-                        Home
-                      </Text>
-                      <Text
-                        className="common-pointer text-base text-blue_gray-800 text-center w-auto"
-                        size="txtManropeBold16"
-                        onClick={() => navigate("/aboutus")}
-                      >
-                        About Us
-                      </Text>
-                      <a className="text-base text-blue_gray-800 text-center w-auto">
+      <div className="flex flex-col font-manrope items-center justify-start mx-auto w-full">
+          <div className="bg-white-A700 flex flex-col items-center justify-start w-full">
+            <div className="flex flex-col md:px-5 relative w-full">
+              <div className="flex flex-col items-center justify-start mx-auto pr-[3px] py-[3px] w-full">
+                <div className="flex flex-col gap-[15px] justify-start mb-[27px] mt-[35px] w-full">
+                  <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between md:ml-[0] ml-[148px] w-[91%] md:w-full">
+                    <Img
+                      className="h-[105px] md:h-auto object-cover"
+                      src="images/img_21.png"
+                      alt="TwentyOne"
+                    />
+                    <div className="flex sm:flex-col flex-row sm:gap-10 items-start justify-between md:mt-0 mt-[7px] w-[28%] md:w-full">
+                      <div className="flex flex-row gap-2.5 items-center justify-center p-2.5 w-auto">
                         <Text
-                          className="common-pointer"
+                          className="text-base text-blue_gray-800 text-center w-auto"
                           size="txtManropeBold16"
-                          onClick={() => navigate("/contactus")}
                         >
-                          Contact Us
+                          Home
                         </Text>
-                      </a>
-                    </div>
-                    <Button
-                      className="common-pointer cursor-pointer font-bold min-w-[96px] rounded text-base text-center"
-                      onClick={() => navigate("/")}
-                      color="black_900"
-                      size="xs"
-                      variant="outline"
-                    >
-                      Logout
-                    </Button>
-                    <Button
-                      className="common-pointer cursor-pointer mb-6 min-w-[92px] rounded text-base text-center"
-                      onClick={() => navigate("/signup")}
-                      color="blue_gray_800"
-                      size="txtManropeSemiBold15"
-                      variant="fill"
-                    >
-                      Signup
-                    </Button>
-                  </div>
-                </div>
-              <div className="bg-blue_gray-800_7f flex md:flex-col flex-row md:gap-5 items-start justify-start p-[55px] md:px-10 sm:px-5 w-full">
-                <div className="bg-blue_gray-800_7f flex flex-1 flex-col gap-[52px] h-[513px] md:h-auto items-start justify-start max-w-[936px] mb-[33px] ml-16 md:ml-[0] md:mt-0 mt-[137px] w-full">
-                  <div className="flex flex-col gap-6 items-start justify-start max-w-[712px] w-full">
-                    <div className="flex flex-col gap-[7px] items-start justify-start max-w-[712px] w-full">
-                      <Text
-                        className="text-[15px] text-white-A700 tracking-[1.50px] uppercase w-auto"
-                        size="txtManropeSemiBold15"
-                      >
-                        Yoga Studio, Wellness Center, Beauty Salon, massage
-                      </Text>
-                      <Text
-                        className="leading-[115.00%] max-w-[655px] md:max-w-full md:text-5xl text-[70px] text-lime-100_01 tracking-[-0.70px]"
-                        size="txtPlayfairDisplayRomanBold70"
-                      >
-                        Find The Best Establishment Nearby
-                      </Text>
-                    </div>
-                    <div className="flex flex-col items-start justify-start w-[508px] sm:w-full">
-                      <Text
-                        className="text-lg text-white-A700 w-[307px]"
-                        size="txtManropeRegular18"
-                      >
-                        Yourself deserves to be taken care of.{" "}
-                      </Text>
-                    </div>
-                  </div>
-                  <div className="bg-gray-50 flex flex-col h-[105px] md:h-auto items-center justify-start max-w-[919px] rounded-[52px] w-full">
-                    <div className="bg-white-A700 flex md:flex-col flex-row gap-[46px] h-[88px] md:h-auto items-center justify-start max-w-[919px] pl-10 sm:pl-5 pr-3.5 py-5 rounded-[44px] shadow-bs w-full">
-                      <div className="flex md:flex-1 md:flex-col flex-row font-inter gap-6 items-start justify-start w-auto md:w-full">
-                        <div className="flex flex-col gap-3.5 items-start justify-start w-auto">
+                        <Text
+                          className="common-pointer text-base text-blue_gray-800 text-center w-auto"
+                          size="txtManropeBold16"
+                          onClick={() => navigate("/aboutus")}
+                        >
+                          About Us
+                        </Text>
+                        <a className="text-base text-blue_gray-800 text-center w-auto">
                           <Text
-                            className="text-blue_gray-600 text-lg w-auto"
-                            size="txtInterBold18"
+                            className="common-pointer"
+                            size="txtManropeBold16"
+                            onClick={() => navigate("/contactus")}
                           >
-                            Establishment Name
+                            Contact Us
                           </Text>
+                        </a>
+                      </div>
+                      <Button
+                        className="common-pointer cursor-pointer font-bold min-w-[96px] rounded text-base text-center"
+                        onClick={() => navigate("/login")}
+                        color="black_900"
+                        size="xs"
+                        variant="outline"
+                      >
+                        Logout
+                      </Button>
+                      <Button
+                        className="common-pointer cursor-pointer mb-6 min-w-[92px] rounded text-base text-center"
+                        onClick={() => navigate("/")}
+                        color="blue_gray_800"
+                        size="xs"
+                        variant="fill"
+                      >
+                        Signup
+                      </Button>
+                    </div>
+                  </div>
+                  <div className="bg-blue_gray-800_7f flex md:flex-col flex-row md:gap-5 items-start justify-start p-[55px] md:px-10 sm:px-5 w-full">
+                    <div className="bg-blue_gray-800_7f flex flex-1 flex-col gap-[52px] h-[513px] md:h-auto items-start justify-start max-w-[936px] mb-[33px] ml-16 md:ml-[0] md:mt-0 mt-[137px] w-full">
+                      <div className="flex flex-col gap-6 items-start justify-start max-w-[712px] w-full">
+                        <div className="flex flex-col gap-[7px] items-start justify-start max-w-[712px] w-full">
+                          <Text
+                            className="text-[15px] text-white-A700 tracking-[1.50px] uppercase w-auto"
+                            size="txtManropeSemiBold15"
+                          >
+                            YOGA STUDIO, Wellness center, Beauty Salon, massage
+                          </Text>
+                          <Text
+                            className="leading-[115.00%] max-w-[655px] md:max-w-full md:text-5xl text-[70px] text-lime-100_01 tracking-[-0.70px]"
+                            size="txtPlayfairDisplayRomanBold70"
+                          >
+                            Find The Best Establishment Nearby
+                          </Text>
+                        </div>
+                        <div className="flex flex-col items-start justify-start w-[508px] sm:w-full">
+                          <Text
+                            className="text-lg text-white-A700 w-[307px]"
+                            size="txtManropeRegular18"
+                          >
+                            Yourself deserves to be taken care of.{" "}
+                          </Text>
+                        </div>
+                      </div>
+                      <div className="bg-gray-50 flex flex-col h-[105px] md:h-auto items-center justify-start max-w-[919px] rounded-[52px] w-full">
+                        <div className="bg-white-A700 flex md:flex-col flex-row gap-[46px] h-[88px] md:h-auto items-center justify-start max-w-[919px] pl-10 sm:pl-5 pr-3.5 py-5 rounded-[44px] shadow-bs w-full">
+                          <div className="flex md:flex-1 md:flex-col flex-row font-inter gap-6 items-start justify-start w-auto md:w-full">
+                            <div className="flex flex-col gap-3.5 items-start justify-start w-auto">
+                              <Text
+                                className="text-blue_gray-600 text-lg w-auto"
+                                size="txtInterBold18"
+                              >
+                                Establishment Name
+                              </Text>
+                              <Input
+                                name="frame1000004318"
+                                placeholder="Book your services..."
+                                value={frame1000004318value}
+                                onChange={(e) => setFrame1000004318value(e)}
+                                className="!placeholder:text-gray-900 !text-gray-900 font-roboto leading-[normal] p-0 text-left text-sm w-full"
+                                wrapClassName="flex w-[307px]"
+                                suffix={
+                                  frame1000004318value?.length > 0 ? (
+                                    <CloseSVG
+                                      className="mt-auto mb-px cursor-pointer h-4 ml-[35px]"
+                                      onClick={() => setFrame1000004318value("")}
+                                      fillColor="#141414"
+                                      height={16}
+                                      width={16}
+                                      viewBox="0 0 16 16"
+                                    />
+                                  ) : (
+                                    <Img
+                                      className="mt-auto mb-px cursor-pointer h-4 ml-[35px]"
+                                      src="images/img_search.svg"
+                                      alt="search"
+                                    />
+                                  )
+                                }
+                                shape="square"
+                                color="gray_900"
+                                size="sm"
+                                variant="outline"
+                              ></Input>
+                            </div>
+                            <div className="flex flex-col gap-3.5 items-start justify-start w-auto">
+                              <Text
+                                className="text-blue_gray-600 text-lg w-auto"
+                                size="txtInterBold18"
+                              >
+                                Address
+                              </Text>
+                              <div className="font-roboto h-6 pb-2 relative w-[307px]">
+                                <div className="absolute md:h-6 h-[23px] inset-[0] justify-center m-auto w-full">
+                                  <div className="border-b border-gray-900 border-solid h-6 m-auto w-full"></div>
+                                  <Img
+                                    className="absolute h-4 right-[0] top-[0] w-4"
+                                    src="images/img_location.svg"
+                                    alt="location"
+                                  />
+                                </div>
+                                <Text
+                                  className="absolute left-[0] text-gray-900 text-sm top-[0] w-auto"
+                                  size="txtRobotoRegular14"
+                                >
+                                  Location
+                                </Text>
+                              </div>
+                            </div>
+                          </div>
                           <Input
-                            name="frame1000004318"
-                            placeholder="Book your services..."
-                            value={frame1000004318value}
-                            onChange={(e) => setFrame1000004318value(e)}
-                            className="!placeholder:text-gray-900 !text-gray-900 font-roboto leading-[normal] p-0 text-left text-sm w-full"
-                            wrapClassName="flex w-[307px]"
+                            name="frameNinetyOne"
+                            placeholder="Search"
+                            value={frameninetyonevalue}
+                            onChange={(e) => setFrameninetyonevalue(e)}
+                            className="!placeholder:text-gray-50 !text-gray-50 font-manrope font-semibold leading-[normal] md:text-[22px] p-0 sm:text-xl text-2xl text-left w-full"
+                            wrapClassName="flex md:flex-1 rounded-[34px] w-[178px] md:w-full"
                             suffix={
-                              frame1000004318value?.length > 0 ? (
+                              frameninetyonevalue?.length > 0 ? (
                                 <CloseSVG
-                                  className="mt-auto mb-px cursor-pointer h-4 ml-[35px]"
-                                  onClick={() => setFrame1000004318value("")}
-                                  fillColor="#141414"
-                                  height={16}
-                                  width={16}
-                                  viewBox="0 0 16 16"
+                                  className="mt-0.5 mb-1 cursor-pointer h-[26px] ml-[23px]"
+                                  onClick={() => setFrameninetyonevalue("")}
+                                  fillColor="#f8f8f8"
+                                  height={26}
+                                  width={26}
+                                  viewBox="0 0 26 26"
                                 />
                               ) : (
                                 <Img
-                                  className="mt-auto mb-px cursor-pointer h-4 ml-[35px]"
-                                  src="images/img_search.svg"
+                                  className="mt-0.5 mb-1 cursor-pointer h-[26px] ml-[23px]"
+                                  src="images/img_search_white_a700.svg"
                                   alt="search"
                                 />
                               )
                             }
-                            shape="square"
-                            color="gray_900"
-                            size="sm"
-                            variant="outline"
+                            color="blue_gray_600"
+                            size="md"
+                            variant="fill"
                           ></Input>
                         </div>
-                        <div className="flex flex-col gap-3.5 items-start justify-start w-auto">
-                          <Text
-                            className="text-blue_gray-600 text-lg w-auto"
-                            size="txtInterBold18"
-                          >
-                            Address
-                          </Text>
-                          <div className="font-roboto h-6 pb-2 relative w-[307px]">
-                            <div className="absolute md:h-6 h-[23px] inset-[0] justify-center m-auto w-full">
-                              <div className="border-b border-gray-900 border-solid h-6 m-auto w-full"></div>
-                              <Img
-                                className="absolute h-4 right-[0] top-[0] w-4"
-                                src="images/img_location.svg"
-                                alt="location"
-                              />
-                            </div>
-                            <Text
-                              className="absolute left-[0] text-gray-900 text-sm top-[0] w-auto"
-                              size="txtRobotoRegular14"
-                            >
-                              Location
-                            </Text>
-                          </div>
-                        </div>
                       </div>
-                      <Input
-                        name="frameNinetyOne"
-                        placeholder="Search"
-                        value={frameninetyonevalue}
-                        onChange={(e) => setFrameninetyonevalue(e)}
-                        className="!placeholder:text-gray-50 !text-gray-50 font-manrope font-semibold leading-[normal] md:text-[22px] p-0 sm:text-xl text-2xl text-left w-full"
-                        wrapClassName="flex md:flex-1 w-[178px] md:w-full"
-                        suffix={
-                          frameninetyonevalue?.length > 0 ? (
-                            <CloseSVG
-                              className="mt-0.5 mb-1 cursor-pointer h-[26px] ml-[23px]"
-                              onClick={() => setFrameninetyonevalue("")}
-                              fillColor="#f8f8f8"
-                              height={26}
-                              width={26}
-                              viewBox="0 0 26 26"
-                            />
-                          ) : (
-                            <Img
-                              className="mt-0.5 mb-1 cursor-pointer h-[26px] ml-[23px]"
-                              src="images/img_search_white_a700.svg"
-                              alt="search"
-                            />
-                          )
-                        }
-                        shape="round"
-                        color="blue_gray_600"
-                        size="lg"
-                        variant="fill"
-                      ></Input>
                     </div>
+                    <Img
+                      className="md:flex-1 h-[609px] sm:h-auto ml-6 md:ml-[0] md:mt-0 mt-[62px] object-cover w-[12%] md:w-full"
+                      src="images/img_rectangle7.png"
+                      alt="rectangleSeven"
+                    />
+                    <List
+                      className="md:flex-1 sm:flex-col flex-row gap-[23px] grid sm:grid-cols-1 grid-cols-2 md:ml-[0] ml-[23px] md:mt-0 mt-[51px] w-1/4 md:w-full"
+                      orientation="horizontal"
+                    >
+                      <div className="flex flex-col gap-6 h-[632px] md:h-auto items-start justify-center w-[212px]">
+                        <Img
+                          className="h-[304px] md:h-auto object-cover w-full"
+                          src="images/img_rectangle11_293x215.png"
+                          alt="rectangleEleven"
+                        />
+                        <Img
+                          className="h-[304px] md:h-auto object-cover w-full"
+                          src="images/img_rectangle10.png"
+                          alt="rectangleTen"
+                        />
+                      </div>
+                      <div className="flex flex-col gap-6 h-[632px] md:h-auto items-start justify-center w-[212px]">
+                        <Img
+                          className="h-[304px] md:h-auto object-cover w-full"
+                          src="images/img_rectangle11.png"
+                          alt="rectangleEleven"
+                        />
+                        <Img
+                          className="h-[304px] md:h-auto object-cover w-full"
+                          src="images/img_rectangle10_293x215.png"
+                          alt="rectangleTen"
+                        />
+                      </div>
+                    </List>
                   </div>
                 </div>
-                <Img
-                  className="md:flex-1 h-[609px] sm:h-auto ml-6 md:ml-[0] md:mt-0 mt-[62px] object-cover w-[12%] md:w-full"
-                  src="images/img_rectangle7.png"
-                  alt="rectangleSeven"
-                />
-                <List
-                  className="md:flex-1 sm:flex-col flex-row gap-[23px] grid sm:grid-cols-1 grid-cols-2 md:ml-[0] ml-[23px] md:mt-0 mt-[51px] w-1/4 md:w-full"
-                  orientation="horizontal"
-                >
-                  <div className="flex flex-col gap-6 h-[632px] md:h-auto items-start justify-center w-[212px]">
-                    <Img
-                      className="h-[304px] md:h-auto object-cover w-full"
-                      src="images/img_rectangle11.png"
-                      alt="rectangleEleven"
-                    />
-                    <Img
-                      className="h-[304px] md:h-auto object-cover w-full"
-                      src="images/img_rectangle10.png"
-                      alt="rectangleTen"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-6 h-[632px] md:h-auto items-start justify-center w-[212px]">
-                    <Img
-                      className="h-[304px] md:h-auto object-cover w-full"
-                      src="images/img_rectangle11_293x215.png"
-                                alt="rectangleEleven"
-                    />
-                    <Img
-                      className="h-[304px] md:h-auto object-cover w-full"
-                      src="images/img_rectangle10_293x215.png"
-                      alt="rectangleTen"
-                    />
-                  </div>
-                </List>
               </div>
-            </div>
-          </div>
-          <div className="flex flex-col items-center justify-start mt-[-29px] mx-auto w-full z-[1]">
+              <div className="flex flex-col items-center justify-start mt-[-29px] mx-auto w-full z-[1]">
             <div className="flex flex-col items-start justify-start pb-10 pr-10 sm:pr-5 w-full">
               <div className="flex flex-col h-[168px] md:h-auto items-center justify-center max-w-[1681px] md:px-10 sm:px-5 px-[120px] w-full">
                 <div className="flex md:flex-col flex-row gap-[53px] h-[168px] md:h-auto items-center justify-center max-w-[1676px] w-full">
@@ -311,355 +311,354 @@ const Home1Page = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col font-playfairdisplay items-center max-w-[2287px] mt-[26px] mx-auto md:px-5 px-[3px] w-full">
-          <div className="md:h-[1246px] sm:h-[929px] h-[937px] relative w-full">
-            <div className="absolute bg-lime-100_7f flex flex-col h-full inset-y-[0] items-center justify-start left-[0] my-auto p-14 md:px-10 sm:px-5 w-[85%]">
-              <div className="flex flex-col items-center justify-start max-w-[1216px] mb-[726px] w-full">
-                <div className="flex flex-col gap-2 items-center justify-start max-w-3xl w-full">
-                  <div className="flex flex-col font-playfairdisplay items-start justify-start w-full">
+            <div className="bg-lime-100_7f flex flex-col font-playfairdisplay md:gap-10 gap-[81px] items-end justify-center max-w-[1898px] mx-auto pl-[42px] md:px-5 py-[42px] w-full">
+              <div className="flex flex-col items-start justify-start mt-[111px] w-[86%] md:w-full">
+                <div className="flex flex-col items-center justify-start max-w-[1216px] w-full">
+                  <div className="flex flex-col gap-2 items-center justify-start max-w-3xl w-full">
+                    <div className="flex flex-col font-playfairdisplay items-start justify-start w-full">
+                      <Text
+                        className="sm:text-[35px] md:text-[41px] text-[45px] text-center text-gray-900 tracking-[-0.45px] w-full"
+                        size="txtPlayfairDisplayRomanBold45"
+                      >
+                        Exploring high rated establishment
+                      </Text>
+                    </div>
                     <Text
-                      className="sm:text-[35px] md:text-[41px] text-[45px] text-center text-gray-900 tracking-[-0.45px] w-full"
-                      size="txtPlayfairDisplayRomanBold45"
+                      className="text-center text-gray-700 text-xl w-full"
+                      size="txtManropeRegular20"
                     >
-                      Exploring high rated establishment
+                      Yoga Studio. Wellness Center. Beauty Salon. Massage
                     </Text>
                   </div>
-                  <Text
-                    className="text-center text-gray-700 text-xl w-full"
-                    size="txtManropeRegular20"
-                  >
-                    Yoga Studio. Wellness Center. Beauty Salon. Massage
-                  </Text>
                 </div>
               </div>
-            </div>
-            <div className="absolute flex md:flex-col flex-row gap-6 md:h-auto h-max inset-y-[0] items-center justify-center my-auto right-[0] w-auto">
-              <Img
-                className="h-12 w-12"
-                src="images/img_arrowleft.svg"
-                alt="arrowleft"
-              />
-              <List
-                className="sm:flex-col flex-row gap-6 grid sm:grid-cols-1 md:grid-cols-3 grid-cols-5 w-[94%] md:w-full"
-                orientation="horizontal"
-              >
-                <div className="bg-white-A700 flex flex-col items-start justify-start outline outline-[1px] outline-black-900_3d rounded-[24px] w-auto sm:w-full">
-                  <Img
-                    className="h-[280px] sm:h-auto object-cover rounded-[24px] w-[383px] md:w-full"
-                    src="images/img_rectangle13.png"
-                    alt="rectangleThirteen"
-                  />
-                  <div className="flex flex-col gap-6 h-[281px] md:h-auto items-start justify-start p-6 sm:px-5 w-[383px] sm:w-full">
-                    <div className="flex flex-row gap-1 items-center justify-between w-full">
-                      <div className="flex flex-row font-opensans gap-2 items-center justify-start w-auto">
-                        <Img
-                          className="h-6 w-6"
-                          src="images/img_frame_blue_gray_800.svg"
-                          alt="frame"
-                        />
-                        <Text
-                          className="text-base text-blue_gray-800"
-                          size="txtOpenSansRomanRegular16"
-                        >
-                          5.0
-                        </Text>
-                      </div>
-                      <Text
-                        className="common-pointer text-gray-900 text-lg w-auto"
-                        size="txtPlayfairDisplayRomanBold18"
-                        onClick={() => navigate("/customerreviews")}
-                      >
-                        215 reviews{" "}
-                      </Text>
-                    </div>
-                    <div className="flex flex-col font-inter gap-2.5 items-start justify-start w-full">
-                      <Text
-                        className="text-2xl md:text-[22px] text-gray-900 sm:text-xl w-auto"
-                        size="txtInterBold24"
-                      >
-                        Dawata Wellness Yoga Studio{" "}
-                      </Text>
-                      <div className="flex flex-row font-manrope gap-2.5 items-start justify-start pb-2.5 pr-2.5 w-full">
-                        <Img
-                          className="h-[18px] mt-[3px] w-[18px]"
-                          src="images/img_placeholder1.svg"
-                          alt="placeholderOne"
-                        />
-                        <Text
-                          className="text-black-900 text-xl"
-                          size="txtManropeExtraBold20Black900"
-                        >
-                          Cebu Business Park
-                        </Text>
-                      </div>
-                    </div>
-                    <Button
-                      className="common-pointer border border-blue_gray-800 border-solid cursor-pointer font-bold leading-[normal] rounded-lg text-base text-center w-full"
-                      onClick={() => navigate("/yogastudiothree")}
-                      shape="round"
-                      color="blue_gray_800"
-                      size="md"
-                      variant="fill"
-                    >
-                      BOOK NOW
-                    </Button>
-                  </div>
-                </div>
-                <div className="md:h-[554px] h-[561px] relative w-full">
-                  <div className="absolute bg-white-A700 flex flex-col h-full inset-[0] items-center justify-start m-auto outline outline-[1px] outline-black-900_3d rounded-[24px] w-auto">
+              <div className="flex flex-col items-center justify-start mb-[119px] w-full">
+                <div className="flex flex-col items-center justify-start w-[99%] md:w-full">
+                  <div className="flex md:flex-col flex-row gap-6 h-[550px] md:h-auto items-center justify-center w-auto md:w-full">
                     <Img
-                      className="h-[280px] sm:h-auto object-cover rounded-[24px] w-[383px] md:w-full"
-                      src="images/img_rectangle13.png"
-                      alt="rectangleThirteen"
+                      className="h-12 w-12"
+                      src="images/img_arrowleft.svg"
+                      alt="arrowleft"
                     />
-                    <div className="flex flex-col gap-6 h-[281px] md:h-auto items-start justify-start p-6 sm:px-5 w-[383px] sm:w-full">
-                      <div className="flex flex-row gap-1 items-center justify-between w-full">
-                        <div className="flex flex-row font-opensans gap-2 items-center justify-start w-auto">
-                          <Img
-                            className="h-6 w-6"
-                            src="images/img_frame_blue_gray_800.svg"
-                            alt="frame"
-                          />
+                    <div className="bg-white-A700 flex flex-col items-start justify-start outline outline-[1px] outline-black-900_3d rounded-[24px] w-[309px]">
+                      <Img
+                        className="h-[262px] sm:h-auto object-cover rounded-[24px] w-[309px] md:w-full"
+                        src="images/img_rectangle13.png"
+                        alt="rectangleThirteen"
+                      />
+                      <div className="flex flex-col gap-6 h-[281px] md:h-auto items-start justify-start p-6 sm:px-5 w-[295px]">
+                        <div className="flex flex-row gap-1 items-center justify-between w-[271px]">
+                          <div className="flex flex-row font-opensans gap-2 items-center justify-start w-auto">
+                            <Img
+                              className="h-6 w-6"
+                              src="images/img_frame.svg"
+                              alt="frame"
+                            />
+                           <Text
+                              className="text-base text-blue_gray-800"
+                              size="txtOpenSansRomanRegular16"
+                            >
+                              5.0
+                            </Text>
+                          </div>
                           <Text
-                            className="text-base text-blue_gray-800"
-                            size="txtOpenSansRomanRegular16"
+                            className="text-gray-900 text-lg w-auto"
+                            size="txtPlayfairDisplayRomanBold18"
                           >
-                            5.0
+                            215 reviews{" "}
                           </Text>
                         </div>
-                        <Text
-                          className="text-gray-900 text-lg w-auto"
-                          size="txtPlayfairDisplayRomanBold18"
-                        >
-                          215 reviews{" "}
-                        </Text>
-                      </div>
-                      <div className="flex flex-col font-inter gap-2.5 items-start justify-start w-full">
+                        <div className="flex flex-col font-inter gap-2.5 items-start justify-start w-full">
                         <Text
                           className="text-2xl md:text-[22px] text-gray-900 sm:text-xl w-auto"
                           size="txtInterBold24"
                         >
-                          Bliss Yoga Cebu
-                        </Text>
-                        <div className="flex flex-row font-manrope gap-2.5 items-start justify-start w-full">
-                          <Img
-                            className="h-[18px] mt-[3px] w-[18px]"
-                            src="images/img_placeholder1.svg"
-                            alt="placeholderOne"
-                          />
+                            Dawata Wellness Yoga Studio{" "}
+                          </Text>
+                          <Input
+                            name="frame35266"
+                            placeholder="Cebu Business Park"
+                            className="font-extrabold font-manrope leading-[normal] p-0 placeholder:text-black-900 text-base text-black-900 text-left w-full"
+                            wrapClassName="flex w-full"
+                            prefix={
+                              <Img
+                                className="mt-0.5 mb-px h-[18px] mr-2.5"
+                                src="images/img_placeholder1.svg"
+                                alt="placeholderOne"
+                              />
+                            }
+                            size="xs"
+                          ></Input>
+                        </div>
+                        <Button
+                          className="border border-blue_gray-800 border-solid cursor-pointer font-bold h-[45px] leading-[normal] text-base text-center w-[255px]"
+                          onClick={() => navigate("/yogastudiothree")}
+                          shape="round"
+                          color="blue_gray_800"
+                          size="xs"
+                          variant="fill"
+                        >
+                          BOOK NOW
+                        </Button>
+                      </div>
+                    </div>
+                    <div className="bg-white-A700 flex flex-col items-start justify-start outline outline-[1px] outline-black-900_3d rounded-[24px] w-[309px]">
+                      <Img
+                        className="h-[262px] sm:h-auto object-cover rounded-[24px] w-[309px] md:w-full"
+                        src="images/img_rectangle13.png"
+                        alt="rectangleThirteen"
+                      />
+                      <div className="flex flex-col gap-6 h-[281px] md:h-auto items-start justify-start p-6 sm:px-5 w-[295px]">
+                        <div className="flex flex-row gap-1 items-center justify-between w-[271px]">
+                          <div className="flex flex-row font-opensans gap-2 items-center justify-start w-auto">
+                            <Img
+                              className="h-6 w-6"
+                              src="images/img_frame.svg"
+                              alt="frame"
+                            />
+                           <Text
+                              className="text-base text-blue_gray-800"
+                              size="txtOpenSansRomanRegular16"
+                            >
+                              5.0
+                            </Text>
+                          </div>
                           <Text
-                            className="sm:flex-1 text-black-900 text-xl w-[93%] sm:w-full"
-                            size="txtManropeExtraBold20Black900"
+                            className="text-gray-900 text-lg w-auto"
+                            size="txtPlayfairDisplayRomanBold18"
                           >
-                            Axis Entertainment Avenue, Vibo Place, N Escario St
+                            300 reviews{" "}
                           </Text>
                         </div>
+                        <div className="flex flex-col font-inter gap-2.5 items-start justify-start w-full">
+                        <Text
+                          className="text-2xl md:text-[22px] text-gray-900 sm:text-xl w-auto"
+                          size="txtInterBold24"
+                        >
+                            Bliss Yoga <br />Cebu{" "}
+                          </Text>
+                          <Input
+                            name="frame35266"
+                            placeholder="Axis Entertainment Avenue"
+                            className="font-extrabold font-manrope leading-[normal] p-0 placeholder:text-black-900 text-base text-black-900 text-left w-full"
+                            wrapClassName="flex w-full"
+                            prefix={
+                              <Img
+                                className="mt-0.5 mb-px h-[18px] mr-2.5"
+                                src="images/img_placeholder1.svg"
+                                alt="placeholderOne"
+                              />
+                            }
+                            size="xs"
+                          ></Input>
+                        </div>
+                        <Button
+                          className="border border-blue_gray-800 border-solid cursor-pointer font-bold h-[45px] leading-[normal] text-base text-center w-[255px]"
+                          onClick={() => navigate("/yogastudiothree")}
+                          shape="round"
+                          color="blue_gray_800"
+                          size="xs"
+                          variant="fill"
+                        >
+                          BOOK NOW
+                        </Button>
                       </div>
-                      <Button
-                        className="border border-blue_gray-800 border-solid cursor-pointer font-bold leading-[normal] rounded-lg text-base text-center w-full"
-                        shape="round"
-                        color="blue_gray_800"
-                        size="md"
-                        variant="fill"
-                      >
-                        BOOK NOW
-                      </Button>
                     </div>
+                    <div className="bg-white-A700 flex flex-col items-start justify-start outline outline-[1px] outline-black-900_3d rounded-[24px] w-[309px]">
+                      <Img
+                        className="h-[262px] sm:h-auto object-cover rounded-[24px] w-[309px] md:w-full"
+                        src="images/img_rectangle14_.jpg"
+                        alt="rectangleEleven"
+                      />
+                      <div className="flex flex-col gap-6 h-[281px] md:h-auto items-start justify-start p-6 sm:px-5 w-[295px]">
+                        <div className="flex flex-row gap-1 items-center justify-between w-[271px]">
+                          <div className="flex flex-row font-opensans gap-2 items-center justify-start w-auto">
+                            <Img
+                              className="h-6 w-6"
+                              src="images/img_frame.svg"
+                              alt="frame"
+                            />
+                           <Text
+                              className="text-base text-blue_gray-800"
+                              size="txtOpenSansRomanRegular16"
+                            >
+                              4.0
+                            </Text>
+                          </div>
+                          <Text
+                            className="text-gray-900 text-lg w-auto"
+                            size="txtPlayfairDisplayRomanBold18"
+                          >
+                            164 reviews{" "}
+                          </Text>
+                        </div>
+                        <div className="flex flex-col font-inter gap-2.5 items-start justify-start w-full">
+                        <Text
+                          className="text-2xl md:text-[22px] text-gray-900 sm:text-xl w-auto"
+                          size="txtInterBold24"
+                        >
+                            Wellnessland Urban Center{" "}
+                          </Text>
+                          <Input
+                            name="frame35266"
+                            placeholder="Wellnessland Bldng, 314St,"
+                            className="font-extrabold font-manrope leading-[normal] p-0 placeholder:text-black-900 text-base text-black-900 text-left w-full"
+                            wrapClassName="flex w-full"
+                            prefix={
+                              <Img
+                                className="mt-0.5 mb-px h-[18px] mr-2.5"
+                                src="images/img_placeholder1.svg"
+                                alt="placeholderOne"
+                              />
+                            }
+                            size="xs"
+                          ></Input>
+                        </div>
+                        <Button
+                          className="border border-blue_gray-800 border-solid cursor-pointer font-bold h-[45px] leading-[normal] text-base text-center w-[255px]"
+                          onClick={() => navigate("/yogastudiothree")}
+                          shape="round"
+                          color="blue_gray_800"
+                          size="xs"
+                          variant="fill"
+                        >
+                          BOOK NOW
+                        </Button>
+                      </div>
+                    </div>
+                    <div className="bg-white-A700 flex flex-col items-start justify-start outline outline-[1px] outline-black-900_3d rounded-[24px] w-[309px]">
+                      <Img
+                        className="h-[262px] sm:h-auto object-cover rounded-[24px] w-[309px] md:w-full"
+                        src="images/img_rectangle13_1.png"
+                        alt="rectangleThirteen_One"
+                      />
+                      <div className="flex flex-col gap-6 h-[281px] md:h-auto items-start justify-start p-6 sm:px-5 w-[295px]">
+                        <div className="flex flex-row gap-1 items-center justify-between w-[271px]">
+                          <div className="flex flex-row font-opensans gap-2 items-center justify-start w-auto">
+                            <Img
+                              className="h-6 w-6"
+                              src="images/img_frame.svg"
+                              alt="frame"
+                            />
+                           <Text
+                              className="text-base text-blue_gray-800"
+                              size="txtOpenSansRomanRegular16"
+                            >
+                              4.9
+                            </Text>
+                          </div>
+                          <Text
+                            className="text-gray-900 text-lg w-auto"
+                            size="txtPlayfairDisplayRomanBold18"
+                          >
+                            184 reviews{" "}
+                          </Text>
+                        </div>
+                        <div className="flex flex-col font-inter gap-2.5 items-start justify-start w-full">
+                        <Text
+                          className="text-2xl md:text-[22px] text-gray-900 sm:text-xl w-auto"
+                          size="txtInterBold24"
+                        >
+                          Bloom lane <br /> Boutique{" "}
+                          </Text>
+                          <Input
+                            name="frame35266"
+                            placeholder="BMD Building, Salinas, Dr,"
+                            className="font-extrabold font-manrope leading-[normal] p-0 placeholder:text-black-900 text-base text-black-900 text-left w-full"
+                            wrapClassName="flex w-full"
+                            prefix={
+                              <Img
+                                className="mt-0.5 mb-px h-[18px] mr-2.5"
+                                src="images/img_placeholder1.svg"
+                                alt="placeholderOne"
+                              />
+                            }
+                            size="xs"
+                          ></Input>
+                        </div>
+                        <Button
+                          className="border border-blue_gray-800 border-solid cursor-pointer font-bold h-[45px] leading-[normal] text-base text-center w-[255px]"
+                          onClick={() => navigate("/yogastudiothree")}
+                          shape="round"
+                          color="blue_gray_800"
+                          size="xs"
+                          variant="fill"
+                        >
+                          BOOK NOW
+                        </Button>
+                      </div>
+                    </div>
+                    <div className="bg-white-A700 flex flex-col items-start justify-start outline outline-[1px] outline-black-900_3d rounded-[24px] w-[309px]">
+                      <Img
+                        className="h-[262px] sm:h-auto object-cover rounded-[24px] w-[309px] md:w-full" 
+                        src="images/img_rectangle11_1.png"
+                        alt="rectangleEleven"
+                      />
+                      <div className="flex flex-col gap-6 h-[281px] md:h-auto items-start justify-start p-6 sm:px-5 w-[295px]">
+                        <div className="flex flex-row gap-1 items-center justify-between w-[271px]">
+                          <div className="flex flex-row font-opensans gap-2 items-center justify-start w-auto">
+                            <Img
+                              className="h-6 w-6"
+                              src="images/img_frame.svg"
+                              alt="frame"
+                            />
+                           <Text
+                              className="text-base text-blue_gray-800"
+                              size="txtOpenSansRomanRegular16"
+                            >
+                              4.8
+                            </Text>
+                          </div>
+                          <Text
+                            className="text-gray-900 text-lg w-auto"
+                            size="txtPlayfairDisplayRomanBold18"
+                          >
+                            196 reviews{" "}
+                          </Text>
+                        </div>
+                        <div className="flex flex-col font-inter gap-2.5 items-start justify-start w-full">
+                        <Text
+                          className="text-2xl md:text-[22px] text-gray-900 sm:text-xl w-auto"
+                          size="txtInterBold24"
+                        >
+                            Healing Point Massage{" "}
+                          </Text>
+                          <Input
+                            name="frame35266"
+                            placeholder="Pope John Paul III Avenue,"
+                            className="font-extrabold font-manrope leading-[normal] p-0 placeholder:text-black-900 text-base text-black-900 text-left w-full"
+                            wrapClassName="flex w-full"
+                            prefix={
+                              <Img
+                                className="mt-0.5 mb-px h-[18px] mr-2.5"
+                                src="images/img_placeholder1.svg"
+                                alt="placeholderOne"
+                              />
+                            }
+                            size="xs"
+                          ></Input>
+                        </div>
+                        <Button
+                          className="border border-blue_gray-800 border-solid cursor-pointer font-bold h-[45px] leading-[normal] text-base text-center w-[255px]"
+                          onClick={() => navigate("/yogastudiothree")}
+                          shape="round"
+                          color="blue_gray_800"
+                          size="xs"
+                          variant="fill"
+                        >
+                          BOOK NOW
+                        </Button>
+                      </div>
+                    </div>
+                    <Img
+                      className="h-12 w-12"
+                      src="images/img_arrowright.svg"
+                      alt="arrowright"
+                    />
                   </div>
-                  <Img
-                    className="absolute h-72 inset-x-[0] mx-auto object-cover rounded-[24px] top-[0] w-full"
-                    src="images/img_rectangle4548.png"
-                    alt="rectangle4548"
-                  />
                 </div>
-                <div className="bg-white-A700 flex flex-col h-[559px] md:h-auto items-start justify-start outline outline-[1px] outline-black-900_3d rounded-[24px] w-[388px] sm:w-full">
-                  <Img
-                    className="h-[275px] sm:h-auto object-cover w-96 md:w-full"
-                    src="images/img_rectangle11_275x384.png"
-                    alt="rectangleEleven"
-                  />
-                  <div className="flex flex-col gap-6 items-start justify-start p-6 sm:px-5 w-full">
-                    <div className="flex flex-row gap-1 items-center justify-between w-full">
-                      <div className="flex flex-row font-opensans gap-2 items-center justify-start w-auto">
-                        <Img
-                          className="h-6 w-6"
-                          src="images/img_frame_blue_gray_800.svg"
-                          alt="frame"
-                        />
-                        <Text
-                          className="text-base text-blue_gray-800"
-                          size="txtOpenSansRomanRegular16"
-                        >
-                          4.8
-                        </Text>
-                      </div>
-                      <Text
-                        className="text-gray-900 text-lg w-auto"
-                        size="txtPlayfairDisplayRomanBold18"
-                      >
-                        164 reviews{" "}
-                      </Text>
-                    </div>
-                    <div className="flex flex-col font-inter gap-2.5 items-start justify-start w-full">
-                      <Text
-                        className="text-2xl md:text-[22px] text-gray-900 sm:text-xl w-auto"
-                        size="txtInterBold24"
-                      >
-                        Wellnessland Urban Center
-                      </Text>
-                      <div className="flex flex-row font-manrope gap-2.5 items-start justify-start w-auto">
-                        <Img
-                          className="h-[18px] w-[18px]"
-                          src="images/img_placeholder1.svg"
-                          alt="placeholderOne"
-                        />
-                        <Text
-                          className="text-base text-black-900_01 w-auto"
-                          size="txtManropeBold16Black90001"
-                        >
-                          Wellnessland Bldng, 314 Sikatura St
-                        </Text>
-                      </div>
-                    </div>
-                    <Button
-                      className="cursor-pointer font-bold leading-[normal] rounded-lg text-base text-center w-full"
-                      shape="round"
-                      color="blue_gray_800"
-                      size="md"
-                      variant="outline"
-                    >
-                      BOOK NOW
-                    </Button>
-                  </div>
-                </div>
-                <div className="bg-white-A700 flex flex-col h-[559px] md:h-auto items-start justify-start outline outline-[1px] outline-black-900_3d rounded-[24px] w-[369px]">
-                  <Img
-                    className="h-[280px] sm:h-auto object-cover rounded-[24px] w-[369px] md:w-full"
-                    src="images/img_rectangle13_280x369.png"
-                    alt="rectangleThirteen"
-                  />
-                  <div className="flex flex-col gap-6 items-start justify-start p-6 sm:px-5 w-full">
-                    <div className="flex flex-row gap-1 items-center justify-between w-full">
-                      <div className="flex flex-row font-opensans gap-2 items-center justify-start w-auto">
-                        <Img
-                          className="h-6 w-6"
-                          src="images/img_frame_blue_gray_800.svg"
-                          alt="frame"
-                        />
-                        <Text
-                          className="text-base text-blue_gray-800"
-                          size="txtOpenSansRomanRegular16"
-                        >
-                          4.9
-                        </Text>
-                      </div>
-                      <Text
-                        className="text-gray-900 text-lg w-auto"
-                        size="txtPlayfairDisplayRomanBold18"
-                      >
-                        184 reviews{" "}
-                      </Text>
-                    </div>
-                    <div className="flex flex-col font-inter gap-2.5 items-start justify-start w-full">
-                      <Text
-                        className="text-2xl md:text-[22px] text-gray-900 sm:text-xl w-auto"
-                        size="txtInterBold24"
-                      >
-                        Bloom Lane
-                      </Text>
-                      <div className="flex flex-row font-manrope gap-2.5 items-start justify-start w-auto">
-                        <Img
-                          className="h-[18px] w-[18px]"
-                          src="images/img_placeholder1.svg"
-                          alt="placeholderOne"
-                        />
-                        <Text
-                          className="max-w-[317px] md:max-w-full text-black-900 text-xl"
-                          size="txtManropeBold20Black900"
-                        >
-                          BMD Building, Salinas Dr, Cebu City
-                        </Text>
-                      </div>
-                    </div>
-                    <Button
-                      className="cursor-pointer font-bold leading-[normal] rounded-lg text-base text-center w-full"
-                      shape="round"
-                      color="blue_gray_800"
-                      size="md"
-                      variant="outline"
-                    >
-                      BOOK NOW
-                    </Button>
-                  </div>
-                </div>
-                <div className="bg-white-A700 flex flex-col items-start justify-start outline outline-[1px] outline-black-900_3d rounded-[24px] w-auto sm:w-full">
-                  <Img
-                    className="h-[275px] sm:h-auto object-cover rounded-tl-[24px] rounded-tr-[24px] w-96 md:w-full"
-                    src="images/img_rectangle11_1.png"
-                    alt="rectangleEleven"
-                  />
-                  <div className="flex flex-col gap-6 items-start justify-start p-6 sm:px-5 w-full">
-                    <div className="flex flex-row gap-1 items-center justify-between w-full">
-                      <div className="flex flex-row font-opensans gap-2 items-center justify-start w-auto">
-                        <Img
-                          className="h-6 w-6"
-                          src="images/img_frame_blue_gray_800.svg"
-                          alt="frame"
-                        />
-                        <Text
-                          className="text-base text-blue_gray-800"
-                          size="txtOpenSansRomanRegular16"
-                        >
-                          4.8
-                        </Text>
-                      </div>
-                      <Text
-                        className="text-gray-900 text-lg w-auto"
-                        size="txtPlayfairDisplayRomanBold18"
-                      >
-                        196 reviews{" "}
-                      </Text>
-                    </div>
-                    <div className="flex flex-col font-inter gap-2.5 items-start justify-start w-full">
-                      <Text
-                        className="text-2xl md:text-[22px] text-gray-900 sm:text-xl w-auto"
-                        size="txtInterBold24"
-                      >
-                        Healing Point Massage
-                      </Text>
-                      <div className="flex flex-row font-manrope gap-2.5 items-start justify-start w-auto">
-                        <Img
-                          className="h-[18px] w-[18px]"
-                          src="images/img_placeholder1.svg"
-                          alt="placeholderOne"
-                        />
-                        <Text
-                          className="max-w-[332px] md:max-w-full text-black-900 text-xl"
-                          size="txtManropeBold20Black900"
-                        >
-                          Pope John Paul II Avenue, Kasambagan, Cebu City
-                        </Text>
-                      </div>
-                    </div>
-                    <Button
-                      className="cursor-pointer font-bold leading-[normal] rounded-lg text-base text-center w-full"
-                      shape="round"
-                      color="blue_gray_800"
-                      size="md"
-                      variant="outline"
-                    >
-                      BOOK NOW
-                    </Button>
-                  </div>
-                </div>
-              </List>
-              <Img
-                className="h-12 w-12"
-                src="images/img_arrowright.svg"
-                alt="arrowright"
-              />
+              </div>
             </div>
-          </div>
         </div>
         <Button
           className="common-pointer bg-transparent cursor-pointer font-bold font-playfairdisplay max-w-3xl ml-4 md:ml-[0] mt-[84px] sm:text-[35px] md:text-[41px] text-[45px] text-center text-gray-900 tracking-[-0.45px] w-full"
