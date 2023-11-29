@@ -141,6 +141,8 @@ const Home1Page = () => {
                                 variant="outline"
                               ></Input>
                             </div>
+            
+                          <div className="flex md:flex-1 md:flex-col flex-row font-inter gap-6 items-start justify-start w-auto md:w-full">
                             <div className="flex flex-col gap-3.5 items-start justify-start w-auto">
                               <Text
                                 className="text-blue_gray-600 text-lg w-auto"
@@ -148,24 +150,40 @@ const Home1Page = () => {
                               >
                                 Address
                               </Text>
-                              <div className="font-roboto h-6 pb-2 relative w-[307px]">
-                                <div className="absolute md:h-6 h-[23px] inset-[0] justify-center m-auto w-full">
-                                  <div className="border-b border-gray-900 border-solid h-6 m-auto w-full"></div>
-                                  <Img
-                                    className="absolute h-4 right-[0] top-[0] w-4"
-                                    src="images/img_location.svg"
-                                    alt="location"
-                                  />
-                                </div>
-                                <Text
-                                  className="absolute left-[0] text-gray-900 text-sm top-[0] w-auto"
-                                  size="txtRobotoRegular14"
-                                >
-                                  Location
-                                </Text>
-                              </div>
+                              <Input
+                                name="frame1000004318"
+                                placeholder="Location..."
+                                value={frame1000004318value}
+                                onChange={(e) => setFrame1000004318value(e)}
+                                className="!placeholder:text-gray-900 !text-gray-900 font-roboto leading-[normal] p-0 text-left text-sm w-full"
+                                wrapClassName="flex w-[307px]"
+                                suffix={
+                                  frame1000004318value?.length > 0 ? (
+                                    <CloseSVG
+                                      className="mt-auto mb-px cursor-pointer h-4 ml-[35px]"
+                                      onClick={() => setFrame1000004318value("")}
+                                      fillColor="#141414"
+                                      height={16}
+                                      width={16}
+                                      viewBox="0 0 16 16"
+                                    />
+                                  ) : (
+                                    <Img
+                                      className="mt-auto mb-px cursor-pointer h-4 ml-[35px]"
+                                      src="images/img_location.svg"
+                                      alt="location"
+                                    />
+                                  )
+                                }
+                                shape="square"
+                                color="gray_900"
+                                size="sm"
+                                variant="outline"
+                              ></Input>
                             </div>
-                          </div>
+                            </div>
+                            </div>
+                           
                           <Input
                             name="frameNinetyOne"
                             placeholder="Search"
@@ -188,7 +206,7 @@ const Home1Page = () => {
                                   className="mt-0.5 mb-1 cursor-pointer h-[26px] ml-[23px]"
                                   src="images/img_search_white_a700.svg"
                                   alt="search"
-                                />
+                                /> 
                               )
                             }
                             color="blue_gray_600"
@@ -351,7 +369,7 @@ const Home1Page = () => {
                           <div className="flex flex-row font-opensans gap-2 items-center justify-start w-auto">
                             <Img
                               className="h-6 w-6"
-                              src="images/img_frame.svg"
+                              src="images/img_frame_blue_gray_800.svg"
                               alt="frame"
                             />
                            <Text
@@ -405,16 +423,16 @@ const Home1Page = () => {
                     <div className="bg-white-A700 flex flex-col items-start justify-start outline outline-[1px] outline-black-900_3d rounded-[24px] w-[309px]">
                       <Img
                         className="h-[262px] sm:h-auto object-cover rounded-[24px] w-[309px] md:w-full"
-                        src="images/img_rectangle13.png"
-                        alt="rectangleThirteen"
+                        src="images/img_rectangle4548.png"
+                       alt="rectangleThirteen"
                       />
                       <div className="flex flex-col gap-6 h-[281px] md:h-auto items-start justify-start p-6 sm:px-5 w-[295px]">
                         <div className="flex flex-row gap-1 items-center justify-between w-[271px]">
                           <div className="flex flex-row font-opensans gap-2 items-center justify-start w-auto">
                             <Img
                               className="h-6 w-6"
-                              src="images/img_frame.svg"
-                              alt="frame"
+                              src="images/img_frame_blue_gray_800.svg"
+                             alt="frame"
                             />
                            <Text
                               className="text-base text-blue_gray-800"
@@ -475,7 +493,7 @@ const Home1Page = () => {
                           <div className="flex flex-row font-opensans gap-2 items-center justify-start w-auto">
                             <Img
                               className="h-6 w-6"
-                              src="images/img_frame.svg"
+                              src="images/img_frame_blue_gray_800.svg"
                               alt="frame"
                             />
                            <Text
@@ -537,7 +555,7 @@ const Home1Page = () => {
                           <div className="flex flex-row font-opensans gap-2 items-center justify-start w-auto">
                             <Img
                               className="h-6 w-6"
-                              src="images/img_frame.svg"
+                              src="images/img_frame_blue_gray_800.svg"
                               alt="frame"
                             />
                            <Text
@@ -599,7 +617,7 @@ const Home1Page = () => {
                           <div className="flex flex-row font-opensans gap-2 items-center justify-start w-auto">
                             <Img
                               className="h-6 w-6"
-                              src="images/img_frame.svg"
+                              src="images/img_frame_blue_gray_800.svg"
                               alt="frame"
                             />
                            <Text
@@ -677,13 +695,13 @@ const Home1Page = () => {
             className="md:flex-1 sm:flex-col flex-row gap-6 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 w-[92%] md:w-full"
             orientation="horizontal"
           >
-            <div className="bg-white-A700 flex flex-col items-start justify-start outline outline-[1px] outline-black-900_3d rounded-[24px] w-auto sm:w-full">
+            <div className="bg-white-A700 flex flex-col h-[559px] md:h-auto items-start justify-start outline outline-[1px] outline-black-900_3d rounded-[24px] w-[350px] sm:w-full">
               <Img
-                className="h-[280px] sm:h-auto object-cover rounded-[24px] w-[383px] md:w-full"
+                className="h-[254px] sm:h-auto object-cover rounded-tl-[24px] rounded-tr-[24px] w-[369px] md:w-full"
                 src="images/img_rectangle13_280x383.png"
                 alt="rectangleThirteen"
               />
-              <div className="flex flex-col gap-6 h-[281px] md:h-auto items-start justify-start p-6 sm:px-5 w-[383px] sm:w-full">
+              <div className="flex flex-col gap-6 items-start justify-start p-6 sm:px-5 w-full">
                 <div className="flex flex-row gap-1 items-center justify-between w-full">
                   <div className="flex flex-row font-opensans gap-2 items-center justify-start w-auto">
                     <Img
@@ -695,51 +713,54 @@ const Home1Page = () => {
                       className="text-base text-blue_gray-800"
                       size="txtOpenSansRomanRegular16"
                     >
-                      5.0
+                      4.8
                     </Text>
                   </div>
                   <Text
                     className="text-gray-900 text-lg w-auto"
                     size="txtPlayfairDisplayRomanBold18"
                   >
-                    215 reviews{" "}
+                    164 reviews{" "}
                   </Text>
                 </div>
                 <div className="flex flex-col font-inter gap-2.5 items-start justify-start w-full">
                   <Text
-                    className="text-2xl md:text-[22px] text-gray-900 sm:text-xl w-auto"
+                    className="max-w-[352px] md:max-w-full text-2xl md:text-[22px] text-gray-900 sm:text-xl"
                     size="txtInterBold24"
                   >
-                    Ananda Marga Yoga Center
+                    Mega Therapeutic & Wellness Center
                   </Text>
-                  <div className="flex flex-row font-manrope gap-2.5 items-start justify-start pr-0.5 py-0.5 w-full">
+                  <div className="flex flex-row font-manrope gap-2.5 h-6 md:h-auto items-start justify-start w-auto">
                     <Img
                       className="h-[18px] w-[18px]"
                       src="images/img_placeholder1.svg"
                       alt="placeholderOne"
                     />
                     <Text
-                      className="mb-[5px] text-black-900 text-xl"
-                      size="txtManropeExtraBold20Black900"
+                      className="text-base text-black-900_01 w-[245px]"
+                      size="txtManropeBold16Black90001"
                     >
-                      Andres Abellana St, Cebu City
+                      {" "}
+                      General Maxilom Ave, Cebu City
                     </Text>
                   </div>
                 </div>
                 <Button
                   className="cursor-pointer font-bold leading-[normal] rounded-lg text-base text-center w-full"
+                  onClick={() => navigate("/yogastudiothree")}
                   shape="round"
                   color="blue_gray_800"
                   size="md"
-                  variant="outline"
+                  variant="fill"
                 >
                   BOOK NOW
                 </Button>
               </div>
             </div>
-            <div className="bg-white-A700 flex flex-col h-[559px] md:h-auto items-start justify-start outline outline-[1px] outline-black-900_3d rounded-[24px] w-[388px] sm:w-full">
+          
+            <div className="bg-white-A700 flex flex-col h-[559px] md:h-auto items-start justify-start outline outline-[1px] outline-black-900_3d rounded-[24px] w-[350px] sm:w-full">
               <Img
-                className="h-[265px] sm:h-auto object-cover w-[364px] md:w-full"
+                className="h-[254px] sm:h-auto object-cover rounded-tl-[24px] rounded-tr-[24px] w-[369px] md:w-full"
                 src="images/img_image11.png"
                 alt="imageEleven"
               />
@@ -791,8 +812,8 @@ const Home1Page = () => {
                   className="cursor-pointer font-bold leading-[normal] rounded-lg text-base text-center w-full"
                   shape="round"
                   color="blue_gray_800"
-                  size="md"
-                  variant="outline"
+                          size="md"
+                          variant="fill"
                 >
                   BOOK NOW
                 </Button>
@@ -951,7 +972,7 @@ const Home1Page = () => {
                     <div className="bg-white-A700 h-[443px] my-auto rounded-[35px] w-1/4"></div>
                     <Img
                       className="h-[246px] mb-[83px] ml-[-35.5px] mt-auto rounded-[50%] w-[89%] z-[1]"
-                      src="images/img_gurl.png"
+                      src="images/img_ellipse1_229x237.png"
                       alt="gurl"
                     />
                   </div>
@@ -968,13 +989,13 @@ const Home1Page = () => {
                         className="text-light_green-50 text-xl tracking-[-0.40px] w-full"
                         size="txtManropeSemiBold20"
                       >
-                        Leslie Alexander
+                        Rhyss Gianne Almeda
                       </Text>
                       <Text
                         className="text-base text-white-A700 w-full"
                         size="txtManropeSemiBold16"
                       >
-                        Moncton, Canada
+                        Tuburan, Cebu
                       </Text>
                     </div>
                     <div className="flex flex-col gap-3 items-start justify-start w-full">
