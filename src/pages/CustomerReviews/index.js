@@ -1,6 +1,8 @@
 import React from "react";
 
 import { useNavigate } from "react-router-dom";
+import HomeFooter from "components/HomeFooter";
+import Header from "components/Header";
 
 import { Button, Img, Line, Text } from "components";
 
@@ -9,93 +11,14 @@ const CustomerReviewsPage = () => {
 
   return (
     <>
+     <Header />
       <div className="bg-white-A700 flex flex-col font-manrope items-center justify-start mx-auto w-full">
         <div className="flex flex-col items-center justify-start max-w-[1920px] w-full">
           <header className="flex md:flex-col md:gap-5 items-center justify-center md:px-5 w-full">
-            <Img
-              className="flex-1 h-[122px] sm:h-auto mb-[18px] object-cover w-full"
-              src="images/img_background_122x1920.png"
-              alt="background"
-            />
+           
             <div className="flex flex-1 flex-col items-center justify-start max-w-[1800px] md:mt-0 mt-[35px] mx-auto w-full">
               <div className="flex flex-col items-center justify-start max-w-[1790px] w-full">
                 <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start w-full">
-                  <Img
-                    className="common-pointer md:flex-1 h-[105px] sm:h-auto object-cover w-1/5 md:w-full"
-                    src="images/img_21.png"
-                    alt="TwentyOne"
-                    onClick={() => navigate("/home1")}
-                  />
-                  <ul className="flex sm:flex-1 flex-row gap-[46px] sm:hidden items-center justify-end md:ml-[0] ml-[652px] md:mt-0 mt-[34px] w-[444px] sm:w-full common-row-list">
-                    <li>
-                      <a className="text-base text-blue_gray-800">
-                        <Text
-                          className="common-pointer"
-                          size="txtManropeMedium16Bluegray800"
-                          onClick={() => navigate("/home1")}
-                        >
-                          Home
-                        </Text>
-                      </a>
-                    </li>
-                    <li>
-                      <a className="text-base text-blue_gray-800">
-                        <Text
-                          className="common-pointer"
-                          size="txtManropeMedium16Bluegray800"
-                          onClick={() => navigate("/aboutus")}
-                        >
-                          About Us
-                        </Text>
-                      </a>
-                    </li>
-                    <li>
-                      <a className="text-base text-blue_gray-800">
-                        <Text
-                          className="common-pointer"
-                          size="txtManropeMedium16Bluegray800"
-                          onClick={() => navigate("/contactus")}
-                        >
-                          Contact Us
-                        </Text>
-                      </a>
-                    </li>
-                  </ul>
-                  <div className="flex flex-row items-center justify-center ml-9 md:ml-[0] md:mt-0 mt-[26px] px-4 py-2 rounded-lg w-auto">
-                    <Text
-                      className="text-base text-blue_gray-800"
-                      size="txtManropeBold16Bluegray800"
-                    >
-                      EN
-                    </Text>
-                    <Img
-                      className="h-6 w-6"
-                      src="images/img_arrowdown.svg"
-                      alt="arrowdown"
-                    />
-                  </div>
-                  <div className="flex flex-col items-start justify-start ml-9 md:ml-[0] md:mt-0 mt-5 w-auto">
-                    <Button
-                      className="common-pointer cursor-pointer font-bold min-w-[91px] rounded-[5px] text-base text-center"
-                      onClick={() => navigate("/")}
-                      shape="round"
-                      color="blue_gray_800"
-                      size="md"
-                      variant="outline"
-                    >
-                      Login
-                    </Button>
-                  </div>
-                  <Button
-                    className="common-pointer border border-blue_gray-800 border-solid cursor-pointer font-bold h-[52px] mb-[33px] min-w-[106px] ml-1 md:ml-[0] md:mt-0 mt-5 rounded-[5px] text-base text-center"
-                    onClick={() => navigate("/signup")}
-                    shape="round"
-                    color="blue_gray_800"
-                    size="md"
-                    variant="fill"
-                  >
-                    Sign up
-                  </Button>
                 </div>
               </div>
             </div>
@@ -403,136 +326,51 @@ const CustomerReviewsPage = () => {
             </Button>
           </div>
         </div>
-        <footer className="flex items-center justify-center mt-[92px] md:px-5 w-full">
-          <div className="flex flex-col items-center justify-center ml-0.5 mt-7 w-full">
-            <div className="bg-orange-50 flex flex-col gap-[58px] items-center justify-start p-[51px] md:px-10 sm:px-5 w-full">
-              <Img
-                className="h-[105px] md:h-auto object-cover w-[19%]"
-                src="images/img_21.png"
-                alt="TwentyOne_One"
-              />
-              <div className="flex md:flex-col flex-row md:gap-10 gap-[129px] h-[262px] md:h-auto items-start justify-start max-w-[1186px] mb-8 w-full">
-                <div className="flex flex-col gap-[21px] items-start justify-start w-[272px]">
-                  <Text
-                    className="text-[22px] text-black-900 sm:text-lg md:text-xl w-auto"
-                    size="txtManropeBold22"
-                  >
-                    Explore
-                  </Text>
-                  <Text
-                    className="leading-[200.00%] text-[17px] text-black-900 tracking-[-0.17px]"
-                    size="txtManropeMedium17"
-                  >
+        <footer className="flex font-manrope items-center justify-center md:px-5 w-full">
+          <div className="sm:h-[532px] h-[635px] md:h-[935px] relative w-full">
+            <HomeFooter
+              className="flex flex-col h-full items-center justify-start m-auto max-w-[1906px] w-full"
+              utilitypagescontent={
+                <Text className="font-medium leading-[200.00%] text-[17px] text-black-900 tracking-[-0.17px]">
+                  <span className="text-black-900 font-manrope text-left">
+                    Privacy Policy
+                  </span>
+                  <span className="text-black-900 font-manrope text-left">
                     <>
-                      Home
+                      {" "}
                       <br />
-                      About Us
-                      <br />
-                      Services
-                      <br />
-                      Blog
-                      <br />
-                      Contact Us
                     </>
-                  </Text>
-                </div>
-                <div className="flex flex-col gap-[21px] items-start justify-start w-[271px]">
-                  <Text
-                    className="text-[22px] text-black-900 sm:text-lg md:text-xl w-auto"
-                    size="txtManropeBold22"
-                  >
-                    Utility Pages
-                  </Text>
-                  <Text
-                    className="leading-[200.00%] text-[17px] text-black-900 tracking-[-0.17px]"
-                    size="txtManropeMedium17"
-                  >
-                    <span className="text-black-900 font-manrope text-left font-medium">
-                      Privacy Policy
-                    </span>
-                    <span className="text-black-900 font-manrope text-left font-medium">
-                      <>
-                        {" "}
-                        <br />
-                      </>
-                    </span>
-                    <span className="text-black-900 font-manrope text-left font-medium">
-                      Terms of Use
-                    </span>
-                  </Text>
-                </div>
-                <div className="flex flex-col gap-[21px] items-start justify-start w-[324px]">
-                  <Text
-                    className="text-[22px] text-black-900 sm:text-lg md:text-xl w-auto"
-                    size="txtManropeBold22"
-                  >
-                    Keep in Touch
-                  </Text>
-                  <ul className="flex flex-col gap-3.5 items-start justify-start w-[324px] md:w-full common-column-list">
-                    <li>
-                      <a href="javascript:">
-                        <div className="flex flex-row gap-3.5 items-start justify-start">
-                          <Text
-                            className="text-[17px] text-black-900 tracking-[-0.17px] w-auto"
-                            size="txtManropeBold17"
-                          >
-                            Address :
-                          </Text>
-                          <Text
-                            className="text-[17px] text-black-900 tracking-[-0.17px] w-[203px]"
-                            size="txtManropeMedium17"
-                          >
-                            Bliss Labangon, Cebu City{" "}
-                          </Text>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:">
-                        <div className="flex flex-row gap-[47px] items-center justify-start">
-                          <Text
-                            className="text-[17px] text-black-900 tracking-[-0.17px] w-auto"
-                            size="txtManropeBold17"
-                          >
-                            Mail :
-                          </Text>
-                          <Text
-                            className="text-[17px] text-black-900 tracking-[-0.17px] w-auto"
-                            size="txtManropeMedium17"
-                          >
-                            support@dreamcraft.com
-                          </Text>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="javascript:">
-                        <div className="flex flex-row gap-[29px] items-start justify-start">
-                          <Text
-                            className="text-[17px] text-black-900 tracking-[-0.17px] w-auto"
-                            size="txtManropeBold17"
-                          >
-                            Phone :
-                          </Text>
-                          <Text
-                            className="text-[17px] text-black-900 tracking-[-0.17px] w-40"
-                            size="txtManropeMedium17"
-                          >
-                            (+63) 92 - 2253 - 234
-                          </Text>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="bg-blue_gray-600 flex flex-col items-center justify-end p-[25px] sm:px-5 w-full">
-              <Img
-                className="h-[21px] mt-[3px]"
-                src="images/img_2023servicemarketdk.svg"
-                alt="copyright2023"
-              />
+                  </span>
+                  <span className="text-black-900 font-manrope text-left">
+                    Terms of Use
+                  </span>
+                </Text>
+              }
+              exploretext="Explore"
+              explorecontent={
+                <>
+                  Home
+                  <br />
+                  About Us
+                  <br />
+                  Services
+                  <br />
+                  Blog
+                  <br />
+                  Contact Us
+                </>
+              }
+              utilitypagestext="Utility Pages"
+              keepintouchtext="Keep in Touch"
+              addressOne="Address :"
+              addresscontent="Bliss Labangon, Cebu City "
+              mail="Mail :"
+              mailcontent="support@dreamcraft.com"
+              phone="Phone :"
+              phonecontent="(+63) 92 -  2253  - 234"
+              copyrightimage="images/img_2023servicemarketdk.svg"
+            />
+            <div className="absolute flex flex-col items-start justify-start right-[0] top-[8%] w-[86%]">
             </div>
           </div>
         </footer>
