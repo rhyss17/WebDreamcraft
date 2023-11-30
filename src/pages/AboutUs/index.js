@@ -14,6 +14,7 @@ const AboutUsPage = () => {
   
   return (
     <>
+    <Header />
       <div className="flex flex-col font-manrope items-center justify-start mx-auto w-full">
         <div className="flex flex-col items-center justify-start w-full">
           <div className="flex flex-col items-center justify-start w-full">
@@ -173,12 +174,6 @@ const AboutUsPage = () => {
                         src="images/img_header_white_a700.svg"
                         alt="header"
                       />
-                      <Img
-                        className="common-pointer absolute h-[105px] left-[6%] object-cover top-[1%] w-[18%]"
-                        src="images/img_21.png"
-                        alt="TwentyThree"
-                        onClick={() => navigate("/homepage")}
-                      />
                       <div className="absolute flex flex-col h-full inset-[0] items-center justify-center m-auto w-full">
                         <div className="h-[1058px] relative w-full">
                           <div className="bg-blue_gray-800 h-[495px] mt-[100px] mx-auto w-[99%]"></div>
@@ -212,68 +207,7 @@ const AboutUsPage = () => {
                               >
                                 CoNTACT US
                               </Button>
-                            </div>
-                            <div className="absolute flex flex-col items-center justify-start right-[1%] top-[2%] w-1/4">
-                              <div className="flex flex-col items-center justify-start w-full">
-                                <div className="flex sm:flex-col flex-row sm:gap-10 items-start justify-between w-full">
-                                  <div className="flex flex-row gap-2.5 items-center justify-center p-2.5 w-auto">
-                                    <Text
-                                      className="common-pointer text-base text-blue_gray-800 text-center w-auto"
-                                      size="txtManropeBold16"
-                                      onClick={() => navigate("/home1")}
-                                    >
-                                      Home
-                                    </Text>
-                                    <Text
-                                      className="text-base text-blue_gray-800 text-center w-auto"
-                                      size="txtManropeBold16"
-                                    >
-                                      About Us
-                                    </Text>
-                                    <a className="text-base text-blue_gray-800 text-center w-auto">
-                                      <Text
-                                        className="common-pointer"
-                                        size="txtManropeBold16"
-                                        onClick={() => navigate("/contactus")}
-                                      >
-                                        Contact Us
-                                      </Text>
-                                    </a>
-                                  </div>
-                                  <div className="flex justify-between">
-                      <Button
-                        className="common-pointer cursor-pointer min-w-[92px] rounded text-base text-center"
-                        onClick={() => navigate("/profile")}
-                        color="blue_gray_800"
-                        size="xs"
-                        variant="outline"
-                      >
-                        Profile
-                      </Button>
-                      <div className="w-1"></div> {/* Space between buttons */}
-                      <Button
-                        className="common-pointer cursor-pointer min-w-[92px] rounded text-base text-center"
-                        onClick={() => navigate("/")}
-                        color="blue_gray_800"
-                        size="xs"
-                        variant="outline"
-                      >
-                        Logout
-                      </Button>
-                      <div className="w-1"></div> {/* Space between buttons */}
-                      <Button
-                        className="common-pointer cursor-pointer min-w-[92px] rounded text-base text-center"
-                        onClick={() => navigate("/signup")}
-                        color="blue_gray_800"
-                        size="xs"
-                        variant="fill"
-                      >
-                        Signup
-                      </Button>
-                      </div>
-                                </div>
-                              </div>
-                            </div>
+                            </div>                
                           </div>
                         </div>
                       </div>
