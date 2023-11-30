@@ -1,12 +1,64 @@
-/* Profile.css */
-.updateFirstName {
-    /* Your custom styles for the updateFirstName class go here */
-    background-color: #3498db;
-    color: #ffffff;
-    border: none;
-    border-radius: 50%; /* This will make the button round */
-    padding: 10px 20px; /* Adjust padding as needed */
-    cursor: pointer;
-    /* Add any other styles you need */
+/* Profile Page Styles */
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  background-color: #a69fcd;
+  margin-top: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 70px; /* Adjusted max-width for better visibility */
+  margin: 50px auto;
+  background-color: #383063;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff; /* Adjusted label color for better visibility */
+}
+
+input {
+  width: 18%; /* Full width input for better responsiveness */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #000; /* Adjust the border color as needed */
+  border-radius: 10px; /* Increase or decrease the border-radius value for a rounder or less round appearance */
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #ffff;
+  color: #000; /* Adjusted button text color for better visibility */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #686389;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #fff; /* Adjusted heading color for better visibility */
+}
+
+p {
+  color: #fff; /* Adjusted paragraph color for better visibility */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    margin: 20px;
   }
-  
+}
