@@ -240,24 +240,37 @@ const AboutUsPage = () => {
                                       </Text>
                                     </a>
                                   </div>
-                                  <Button
-                                    className="common-pointer cursor-pointer font-bold min-w-[96px] rounded text-base text-center"
-                                    onClick={() => navigate("/")}
-                                    color="black_900"
-                                    size="xs"
-                                    variant="outline"
-                                  >
-                                    Logout
-                                  </Button>
-                                  <Button
-                                    className="common-pointer cursor-pointer mb-6 min-w-[92px] rounded text-base text-center"
-                                    onClick={() => navigate("/signup")}
-                                    color="blue_gray_800"
-                                    size="xs"
-                                    variant="fill"
-                                  >
-                                    Signup
-                                  </Button>
+                                  <div className="flex justify-between">
+                      <Button
+                        className="common-pointer cursor-pointer min-w-[92px] rounded text-base text-center"
+                        onClick={() => navigate("/profile")}
+                        color="blue_gray_800"
+                        size="xs"
+                        variant="outline"
+                      >
+                        Profile
+                      </Button>
+                      <div className="w-1"></div> {/* Space between buttons */}
+                      <Button
+                        className="common-pointer cursor-pointer min-w-[92px] rounded text-base text-center"
+                        onClick={() => navigate("/")}
+                        color="blue_gray_800"
+                        size="xs"
+                        variant="outline"
+                      >
+                        Logout
+                      </Button>
+                      <div className="w-1"></div> {/* Space between buttons */}
+                      <Button
+                        className="common-pointer cursor-pointer min-w-[92px] rounded text-base text-center"
+                        onClick={() => navigate("/signup")}
+                        color="blue_gray_800"
+                        size="xs"
+                        variant="fill"
+                      >
+                        Signup
+                      </Button>
+                      </div>
                                 </div>
                               </div>
                             </div>

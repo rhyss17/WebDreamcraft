@@ -2,8 +2,10 @@ import React from "react";
 
 import { useNavigate } from "react-router-dom";
 
+import Header from "components/Header";
 import { Button, Img, Input, Line, List, Text } from "components";
 import HomeFooter from "components/HomeFooter";
+
 
 import { CloseSVG } from "../../assets/images";
 
@@ -18,70 +20,13 @@ const Home1Page = () => {
 
   return (
     <>
+      <Header />
       <div className="flex flex-col font-manrope items-center justify-start mx-auto w-full">
           <div className="bg-white-A700 flex flex-col items-center justify-start w-full">
             <div className="flex flex-col md:px-5 relative w-full">
               <div className="flex flex-col items-center justify-start mx-auto pr-[3px] py-[3px] w-full">
                 <div className="flex flex-col gap-[15px] justify-start mb-[27px] mt-[35px] w-full">
                   <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between md:ml-[0] ml-[148px] w-[91%] md:w-full">
-                    <Img
-                      className="h-[105px] md:h-auto object-cover"
-                      src="images/img_21.png"
-                      alt="TwentyOne"
-                    />
-                    <div className="flex sm:flex-col flex-row sm:gap-10 items-start justify-between md:mt-0 mt-[7px] w-[28%] md:w-full">
-                      <div className="flex flex-row gap-2.5 items-center justify-center p-2.5 w-auto">
-                        <Text
-                          className="text-base text-blue_gray-800 text-center w-auto"
-                          size="txtManropeBold16"
-                        >
-                          Home
-                        </Text>
-                        <Text
-                          className="common-pointer text-base text-blue_gray-800 text-center w-auto"
-                          size="txtManropeBold16"
-                          onClick={() => navigate("/aboutus")}
-                        >
-                          About Us
-                        </Text>
-                        <a className="text-base text-blue_gray-800 text-center w-auto">
-                          <Text
-                            className="common-pointer"
-                            size="txtManropeBold16"
-                            onClick={() => navigate("/contactus")}
-                          >
-                            Contact Us
-                          </Text>
-                        </a>
-                      </div>
-                      <Button
-                        className="common-pointer cursor-pointer font-bold min-w-[96px] rounded text-base text-center"
-                        onClick={() => navigate("/")}
-                        color="black_900"
-                        size="xs"
-                        variant="outline"
-                      >
-                       Profile
-                    </Button>
-                    <Button
-                      className="common-pointer cursor-pointer font-bold min-w-[96px] rounded text-base text-center"
-                      onClick={() => navigate("/profile")}
-                      color="black_900"
-                      size="xs"
-                      variant="outline"
-                    >      
-                        Logout
-                      </Button>
-                      <Button
-                        className="common-pointer cursor-pointer mb-6 min-w-[92px] rounded text-base text-center"
-                        onClick={() => navigate("/signup")}
-                        color="blue_gray_800"
-                        size="xs"
-                        variant="fill"
-                      >
-                        Signup
-                      </Button>
-                    </div>
                   </div>
                   <div className="bg-blue_gray-800_7f flex md:flex-col flex-row md:gap-5 items-start justify-start p-[55px] md:px-10 sm:px-5 w-full">
                     <div className="bg-blue_gray-800_7f flex flex-1 flex-col gap-[52px] h-[513px] md:h-auto items-start justify-start max-w-[936px] mb-[33px] ml-16 md:ml-[0] md:mt-0 mt-[137px] w-full">
