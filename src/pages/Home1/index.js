@@ -268,7 +268,7 @@ const Home1Page = () => {
                 <div className="flex md:flex-col flex-row gap-[53px] h-[168px] md:h-auto items-center justify-center max-w-[1676px] w-full">
                   <div
                     className="common-pointer flex flex-col gap-6 h-[147px] md:h-auto items-center justify-start w-60"
-                    onClick={() => navigate("/yogastudiothree")}
+                    onClick={() => navigate("/yogastudio")}
                   >
                     <div className="h-[104px] relative w-[141px]">
                       <div className="absolute bg-lime-100_7f h-24 left-[0] rounded-[50%] top-[0] w-24"></div>
@@ -722,14 +722,14 @@ const Home1Page = () => {
                       className="text-base text-blue_gray-800"
                       size="txtOpenSansRomanRegular16"
                     >
-                      4.8
+                      5.0
                     </Text>
                   </div>
                   <Text
                     className="text-gray-900 text-lg w-auto"
                     size="txtPlayfairDisplayRomanBold18"
                   >
-                    164 reviews{" "}
+                    215 reviews{" "}
                   </Text>
                 </div>
                 <div className="flex flex-col font-inter gap-2.5 items-start justify-start w-full">
@@ -737,7 +737,7 @@ const Home1Page = () => {
                     className="max-w-[352px] md:max-w-full text-2xl md:text-[22px] text-gray-900 sm:text-xl"
                     size="txtInterBold24"
                   >
-                    Mega Therapeutic & Wellness Center
+                    Ananda Marga Yoga Center
                   </Text>
                   <div className="flex flex-row font-manrope gap-2.5 h-6 md:h-auto items-start justify-start w-auto">
                     <Img
@@ -750,7 +750,7 @@ const Home1Page = () => {
                       size="txtManropeBold16Black90001"
                     >
                       {" "}
-                      General Maxilom Ave, Cebu City
+                      Andres Abellana St, Cebu City
                     </Text>
                   </div>
                 </div>
@@ -828,11 +828,11 @@ const Home1Page = () => {
                 </Button>
               </div>
             </div>
-            <div className="bg-white-A700 flex flex-col h-[559px] md:h-auto items-start justify-start outline outline-[1px] outline-black-900_3d rounded-[24px] w-[369px]">
+            <div className="bg-white-A700 flex flex-col h-[559px] md:h-auto items-start justify-start outline outline-[1px] outline-black-900_3d rounded-[24px] w-[350px] sm:w-full">
               <Img
-                className="h-[254px] sm:h-auto object-cover rounded-tl-[24px] rounded-tr-[24px] w-[369px] md:w-full"
-                src="images/img_image12.png"
-                alt="imageTwelve"
+                className="h-[254px] sm:h-auto object-cover rounded-tl-[24px] rounded-tr-[24px] w-[369px] md:w-full"               
+              src="images/img_image12.png"
+              alt="imageTwelve"
               />
               <div className="flex flex-col gap-6 items-start justify-start p-6 sm:px-5 w-full">
                 <div className="flex flex-row gap-1 items-center justify-between w-full">
@@ -858,22 +858,23 @@ const Home1Page = () => {
                 </div>
                 <div className="flex flex-col font-inter gap-2.5 items-start justify-start w-full">
                   <Text
-                    className="text-2xl md:text-[22px] text-gray-900 sm:text-xl w-auto"
+                    className="max-w-[352px] md:max-w-full text-2xl md:text-[22px] text-gray-900 sm:text-xl"
                     size="txtInterBold24"
                   >
-                    LA METISSE Salon de Beauté
+                    LA METISSE Salon de Beaute
                   </Text>
-                  <div className="flex flex-row font-manrope gap-2.5 items-start justify-start w-auto">
+                  <div className="flex flex-row font-manrope gap-2.5 h-6 md:h-auto items-start justify-start w-auto">
                     <Img
                       className="h-[18px] w-[18px]"
                       src="images/img_placeholder1.svg"
                       alt="placeholderOne"
                     />
                     <Text
-                      className="max-w-[317px] md:max-w-full text-black-900 text-xl"
-                      size="txtManropeBold20Black900"
+                      className="text-base text-black-900_01 w-[245px]"
+                      size="txtManropeBold16Black90001"
                     >
-                      Unit 121, RainTree Mall, Fuente Osmeña Cir, Cebu City
+                      {" "}
+                      Unit 121, Fuente Osmeña Cir, Cebu City
                     </Text>
                   </div>
                 </div>
@@ -881,16 +882,16 @@ const Home1Page = () => {
                   className="cursor-pointer font-bold leading-[normal] rounded-lg text-base text-center w-full"
                   shape="round"
                   color="blue_gray_800"
-                  size="md"
-                  variant="outline"
+                          size="md"
+                          variant="fill"
                 >
                   BOOK NOW
                 </Button>
               </div>
             </div>
-            <div className="bg-white-A700 flex flex-col items-start justify-start outline outline-[1px] outline-black-900_3d rounded-[24px] w-auto">
+            <div className="bg-white-A700 flex flex-col h-[559px] md:h-auto items-start justify-start outline outline-[1px] outline-black-900_3d rounded-[24px] w-[350px] sm:w-full">
               <Img
-                className="h-[271px] sm:h-auto object-cover rounded-tl-[24px] rounded-tr-[24px] w-[323px] md:w-full"
+                className="h-[254px] sm:h-auto object-cover rounded-tl-[24px] rounded-tr-[24px] w-[369px] md:w-full"
                 src="images/img_image13.png"
                 alt="imageThirteen"
               />
@@ -918,21 +919,22 @@ const Home1Page = () => {
                 </div>
                 <div className="flex flex-col font-inter gap-2.5 items-start justify-start w-full">
                   <Text
-                    className="max-w-[299px] md:max-w-full text-2xl md:text-[22px] text-gray-900 sm:text-xl"
+                    className="max-w-[352px] md:max-w-full text-2xl md:text-[22px] text-gray-900 sm:text-xl"
                     size="txtInterBold24"
                   >
                     Nuat Thai Foot & Body Massage
                   </Text>
-                  <div className="flex flex-row font-manrope gap-2.5 items-start justify-start w-auto">
+                  <div className="flex flex-row font-manrope gap-2.5 h-6 md:h-auto items-start justify-start w-auto">
                     <Img
                       className="h-[18px] w-[18px]"
                       src="images/img_placeholder1.svg"
                       alt="placeholderOne"
                     />
                     <Text
-                      className="max-w-[271px] md:max-w-full text-black-900 text-xl"
-                      size="txtManropeBold20Black900"
+                      className="text-base text-black-900_01 w-[245px]"
+                      size="txtManropeBold16Black90001"
                     >
+                      {" "}
                       Pope John Paul II Avenue, Kasambagan, Cebu City
                     </Text>
                   </div>
@@ -941,8 +943,8 @@ const Home1Page = () => {
                   className="cursor-pointer font-bold leading-[normal] rounded-lg text-base text-center w-full"
                   shape="round"
                   color="blue_gray_800"
-                  size="md"
-                  variant="outline"
+                          size="md"
+                          variant="fill"
                 >
                   BOOK NOW
                 </Button>
