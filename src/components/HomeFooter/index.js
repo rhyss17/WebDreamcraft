@@ -34,7 +34,7 @@ const HomeFooter = (props) => {
                         <br />
                         <span onClick={() => navigate("/contactus")}>Contact Us</span>
                         <br />
-                        <span onClick={() => navigate("/")}>Blog</span>
+                        <span onClick={() => navigate("/customerreviews")}>Reviews</span>
                         </>
                       </Text>
                     </div>
