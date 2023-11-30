@@ -1,6 +1,7 @@
 import React from "react";
 
 import { useNavigate } from "react-router-dom";
+import Header from "components/Header";
 
 import { Button, Img, Line, Text } from "components";
 
@@ -9,6 +10,7 @@ const ContactUsPage = () => {
 
   return (
     <>
+    <Header />
       <div className="flex flex-col font-playfairdisplay items-center justify-start mx-auto w-full">
         <div className="flex flex-col items-center justify-start w-full">
           <div className="flex flex-col items-center justify-start w-full">
@@ -16,55 +18,13 @@ const ContactUsPage = () => {
               <div className="bg-white-A700 flex flex-col gap-[31px] items-center justify-end pt-4 w-full">
                 <div className="md:h-[233px] sm:h-[253px] h-[294px] md:px-5 relative w-full">
 
-                  <Img
-                    className="common-pointer h-13 ml-3 object-cover w-[12%]"
-                    src="images/img_21.png"
-                    alt="TwentyTwo"
-                    onClick={() => navigate("/home1")}
-                  />
+                  
                   <div className="absolute h-[294px] inset-[0] justify-center m-auto w-full">
                     <div className="flex flex-col font-manrope items-center justify-start mb-[-7px] ml-auto mr-[21px] w-[33%] z-[1]">
                       <div className="flex sm:flex-col flex-row sm:gap-10 items-start justify-between w-full">
                         <div className="flex flex-row gap-2.5 items-center justify-center p-2.5 w-auto">
-                          <Text
-                            className="common-pointer text-base text-blue_gray-800 text-center w-auto"
-                            size="txtManropeBold16"
-                            onClick={() => navigate("/home1")}
-                          >
-                            Home
-                          </Text>
-                          <Text
-                            className="common-pointer text-base text-blue_gray-800 text-center w-auto"
-                            size="txtManropeBold16"
-                            onClick={() => navigate("/aboutus")}
-                          >
-                            About Us
-                          </Text>
-                          <a
-                            href="javascript:"
-                            className="text-base text-blue_gray-800 text-center w-auto"
-                          >
-                            <Text size="txtManropeBold16">Contact Us</Text>
-                          </a>
+                          
                         </div>
-                        <Button
-                          className="common-pointer cursor-pointer font-bold min-w-[96px] rounded text-base text-center"
-                          onClick={() => navigate("/")}
-                          color="black_900"
-                          size="xs"
-                          variant="outline"
-                        >
-                          Logout
-                        </Button>
-                        <Button
-                          className="common-pointer cursor-pointer mb-6 min-w-[92px] rounded text-base text-center"
-                          onClick={() => navigate("/signup")}
-                          color="blue_gray_800"
-                          size="xs"
-                          variant="fill"
-                        >
-                          Signup
-                        </Button>
                       </div>
                     </div>
                     <div
@@ -149,7 +109,7 @@ const ContactUsPage = () => {
                     <div className="flex sm:flex-col flex-row sm:gap-5 items-start justify-evenly w-[99%] md:w-full">
                       <Img
                         className="h-10 md:h-auto object-cover w-10"
-                        src="images/img_42.png"
+                        src="images/img_41.png"
                         alt="FortyTwo"
                       />
                       <div className="flex flex-col justify-start">
@@ -177,12 +137,12 @@ const ContactUsPage = () => {
                       />
                       <Img
                         className="h-[60px] md:h-auto object-cover w-[60px]"
-                        src="images/img_180_60x60.png"
+                        src="images/img_180.png"
                         alt="OneHundredEighty_One"
                       />
                       <Img
                         className="h-[60px] md:h-auto mr-2 object-cover w-[60px]"
-                        src="images/img_320_60x60.png"
+                        src="images/img_320.png"
                         alt="ThreeHundredTwenty_One"
                       />
                     </div>
