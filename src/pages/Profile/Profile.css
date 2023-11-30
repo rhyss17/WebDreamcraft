@@ -1,0 +1,12 @@
+/* Profile.css */
+.updateFirstName {
+    /* Your custom styles for the updateFirstName class go here */
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%; /* This will make the button round */
+    padding: 10px 20px; /* Adjust padding as needed */
+    cursor: pointer;
+    /* Add any other styles you need */
+  }
+  

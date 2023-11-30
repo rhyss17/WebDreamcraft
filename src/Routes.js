@@ -9,6 +9,7 @@ const CustomerReviews = React.lazy(() => import("pages/CustomerReviews"));
 const PersonalRecommendation = React.lazy(
   () => import("pages/PersonalRecommendation"),
 );
+const Profile = React.lazy(() => import("pages/Profile"));
 const ContactUs = React.lazy(() => import("pages/ContactUs"));
 const AboutUs = React.lazy(() => import("pages/AboutUs"));
 const YOGASTUDIO = React.lazy(() => import("pages/YOGASTUDIO"));
@@ -46,6 +47,7 @@ const ProjectRoutes = () => {
           <Route path="/yogastudio" element={<YOGASTUDIO />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/profile" element={<Profile />} />
           <Route
             path="/personalrecommendation"
             element={<PersonalRecommendation />}

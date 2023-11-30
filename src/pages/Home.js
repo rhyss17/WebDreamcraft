@@ -47,6 +47,9 @@ const Home = () => {
           <Link to="/contactus">ContactUs</Link>
         </li>
         <li>
+          <Link to="/profile">Profile</Link>
+        </li>
+        <li>
           <Link to="/personalrecommendation">PersonalRecommendation</Link>
         </li>
         <li>

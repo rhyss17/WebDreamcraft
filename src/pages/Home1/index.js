@@ -61,6 +61,15 @@ const Home1Page = () => {
                         size="xs"
                         variant="outline"
                       >
+                       Profile
+                    </Button>
+                    <Button
+                      className="common-pointer cursor-pointer font-bold min-w-[96px] rounded text-base text-center"
+                      onClick={() => navigate("/profile")}
+                      color="black_900"
+                      size="xs"
+                      variant="outline"
+                    >      
                         Logout
                       </Button>
                       <Button
