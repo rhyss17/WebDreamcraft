@@ -259,7 +259,7 @@ const Home1Page = () => {
                 <div className="flex md:flex-col flex-row gap-[53px] h-[168px] md:h-auto items-center justify-center max-w-[1676px] w-full">
                   <div
                     className="common-pointer flex flex-col gap-6 h-[147px] md:h-auto items-center justify-start w-60"
-                    onClick={() => navigate("/yogastudiothree")}
+                    onClick={() => navigate("/yogastudio")}
                   >
                     <div className="h-[104px] relative w-[141px]">
                       <div className="absolute bg-lime-100_7f h-24 left-[0] rounded-[50%] top-[0] w-24"></div>
