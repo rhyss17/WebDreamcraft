@@ -33,7 +33,8 @@ const Profile = () => {
 
   return (
     <>
-      <Header />
+      <Header className="header" />
+        <form className="profile-form"></form>
       <div className="profile-container">
         <form onSubmit={handleSubmit}>
           <div>

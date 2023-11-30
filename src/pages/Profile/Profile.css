@@ -8,6 +8,34 @@ body {
   padding: 0;
 }
 
+.header {
+  background-color: #fdfdfd; /* Change to your header color */
+  height: 120px;
+  margin: 0; /* Reset margin to remove any unwanted space */
+  padding: 0; /* Reset padding to remove any unwanted space */
+  display: flex; /* Use flex to control header items */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.profile-container {
+  background-color: #a69fcd; /* Background color for profile section */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set a height to center vertically */
+}
+
 .container {
   max-width: 70px; /* Adjusted max-width for better visibility */
   margin: 50px auto;
@@ -25,11 +53,12 @@ label {
 }
 
 input {
-  width: 18%; /* Full width input for better responsiveness */
+  width: 150%; /* Adjust the width percentage as needed */
+  max-width: 300px; /* Set a maximum width if necessary */
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #000; /* Adjust the border color as needed */
-  border-radius: 10px; /* Increase or decrease the border-radius value for a rounder or less round appearance */
+  border: 1px solid #000;
+  border-radius: 10px;
   box-sizing: border-box;
 }
 
@@ -37,9 +66,10 @@ button {
   background-color: #ffff;
   color: #000; /* Adjusted button text color for better visibility */
   padding: 10px 15px;
-  border: none;
+  border: 1px solid #2e11eb;
   border-radius: 4px;
   cursor: pointer;
+  /* box-shadow: inset 0 0 0 2px #686389; Inner border color */
 }
 
 button:hover {
