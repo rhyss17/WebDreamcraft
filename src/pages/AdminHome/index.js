@@ -45,7 +45,9 @@ const AdminHomePage = () => {
                     shape="round"
                     color="black_900"
                     variant="outline"
+                    onClick={() => navigate("/loginadmin")}
                   >
+                    
                     Logout
                   </Button>
                   <Button

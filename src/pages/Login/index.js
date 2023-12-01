@@ -113,7 +113,7 @@ const handleLogin = async () => {
                           className="md:text-3xl sm:text-[28px] text-[32px] text-white-A700 tracking-[0.16px] w-auto"
                           size="txtSyneSemiBold32"
                         >
-                          Login as Administrator
+                          Login
                         </Text>
                         <Text
                           className="leading-[150.00%] max-w-[435px] md:max-w-full text-[17px] text-gray-100"

@@ -36,7 +36,7 @@ const handleLogin = async () => {
   }
 
   try {
-    const response = await fetch("http://localhost:8092/User/login", {
+    const response = await fetch("http://localhost:8092/Admin/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -48,7 +48,7 @@ const handleLogin = async () => {
       const data = await response.text(); // Assuming the response is a text-based message
       if (data === "Login successful") {
         // Login successful - navigate to home or dashboard
-        navigate("/home1");
+        navigate("/adminhome");
       } else {
         // Login failed - show error message
         setError("Invalid email or password.");
@@ -140,7 +140,7 @@ const handleLogin = async () => {
                           color="white_A700_3f"
                           size="md"
                           variant="outline"
-                          style={{ width: '500px' }}
+                          
                         ></Input>
                         <Input
                           name="password"
@@ -178,13 +178,22 @@ const handleLogin = async () => {
                         <Text
                           className="common-pointer text-center text-lg text-white-A700 tracking-[0.09px] w-full"
                           size="txtManropeRegular18"
-                          onClick={() => navigate("/adminframe")}
+                          onClick={() => navigate("/")}
+                        >
+                          <span className="text-white-A700 font-manrope font-normal">
+                            Log in as User
+                          </span>
+                        </Text>
+
+                        <Text
+                          className="common-pointer text-center text-lg text-white-A700 tracking-[0.09px] w-full"
+                          size="txtManropeRegular18"
+                          onClick={() => navigate("/adminhome")}
                         >
                           <span className="text-white-A700 font-manrope font-normal">
                             temp to admin
                           </span>
-                        </Text>
-               
+                        </Text>               
                       </div>
                     </div>
                   </div>
