@@ -25,6 +25,7 @@ const FIgmaStylicleSalonLandingPage = React.lazy(
   () => import("pages/FIgmaStylicleSalonLandingPage"),
 );
 const Login = React.lazy(() => import("pages/Login"));
+const LoginAsAdmin = React.lazy(() => import("pages/LoginAsAdmin"));
 const AdminNewOne = React.lazy(() => import("pages/AdminNewOne"));
 const AdminViewUser = React.lazy(() => import("pages/AdminViewUser"));
 const AdminViewEstablishment = React.lazy(() => import("pages/AdminViewEstablishment"));
@@ -46,6 +47,7 @@ const ProjectRoutes = () => {
           />
           <Route path="/admindashboard" element={<AdminDashboard />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/loginadmin" element={<LoginAsAdmin />} />
           <Route path="/adminlogin" element={<AdminLogIn />} />
           <Route path="/adminframe" element={<AdminFrame />} />
           <Route path="/home1" element={<Home1 />} />
@@ -65,7 +67,7 @@ const ProjectRoutes = () => {
           <Route path="/yogastudioone" element={<YOGASTUDIOOne />} />
           <Route path="/yogastudiotwo" element={<YOGASTUDIOTwo />} />
           <Route path="/dhiwise-dashboard" element={<Home />} />
-          <Route path="/" element={<AdminHome />} />
+          <Route path="/adminhome" element={<AdminHome />} />
           <Route path="*" element={<NotFound />} />
           <Route
             path="/adminviewestablishmentone"

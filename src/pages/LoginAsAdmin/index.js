@@ -72,11 +72,11 @@ const handleLogin = async () => {
           <div className="flex flex-col items-center justify-start w-full">
             <div className="flex flex-col items-center justify-start w-full">
               <div className="flex flex-col items-center justify-start w-full">
-                <div className="h-[795px] md:px-5 relative w-full">
+                <div className="h-[695px] md:px-5 relative w-full">
                   <div className="absolute h-[695px] inset-y-[0] left-[0] my-auto w-[93%] md:w-full">
                     <Img
                       className="h-[695px] my-auto object-cover w-[84%]"
-                      src="images/img_image15.png"
+                      src="images/adminbg.jpg"
                       alt="imageFifteen"
                     />
                     <div className="absolute bg-gray-900_99 flex flex-col h-full inset-[0] items-start justify-center m-auto p-24 md:px-10 sm:px-5 w-full">
@@ -123,14 +123,14 @@ const handleLogin = async () => {
                         </Text>
                       </div>
                       <div className="flex flex-col gap-5 items-start justify-start w-auto sm:w-full">
-                        <Input //inpuuuuuuuuuuuuuuuuuuuuuuuuuuuuuut
+                        <Input 
                           name="email"
                           placeholder="Email"
                           value={formData.email}
                           onChange={(value) =>
                             setFormData((prevFormData) => ({
                               ...prevFormData,
-                              email: value, // Update the firstname in formData
+                              email: value, 
                             }))
                           }
                           className="p-0 placeholder:text-white-A700_99 text-left text-lg w-full"
@@ -140,6 +140,7 @@ const handleLogin = async () => {
                           color="white_A700_3f"
                           size="md"
                           variant="outline"
+                          style={{ width: '500px' }}
                         ></Input>
                         <Input
                           name="password"
@@ -159,35 +160,8 @@ const handleLogin = async () => {
                           size="md"
                           variant="outline"
                         ></Input>
-                        <div
-                          className="common-pointer border border-solid border-white-A700_3f flex sm:flex-col flex-row font-inter gap-[11px] items-start justify-center p-[18px] rounded-sm w-full"
-                          //onClick={() => googleSignIn()}
-                        >
-                          <Img
-                            className="h-[18px] sm:ml-[0] ml-[129px] w-[18px]"
-                            src="images/img_vector.svg"
-                            alt="vector"
-                          />
-                          <Text
-                            className="mr-[99px] sm:mt-0 my-0.5 text-base text-white-A700"
-                            size="txtInterRegular16"
-                          >
-                            Log in with Google
-                          </Text>
-                        </div>
-                        <div className="border border-solid border-white-A700_3f flex sm:flex-col flex-row font-inter gap-2.5 items-start justify-center p-3.5 rounded-sm w-full">
-                          <Img
-                            className="h-6 mb-2 sm:ml-[0] ml-[124px] w-6"
-                            src="images/img_iconfacebook.svg"
-                            alt="iconfacebook"
-                          />
-                          <Text
-                            className="mr-[87px] sm:mt-0 mt-[3px] text-base text-white-A700"
-                            size="txtInterRegular16"
-                          >
-                            Log in with Facebook
-                          </Text>
-                        </div>
+
+
                       </div>
                       <div className="flex flex-col gap-8 items-center justify-start w-auto sm:w-full">
                         <Button
@@ -200,38 +174,17 @@ const handleLogin = async () => {
                         >
                           Login
                         </Button>
-                        <Text
-                          className="common-pointer text-center text-lg text-white-A700 tracking-[0.09px] w-full"
-                          size="txtManropeRegular18"
-                          onClick={() => navigate("/signup")}
-                        >
-                          <span className="text-white-A700 font-manrope font-normal">
-                            Dont have an account?
-                          </span>
-                          <span className="text-white-A700 font-manrope font-semibold">
-                            {" "}
-                            Register
-                          </span>
-                        </Text>
-                        <Text
-                          className="common-pointer text-center text-lg text-white-A700 tracking-[0.09px] w-full"
-                          size="txtManropeRegular18"
-                          onClick={() => navigate("/loginadmin")}
-                        >
-                          <span className="text-white-A700 font-manrope font-normal">
-                            Log in as Administrator
-                          </span>
-                        </Text>
 
                         <Text
                           className="common-pointer text-center text-lg text-white-A700 tracking-[0.09px] w-full"
                           size="txtManropeRegular18"
-                          onClick={() => navigate("/home1")}
+                          onClick={() => navigate("/adminframe")}
                         >
                           <span className="text-white-A700 font-manrope font-normal">
-                            temp to home
+                            temp to admin
                           </span>
-                        </Text>                        
+                        </Text>
+               
                       </div>
                     </div>
                   </div>
