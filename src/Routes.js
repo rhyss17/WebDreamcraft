@@ -25,6 +25,15 @@ const FIgmaStylicleSalonLandingPage = React.lazy(
   () => import("pages/FIgmaStylicleSalonLandingPage"),
 );
 const Login = React.lazy(() => import("pages/Login"));
+const LoginAsAdmin = React.lazy(() => import("pages/LoginAsAdmin"));
+const AdminNewOne = React.lazy(() => import("pages/AdminNewOne"));
+const AdminViewUser = React.lazy(() => import("pages/AdminViewUser"));
+const AdminViewEstablishment = React.lazy(() => import("pages/AdminViewEstablishment"));
+const AdminNew = React.lazy(() => import("pages/AdminNew"));
+const AdminViewEstablishmentTwo = React.lazy(() => import("pages/AdminViewEstablishmentTwo"));
+const AdminViewUserOne = React.lazy(() => import("pages/AdminViewUserOne"));
+const AdminViewEstablishmentOne = React.lazy(() => import("pages/AdminViewEstablishmentOne"));
+const AdminHome = React.lazy(() => import("pages/AdminHome"));
 const ProjectRoutes = () => {
   return (
     <React.Suspense fallback={<>Loading...</>}>
@@ -38,6 +47,7 @@ const ProjectRoutes = () => {
           />
           <Route path="/admindashboard" element={<AdminDashboard />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/loginadmin" element={<LoginAsAdmin />} />
           <Route path="/adminlogin" element={<AdminLogIn />} />
           <Route path="/adminframe" element={<AdminFrame />} />
           <Route path="/home1" element={<Home1 />} />
@@ -56,6 +66,25 @@ const ProjectRoutes = () => {
           <Route path="/yogastudiothree" element={<YOGASTUDIOThree />} />
           <Route path="/yogastudioone" element={<YOGASTUDIOOne />} />
           <Route path="/yogastudiotwo" element={<YOGASTUDIOTwo />} />
+          <Route path="/dhiwise-dashboard" element={<Home />} />
+          <Route path="/adminhome" element={<AdminHome />} />
+          <Route path="*" element={<NotFound />} />
+          <Route
+            path="/adminviewestablishmentone"
+            element={<AdminViewEstablishmentOne />}
+          />
+          <Route path="/adminviewuserone" element={<AdminViewUserOne />} />
+          <Route
+            path="/adminviewestablishmenttwo"
+            element={<AdminViewEstablishmentTwo />}
+          />
+          <Route path="/adminnew" element={<AdminNew />} />
+          <Route
+            path="/adminviewestablishment"
+            element={<AdminViewEstablishment />}
+          />
+          <Route path="/adminviewuser" element={<AdminViewUser />} />
+          <Route path="/adminnewone" element={<AdminNewOne />} />
           <Route path="/dhiwise-dashboard" element={<Home />} />
         </Routes>
       </Router>

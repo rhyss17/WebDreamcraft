@@ -18,3 +18,7 @@
  @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/OpenSansRomanRegular.ttf"); font-family : "Open Sans"; font-weight : 400;  }
  @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/PlayfairDisplayRomanSemiBold.ttf"); font-family : "Playfair Display"; font-weight : 600;  }
  @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/OpenSansRomanBold.ttf"); font-family : "Open Sans"; font-weight : 700;  }
+ 
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/ManropeBold.ttf"); font-family : "Manrope"; font-weight : 700;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/ManropeRegular.ttf"); font-family : "Manrope"; font-weight : 400;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/PoppinsBold.ttf"); font-family : "Poppins"; font-weight : 700;  }

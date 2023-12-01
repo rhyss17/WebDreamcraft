@@ -26,7 +26,7 @@ import { Button, Img, Input, Text } from "components";
     }
   };
   
-  
+  const [error, setError] = useState(""); 
   
 
   const handleSubmit = async (e) => {
@@ -44,6 +44,7 @@ import { Button, Img, Input, Text } from "components";
         navigate("/"); // Redirect on successful registration
       } else {
         // Handle registration error
+        setError("Registration failed.");
         console.error("Registration failed");
       }
     } catch (error) {
