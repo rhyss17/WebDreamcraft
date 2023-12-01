@@ -15,21 +15,21 @@ const LoginPage = () => {
  //   },
  // });
 
- const [formData, setFormData] = useState({
-  email: "",
-  password: "",
-});
-const [error, setError] = useState("");
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+  const [error, setError] = useState("");
 
-const handleChange = (e) => {
-  const { name, value } = e.target;
-  setFormData((prevFormData) => ({
-    ...prevFormData,
-    [name]: value,
-  }));
-};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
 
-const handleLogin = async () => {
+  const handleLogin = async () => {
   if (!formData.email || !formData.password) {
     setError("Please enter both email and password.");
     return;
@@ -62,7 +62,7 @@ const handleLogin = async () => {
     console.error("Error occurred during login:", error);
     setError("An error occurred while logging in.");
   }
-};
+  };
 
 
   return (
@@ -219,7 +219,11 @@ const handleLogin = async () => {
                           onClick={() => navigate("/loginadmin")}
                         >
                           <span className="text-white-A700 font-manrope font-normal">
-                            Log in as Administrator
+                            Log in as
+                          </span>
+                          <span className="text-white-A700 font-manrope font-semibold">
+                            {" "}
+                            Administrator
                           </span>
                         </Text>
 

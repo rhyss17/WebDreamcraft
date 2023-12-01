@@ -2,18 +2,12 @@ import React, { useState } from 'react';
 
 import { useNavigate } from "react-router-dom";
 
-//import { useGoogleLogin } from "@react-oauth/google";
 
 import { Button, Img, Input, Text } from "components";
 
 const LoginPage = () => {
   const navigate = useNavigate();
-  //const googleSignIn = useGoogleLogin({ 
-  //  onSuccess: (res) => {
-   //   console.log("res", res);
-  //    alert("Login successfull. 😍");
- //   },
- // });
+
 
  const [formData, setFormData] = useState({
   email: "",
@@ -45,10 +39,13 @@ const handleLogin = async () => {
     });
 
     if (response.ok) {
-      const data = await response.text(); // Assuming the response is a text-based message
+      //const data = await response.json();
+      const data = await response.text(); 
+      //if (data.firstname) {
       if (data === "Login successful") {
         // Login successful - navigate to home or dashboard
         navigate("/adminhome");
+        //navigate("/adminhome", { state: { adminDetails: data } });
       } else {
         // Login failed - show error message
         setError("Invalid email or password.");
@@ -57,10 +54,12 @@ const handleLogin = async () => {
     } else {
       // Handle other HTTP errors if needed
       setError("An error occurred while logging in.");
+      alert("Login failed.");
     }
   } catch (error) {
     console.error("Error occurred during login:", error);
     setError("An error occurred while logging in.");
+    
   }
 };
 

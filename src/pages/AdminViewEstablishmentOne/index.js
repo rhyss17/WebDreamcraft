@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 
 import { useNavigate } from "react-router-dom";
 
@@ -6,6 +6,17 @@ import { Button, Img, List, Text } from "components";
 
 const AdminViewEstablishmentOnePage = () => {
   const navigate = useNavigate();
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    fetch('http://localhost:8092/Establishment/getAllEstablishments') // Replace with your backend URL
+      .then(response => response.json())
+      .then(data => {
+        setData(data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
 
   return (
     <>
@@ -172,6 +183,27 @@ const AdminViewEstablishmentOnePage = () => {
                 </Button>
               </div>
             </div>
+            <h1>Data Table</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Location</th>
+            {/* Add more table headers as needed */}
+          </tr>
+        </thead>
+        <tbody>
+          {data.map(item => (
+            <tr key={item.eid}>
+              <td>{item.eid}</td>
+              <td>{item.name}</td>
+              <td>{item.location}</td>
+              {/* Render other data fields */}
+            </tr>
+          ))}
+        </tbody>
+      </table>
           </div>
         </div>
       </div>
