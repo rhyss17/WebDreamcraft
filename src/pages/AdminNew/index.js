@@ -1,93 +1,177 @@
-import React from "react";
-
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "components/Header";
-
-import { Button, Img, Text } from "components";
+import { Button } from "components";
 
 const AdminNewPage = () => {
   const navigate = useNavigate();
+  const [establishmentId, setEstablishmentId] = useState("");
+  const [newName, setNewName] = useState("");
+  const [newLocation, setNewLocation] = useState("");
+  const [showConfirmation, setShowConfirmation] = useState(false);
+  const [confirmedDelete, setConfirmedDelete] = useState(false);
+
+  const handleUpdate = async () => {
+    if (!establishmentId) {
+      console.error("Establishment ID is empty.");
+      window.alert("Establishment ID is empty.");
+      // Display an error message indicating the empty ID
+      return;
+    }
+  
+    try {
+      const response = await fetch(`http://localhost:8092/Establishment/updateEstablishment/${establishmentId}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: newName,
+          location: newLocation,
+        }),
+      });
+  
+      if (response.status === 404) {
+        console.error(`Establishment with ID ${establishmentId} not found.`);
+        window.alert("Establishment not found. Update failed.");
+      } else if (response.ok) {
+        console.log(`Establishment with ID ${establishmentId} updated successfully!`);
+        window.alert("Establishment updated successfully!");
+        navigate('/adminviewestablishmentone');
+      } else {
+        console.error(`Failed to update establishment with ID ${establishmentId}`);
+        window.alert("ID not found, Update failed.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+  
+  
+
+  const handleDelete = async () => {
+    if (!establishmentId) {
+      console.error("Establishment ID is empty.");
+      window.alert("Establishment ID is empty.");
+      // Display an error message indicating the empty ID
+      return;
+    }
+    setShowConfirmation(true);
+  };
+
+  const confirmDelete = async () => {
+    try {
+      // Perform deletion logic...
+      // Example fetch call for deletion
+      const response = await fetch(`http://localhost:8092/Establishment/deleteEstablishment/${establishmentId}`, {
+        method: "DELETE",
+      });
+  
+      if (response.ok) {
+        setConfirmedDelete(true); // Simulate deletion success
+        setTimeout(() => {
+          setConfirmedDelete(false);
+          setShowConfirmation(false);
+          navigate('/adminviewestablishmentone'); // Redirect to the update page after deletion
+        }, 0); // Adjust the timeout duration as needed
+      } else {
+        console.error("Failed to delete establishment.");
+        window.alert("ID not found");
+        //navigate('/adminnew');
+        // Handle error scenario
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+  
+
+  const cancelDelete = () => {
+    setShowConfirmation(false);
+  };
 
   return (
     <>
-    <Header />
-      <div className="flex flex-col font-manrope items-start justify-start mx-auto w-auto sm:w-full md:w-full">
-        <div className="bg-white-A700 flex flex-col items-center justify-start pr-4 py-4 w-full">
-          <div className="flex flex-col items-end justify-start max-w-[1419px] mb-[403px] mx-auto md:px-5 w-full">
-            <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-full">
-              <div className="flex sm:flex-1 flex-col items-start justify-start w-auto sm:w-full">
-                <div className="flex sm:flex-col flex-row sm:gap-10 items-start justify-between w-full">
-                  <div className="flex flex-row gap-2.5 items-center justify-center p-2.5 w-auto">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="common-pointer flex sm:flex-col flex-row gap-4 h-[151px] md:h-auto items-center justify-start mt-[46px] p-3 w-[421px] sm:w-full"
-              onClick={() => navigate("/")}
-            >
-              <Img
-                className="h-[120px] md:h-auto object-cover rounded-[71px] w-[142px] sm:w-full"
-                src="images/img_radiobutton.png"
-                alt="radiobutton"
+      <Header />
+      <div className="flex flex-col font-manrope items-center justify-start mx-auto w-full max-w-[800px] px-4">
+        <form className="mt-8 w-full">
+          <div className="flex flex-col mb-4">
+            <label htmlFor="eid" className="mb-2">
+              Establishment ID:
+              <input
+                type="text"
+                id="eid"
+                name="eid"
+                value={establishmentId}
+                onChange={(e) => setEstablishmentId(e.target.value)}
+                className="border rounded-md py-2 px-3 mt-1"
               />
-              <Text
-                className="md:text-3xl sm:text-[28px] text-[32px] text-black-900 w-[216px]"
-                size="txtManropeBold32"
-              >
-                Administrator
-              </Text>
-            </div>
-            <div className="flex md:flex-col flex-row font-poppins md:gap-5 items-end justify-end mt-[70px] w-[95%] md:w-full">
-              <div className="flex flex-col items-start justify-start w-auto md:w-full">
-                <div className="flex flex-row flex-wrap sm:gap-5 items-start justify-start max-w-7xl w-full">
-                  <Button
-                    className="cursor-pointer flex-1 font-bold leading-[normal] text-3xl sm:text-[26px] md:text-[28px] text-center w-full"
-                    color="blue_gray_800"
-                  >
-                    ID
+            </label>
+          </div>
+          <div className="flex flex-col mb-4">
+            <label htmlFor="newName" className="mb-2">
+              New Name:
+              <input
+                type="text"
+                id="newName"
+                name="newName"
+                value={newName}
+                onChange={(e) => setNewName(e.target.value)}
+                className="border rounded-md py-2 px-3 mt-1"
+              />
+            </label>
+          </div>
+          <div className="flex flex-col mb-4">
+            <label htmlFor="newLocation" className="mb-2">
+              New Location:
+              <input
+                type="text"
+                id="newLocation"
+                name="newLocation"
+                value={newLocation}
+                onChange={(e) => setNewLocation(e.target.value)}
+                className="border rounded-md py-2 px-3 mt-1"
+              />
+            </label>
+          </div>
+          <Button type="button" onClick={handleUpdate}>
+            Update
+          </Button>
+          <Button type="button" onClick={handleDelete}>
+            Delete
+          </Button>
+        </form>
+
+        <Button type="button" onClick={() => navigate("/adminviewestablishmentone")}>
+          Go back
+        </Button>
+
+        {showConfirmation && (
+          <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-700 bg-opacity-70 z-50">
+            <div className="bg-white rounded-lg overflow-hidden shadow-xl max-w-md w-full">
+              <div className="p-4">
+                <p className="text-lg font-semibold mb-4">Confirm Deletion</p>
+                <p className="mb-4">Are you sure you want to delete this establishment?</p>
+                <div className="flex justify-end">
+                  <Button type="button" onClick={confirmDelete} className="bg-red-500 text-white px-4 py-2 rounded-md mr-4">
+                    Yes
                   </Button>
-                  <Button
-                    className="cursor-pointer flex-1 font-bold leading-[normal] text-3xl sm:text-[26px] md:text-[28px] text-center w-full"
-                    color="blue_gray_800"
-                  >
-                    Name
-                  </Button>
-                  <Button
-                    className="cursor-pointer flex-1 font-bold leading-[normal] text-3xl sm:text-[26px] md:text-[28px] text-center w-full"
-                    color="blue_gray_800"
-                  >
-                    Location
+                  <Button type="button" onClick={cancelDelete} className="border border-gray-300 px-4 py-2 rounded-md">
+                    Cancel
                   </Button>
                 </div>
-                <div className="flex md:flex-col flex-row md:gap-5 items-start justify-start max-w-7xl w-full">
-                  <Button className="cursor-pointer flex-1 font-bold leading-[normal] text-3xl sm:text-[26px] md:text-[28px] text-center w-full">
-                    1
-                  </Button>
-                  <Button className="cursor-pointer flex-1 font-bold leading-[normal] text-3xl sm:text-[26px] md:text-[28px] text-center w-full">
-                    newName 1
-                  </Button>
-                  <div className="bg-gray-400 flex flex-1 flex-col items-center justify-center px-10 sm:px-5 py-2.5 w-full">
-                    <Text
-                      className="text-3xl sm:text-[26px] md:text-[28px] text-indigo-900 w-auto"
-                      size="txtPoppinsBold30"
-                    >
-                      newLocation 1
-                    </Text>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col items-center justify-start mb-[3px] md:mt-0 mt-[68px] w-[5%] md:w-full">
-                <Img
-                  className="common-pointer h-[59px] md:h-auto object-cover w-full"
-                  src="images/img_image2.png"
-                  alt="imageTwo"
-                  onClick={() => navigate("/adminviewestablishment")}
-                />
               </div>
             </div>
           </div>
-        </div>
+        )}
+        {confirmedDelete && (
+          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-gray-700 bg-opacity-50">
+            <div className="bg-white p-8 rounded-md">
+              <p>Establishment deleted successfully!</p>
+            </div>
+          </div>
+          
+        ) }
       </div>
     </>
   );
