@@ -94,9 +94,10 @@ const AdminNewPage = () => {
     <>
       <Header />
       <div className="flex flex-col font-manrope items-center justify-start mx-auto w-full max-w-[800px] px-4">
-        <form className="mt-8 w-full">
-          <div className="flex flex-col mb-4">
-            <label htmlFor="eid" className="mb-2">
+      <div style={{ marginTop: '1in' }}></div> {/* Adding a large space */}
+        <form className="w-full flex flex-col items-center">
+        <div className="flex flex-col mb-4 w-full max-w-[400px]">
+        <label htmlFor="name" className="mb-2" style={{ fontSize: '24px' }}>
               Establishment ID:
               <input
                 type="text"
@@ -104,12 +105,12 @@ const AdminNewPage = () => {
                 name="eid"
                 value={establishmentId}
                 onChange={(e) => setEstablishmentId(e.target.value)}
-                className="border rounded-md py-2 px-3 mt-1"
+                className="border rounded-md py-2 px-3 mt-1 w-full"
               />
             </label>
           </div>
-          <div className="flex flex-col mb-4">
-            <label htmlFor="newName" className="mb-2">
+          <div className="flex flex-col mb-4 w-full max-w-[400px]">
+          <label htmlFor="location" className="mb-2" style={{ fontSize: '24px' }}>
               New Name:
               <input
                 type="text"
@@ -117,12 +118,12 @@ const AdminNewPage = () => {
                 name="newName"
                 value={newName}
                 onChange={(e) => setNewName(e.target.value)}
-                className="border rounded-md py-2 px-3 mt-1"
+                className="border rounded-md py-2 px-3 mt-1 w-full"
               />
             </label>
           </div>
-          <div className="flex flex-col mb-4">
-            <label htmlFor="newLocation" className="mb-2">
+          <div className="flex flex-col mb-4 w-full max-w-[400px]">
+          <label htmlFor="location" className="mb-2" style={{ fontSize: '24px' }}>
               New Location:
               <input
                 type="text"
@@ -130,22 +131,23 @@ const AdminNewPage = () => {
                 name="newLocation"
                 value={newLocation}
                 onChange={(e) => setNewLocation(e.target.value)}
-                className="border rounded-md py-2 px-3 mt-1"
+                className="border rounded-md py-2 px-3 mt-1 w-full"
               />
             </label>
           </div>
+          <div className="flex justify-between w-full max-w-[400px]">
           <Button type="button" onClick={handleUpdate}>
             Update
           </Button>
           <Button type="button" onClick={handleDelete}>
             Delete
           </Button>
-        </form>
 
         <Button type="button" onClick={() => navigate("/adminviewestablishmentone")}>
           Go back
         </Button>
-
+        </div>
+        </form>
         {showConfirmation && (
           <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-700 bg-opacity-70 z-50">
             <div className="bg-white rounded-lg overflow-hidden shadow-xl max-w-md w-full">
@@ -169,8 +171,7 @@ const AdminNewPage = () => {
             <div className="bg-white p-8 rounded-md">
               <p>Establishment deleted successfully!</p>
             </div>
-          </div>
-          
+          </div>         
         ) }
       </div>
     </>
