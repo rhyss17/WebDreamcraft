@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "components/Header";
 
 import { Button, Img, Text } from "components";
+import "./admins.css";
 
 const AdminHomePage = () => {
   const navigate = useNavigate();
@@ -22,45 +23,45 @@ const AdminHomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="flex md:flex-col flex-row md:gap-10 gap-[61px] items-start justify-start ml-4 md:ml-[0] mt-[46px] w-[89%] md:w-full">
-              <div className="flex sm:flex-col flex-row gap-4 h-[151px] md:h-auto items-center justify-start p-3 w-[421px] sm:w-full">
-                <Img
-                  className="h-[120px] md:h-auto object-cover rounded-[71px] w-[142px] sm:w-full"
+            <div className="flex items-center justify-center flex-col md:flex-row gap-10 w-full">
+              <div className="flex flex-col items-center justify-center gap-4 h-[151px] w-[421px] mt-4">
+                
+              <Img
+                  className="h-[120px] object-cover rounded-[71px] w-[142px]"
                   src="images/img_radiobutton.png"
                   alt="radiobutton"
                 />
                 <Text
-                  className="md:text-3xl sm:text-[28px] text-[32px] text-black-900 w-[216px]"
+                  className="text-3xl text-black-900 mb-10"
                   size="txtManropeBold32"
                 >
                   Administrator
                 </Text>
               </div>
-              <div className="flex flex-row flex-wrap font-poppins sm:gap-5 items-start justify-start max-w-[773px] md:mt-0 mt-[51px] w-full">
-                <Button
-                  className="common-pointer cursor-pointer flex-1 font-bold leading-[normal] text-3xl sm:text-[26px] md:text-[28px] text-center w-full"
+              <div className="button-container">
+              <div className="button-border">
+                <button
+                  className="styled-button large-font" /* Added large-font class */
                   onClick={() => navigate("/adminviewestablishmentone")}
-                  color="blue_gray_800"
                 >
                   View Establishment
-                </Button>
-                <Button
-                  className="common-pointer cursor-pointer flex-1 font-bold leading-[normal] text-3xl sm:text-[26px] md:text-[28px] text-center w-full"
-                  onClick={() => navigate("/adminviewuserone")}
-                  color="blue_gray_800"
-                >
-                  View User
-                </Button>
+                </button>
               </div>
             </div>
-            <Img
-              className="h-[390px] ml-20 md:ml-[0] mt-[70px] w-[1280px]"
-              src="images/img_frame1000004350.svg"
-              alt="frame1000004350"
-            />
+            <div className="button-container">
+              <div className="button-border">
+              <button
+                   className="styled-button large-font" /* Added large-font class */
+                  onClick={() => navigate("/adminviewuserone")}               
+                >
+                View User
+                </button>
+                </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
     </>
   );
 };
