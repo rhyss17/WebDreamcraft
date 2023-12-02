@@ -191,7 +191,7 @@ import { Button, Img, Input, Text } from "components";
               
                 <Button type="submit"
                   className="common-pointer cursor-pointer font-montserrat font-semibold min-w-[435px] sm:min-w-full rounded-sm text-center text-lg tracking-[0.09px]"
-                  //onClick={() => navigate("/")}
+                  
                   
                   color="white_A700"
                   size="md"
