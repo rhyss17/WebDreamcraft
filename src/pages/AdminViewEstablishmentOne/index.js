@@ -50,26 +50,27 @@ const AdminViewEstablishmentOnePage = () => {
             {/* space between the admin profile */}
             <div style={{ marginTop: '50px' }}></div> 
             <h1 style={{ fontSize: '32px' }}>Data Table</h1> {/* Changing font size */}
-      <table>
-        <thead>
-            <tr style={{ fontSize: '24px' }}> {/* Changing font size for table headers */}
-            <th>ID</th>
-            <th>Name</th>
-            <th>Location</th>
-            {/* Add more table headers as needed */}
-          </tr>
-        </thead>
-        <tbody>
-          {data.map(item => (
-            <tr key={item.eid}>
-              <td>{item.eid}</td>
-              <td>{item.name}</td>
-              <td>{item.location}</td>
-              {/* Render other data fields */}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+            <table style={{ borderCollapse: 'collapse', fontFamily: 'Arial, sans-serif', fontSize: '18px' }}>
+              <thead>
+                <tr style={{ fontSize: '24px', borderBottom: '2px solid black' }}>
+                  <th style={{ padding: '10px', textAlign: 'left' }}>ID</th>
+                  <th style={{ padding: '10px', textAlign: 'left' }}>Name</th>
+                  <th style={{ padding: '10px', textAlign: 'left' }}>Location</th>
+                  {/* Add more table headers as needed */}
+                </tr>
+              </thead>
+              <tbody>
+                {data.map(item => (
+                  <tr key={item.eid} style={{ borderTop: '1px solid #ddd' }}>
+                    <td style={{ padding: '10px', textAlign: 'left' }}>{item.eid}</td>
+                    <td style={{ padding: '10px', textAlign: 'left' }}>{item.name}</td>
+                    <td style={{ padding: '10px', textAlign: 'left' }}>{item.location}</td>
+                    {/* Render other data fields */}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+
       <div className="flex flex-col font-poppins items-start justify-start md:ml-[0] ml-[450px] mt-[74px] p-2.5 w-auto sm:w-full">
           <div className="flex sm:flex-col flex-row gap-1 items-start justify-start w-auto sm:w-full">
           <div className="button-container">
