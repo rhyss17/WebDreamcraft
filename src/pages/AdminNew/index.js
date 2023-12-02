@@ -1,6 +1,7 @@
 import React from "react";
 
 import { useNavigate } from "react-router-dom";
+import Header from "components/Header";
 
 import { Button, Img, Text } from "components";
 
@@ -9,52 +10,15 @@ const AdminNewPage = () => {
 
   return (
     <>
+    <Header />
       <div className="flex flex-col font-manrope items-start justify-start mx-auto w-auto sm:w-full md:w-full">
         <div className="bg-white-A700 flex flex-col items-center justify-start pr-4 py-4 w-full">
           <div className="flex flex-col items-end justify-start max-w-[1419px] mb-[403px] mx-auto md:px-5 w-full">
             <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-full">
-              <Img
-                className="h-11 md:h-auto object-cover"
-                src="images/img_22.png"
-                alt="TwentyTwo"
-              />
               <div className="flex sm:flex-1 flex-col items-start justify-start w-auto sm:w-full">
                 <div className="flex sm:flex-col flex-row sm:gap-10 items-start justify-between w-full">
                   <div className="flex flex-row gap-2.5 items-center justify-center p-2.5 w-auto">
-                    <Text
-                      className="text-base text-blue_gray-800 text-center w-auto"
-                      size="txtManropeBold16"
-                    >
-                      Home
-                    </Text>
-                    <Text
-                      className="text-base text-blue_gray-800 text-center w-auto"
-                      size="txtManropeBold16"
-                    >
-                      About Us
-                    </Text>
-                    <a
-                      href="javascript:"
-                      className="text-base text-blue_gray-800 text-center w-auto"
-                    >
-                      <Text size="txtManropeBold16">Contact Us</Text>
-                    </a>
                   </div>
-                  <Button
-                    className="cursor-pointer font-bold min-w-[96px] text-base text-center"
-                    shape="round"
-                    color="black_900"
-                    variant="outline"
-                  >
-                    Logout
-                  </Button>
-                  <Button
-                    className="cursor-pointer mb-6 min-w-[92px] text-base text-center"
-                    shape="round"
-                    color="blue_gray_800"
-                  >
-                    Signup
-                  </Button>
                 </div>
               </div>
             </div>
