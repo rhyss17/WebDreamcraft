@@ -206,12 +206,14 @@ const LoginPage = () => {
                           onClick={() => navigate("/signup")}
                         >
                           <span className="text-white-A700 font-manrope font-normal">
-                            Dont have an account?
+                            Dont have an account?{" "}
                           </span>
-                          <span className="text-white-A700 font-manrope font-semibold">
-                            {" "}
+                          <a
+                            href="javascript:"
+                            className="text-lime-100 font-montserrat font-semibold underline"
+                          >
                             Register
-                          </span>
+                          </a>
                         </Text>
                         <Text
                           className="common-pointer text-center text-lg text-white-A700 tracking-[0.09px] w-full"
@@ -219,12 +221,14 @@ const LoginPage = () => {
                           onClick={() => navigate("/loginadmin")}
                         >
                           <span className="text-white-A700 font-manrope font-normal">
-                            Log in as
+                            Log in as{" "}
                           </span>
-                          <span className="text-white-A700 font-manrope font-semibold">
-                            {" "}
+                          <a
+                            href="javascript:"
+                            className="text-lime-100 font-montserrat font-semibold underline"
+                          >
                             Administrator
-                          </span>
+                          </a>
                         </Text>
 
                         <Text
