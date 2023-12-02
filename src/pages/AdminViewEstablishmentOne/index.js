@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 import { useNavigate } from "react-router-dom";
+import Header from "components/Header";
 
 import { Button, Img, List, Text } from "components";
-
+  
 const AdminViewEstablishmentOnePage = () => {
   const navigate = useNavigate();
   const [data, setData] = useState([]);
@@ -20,52 +21,15 @@ const AdminViewEstablishmentOnePage = () => {
 
   return (
     <>
+    <Header />
       <div className="flex flex-col font-manrope items-start justify-start mx-auto w-auto sm:w-full md:w-full">
         <div className="bg-white-A700 flex flex-col items-center justify-end pr-4 pt-4 w-full">
           <div className="flex flex-col justify-start max-w-[1419px] mx-auto md:px-5 w-full">
             <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-full">
-              <Img
-                className="h-11 md:h-auto object-cover"
-                src="images/img_22.png"
-                alt="TwentyTwo"
-              />
               <div className="flex sm:flex-1 flex-col items-start justify-start w-auto sm:w-full">
                 <div className="flex sm:flex-col flex-row sm:gap-10 items-start justify-between w-full">
-                  <div className="flex flex-row gap-2.5 items-center justify-center p-2.5 w-auto">
-                    <Text
-                      className="text-base text-blue_gray-800 text-center w-auto"
-                      size="txtManropeBold16"
-                    >
-                      Home
-                    </Text>
-                    <Text
-                      className="text-base text-blue_gray-800 text-center w-auto"
-                      size="txtManropeBold16"
-                    >
-                      About Us
-                    </Text>
-                    <a
-                      href="javascript:"
-                      className="text-base text-blue_gray-800 text-center w-auto"
-                    >
-                      <Text size="txtManropeBold16">Contact Us</Text>
-                    </a>
+                  <div className="flex flex-row gap-2.5 items-center justify-center p-2.5 w-auto">                   
                   </div>
-                  <Button
-                    className="cursor-pointer font-bold min-w-[96px] text-base text-center"
-                    shape="round"
-                    color="black_900"
-                    variant="outline"
-                  >
-                    Logout
-                  </Button>
-                  <Button
-                    className="cursor-pointer mb-6 min-w-[92px] text-base text-center"
-                    shape="round"
-                    color="blue_gray_800"
-                  >
-                    Signup
-                  </Button>
                 </div>
               </div>
             </div>
