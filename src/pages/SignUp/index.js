@@ -55,11 +55,10 @@ import { Button, Img, Input, Text } from "components";
 
   return (
     <>
-      <div className="dhiwise-navigation">
         <div className="flex font-syne mx-auto pb-[13px] relative w-full">
-          <div className="h-[697px] my-auto md:px-5 w-[66%] md:w-full">
+          <div className="h-[1000px] my-auto md:px-5 w-[66%] md:w-full">
             <Img
-              className="h-[697px] m-auto object-cover w-full"
+              className="h-[1000px] m-auto object-cover w-full"
               src="images/img_image15.png"
               alt="imageFifteen"
             />
@@ -71,8 +70,10 @@ import { Button, Img, Input, Text } from "components";
             deserve.
           </Text>
           </div>
-          <div className="bg-blue_gray-800 flex flex-col font-montserrat items-center justify-end ml-[-1px] my-auto p-[83px] md:px-5 w-[60%] z-[1]">
+           {/* Right Section */}
+           <div className="bg-blue_gray-800 flex flex-col font-montserrat items-center justify-end ml-[-1px] my-auto p-[83px] md:px-5 w-[60%] z-[1] h-[1000px]">
             <div className="flex flex-col gap-10 items-start justify-start w-[459px] sm:w-full">
+              <div className="absolute flex flex-col gap-10 h-max inset-y-[0] items-start justify-start right-[14%] my-auto w-[459px] sm:w-full">
               <div className="flex flex-col gap-2.5 items-start justify-start w-auto sm:w-full">
                 <Text
                   className="md:text-3xl sm:text-[28px] text-[32px] text-white-A700 tracking-[0.16px] w-auto"
@@ -220,7 +221,9 @@ import { Button, Img, Input, Text } from "components";
             </div>
           </div>
         </div>
-      </div>
+        </div>
+        
+      
     </>
   );
 };

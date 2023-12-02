@@ -67,18 +67,17 @@ const LoginPage = () => {
 
   return (
     <>
+    
       <div className="flex flex-col font-montserrat items-center justify-start mx-auto pb-0.5 w-full">
         <div className="flex flex-col items-center justify-start pb-[13px] w-full">
-          <div className="flex flex-col items-center justify-start w-full">
-            <div className="flex flex-col items-center justify-start w-full">
-              <div className="flex flex-col items-center justify-start w-full">
-                <div className="h-[795px] md:px-5 relative w-full">
-                  <div className="absolute h-[695px] inset-y-[0] left-[0] my-auto w-[93%] md:w-full">
+                <div className="h-[800px] md:px-5 relative w-full">
+                  <div className="absolute h-[1000px] inset-y-[0] left-[0] my-auto w-[50%] md:w-full">
                     <Img
-                      className="h-[695px] my-auto object-cover w-[84%]"
+                      className="h-[1000px] my-auto object-cover w-[100%]"
                       src="images/img_image15.png"
                       alt="imageFifteen"
                     />
+                    {/* Left Section */}
                     <div className="absolute bg-gray-900_99 flex flex-col h-full inset-[0] items-start justify-center m-auto p-24 md:px-10 sm:px-5 w-full">
                       <div className="flex flex-col gap-3.5 items-start justify-start mb-40 ml-16 md:ml-[0] w-[491px] sm:w-full">
                         <Text
@@ -97,8 +96,9 @@ const LoginPage = () => {
                       </div>
                     </div>
                   </div>
+                  {/* Right Section */}
                   <div
-                    className="absolute bg-cover bg-no-repeat flex md:h-[598px] sm:h-[655px] h-[695px] inset-y-[0] justify-end my-auto p-[39px] sm:px-5 right-[0] w-[49%] md:w-full"
+                    className="absolute bg-cover bg-no-repeat flex md:h-[600px] sm:h-[655px] h-[1000px] inset-y-[0] justify-end my-auto p-[39px] sm:px-5 right-[0] w-[50%] md:w-full"
                     style={{ backgroundImage: "url(images/img_group26.svg)" }}
                   >
                     <a
@@ -242,9 +242,6 @@ const LoginPage = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
     </>
   );
 };

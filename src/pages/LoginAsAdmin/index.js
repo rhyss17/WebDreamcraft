@@ -69,12 +69,10 @@ const handleLogin = async () => {
       <div className="flex flex-col font-montserrat items-center justify-start mx-auto pb-0.5 w-full">
         <div className="flex flex-col items-center justify-start pb-[13px] w-full">
           <div className="flex flex-col items-center justify-start w-full">
-            <div className="flex flex-col items-center justify-start w-full">
-              <div className="flex flex-col items-center justify-start w-full">
                 <div className="h-[695px] md:px-5 relative w-full">
-                  <div className="absolute h-[695px] inset-y-[0] left-[0] my-auto w-[93%] md:w-full">
+                  <div className="absolute h-[950px] inset-y-[0] left-[0] my-auto w-[93%] md:w-full">
                     <Img
-                      className="h-[695px] my-auto object-cover w-[84%]"
+                      className="h-[950px] my-auto object-cover w-[55%]"
                       src="images/adminbg.jpg"
                       alt="imageFifteen"
                     />
@@ -97,7 +95,7 @@ const handleLogin = async () => {
                     </div>
                   </div>
                   <div
-                    className="absolute bg-cover bg-no-repeat flex md:h-[598px] sm:h-[655px] h-[695px] inset-y-[0] justify-end my-auto p-[39px] sm:px-5 right-[0] w-[49%] md:w-full"
+                    className="absolute bg-cover bg-no-repeat flex md:h-[598px] sm:h-[655px] h-[1000px] inset-y-[0] justify-end my-auto p-[39px] sm:px-5 right-[0] w-[49%] md:w-full"
                     style={{ backgroundImage: "url(images/img_group26.svg)" }}
                   >
                     <a
@@ -200,8 +198,7 @@ const handleLogin = async () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+       
     </>
   );
 };
