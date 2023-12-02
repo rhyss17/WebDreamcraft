@@ -88,7 +88,6 @@ const AdminViewEstablishmentOnePage = () => {
                 <button
                   className="styled-button large-font" 
               onClick={() => navigate("/adminnew")}
-              color="blue_gray_800"
             >
               Update
             </button>
