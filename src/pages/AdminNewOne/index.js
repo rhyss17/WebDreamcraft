@@ -24,6 +24,11 @@ const AdminNewOnePage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    if (!establishmentData.name || !establishmentData.location) {
+      window.alert("Error fields are empty.");
+      return; // Prevent further execution
+    }
+
     try {
       const response = await fetch("http://localhost:8092/Establishment/insertEstablishment", {
         method: "POST",
@@ -45,9 +50,11 @@ const AdminNewOnePage = () => {
       } else {
         // Handle error response
         console.error("Failed to add establishment.");
+        window.alert("Failed to add establishment.");
       }
     } catch (error) {
       console.error("Error:", error);
+      window.alert("Failed to add establishment.");
     }
   };
 
