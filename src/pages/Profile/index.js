@@ -34,9 +34,11 @@ const Profile = () => {
   return (
     <>
       <Header className="header" />
-        <form className="profile-form"></form>
       <div className="profile-container">
-        <form onSubmit={handleSubmit}>
+        <div className="account-settings">
+          <h1 style={{ fontWeight: 'bold' }}>Account Settings</h1>
+        </div>
+        <form onSubmit={handleSubmit} className="profile-form">
           <div>
             <label htmlFor="firstName">First Name:</label>
             <input
@@ -77,7 +79,7 @@ const Profile = () => {
               onChange={handleInputChange}
             />
           </div>
-          <button type="submit">Save Changes</button>
+          <button type="submit">Update personal information</button>
         </form>
       </div>
     </>

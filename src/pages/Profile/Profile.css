@@ -1,155 +1,88 @@
-/* Profile Page Styles */
 
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 18px;
+  font-size: 25px;
   background-color: #383063;
-  margin-top: 0;
+  margin: 0;
   padding: 0;
+  color: #000000; /* Adjusted text color for better visibility */
 }
 
 .header {
-  background-color: #fdfdfd; /* Change to your header color */
+  background-color: #ffffff; /* Change to your header color */
   height: 120px;
-  margin: 0; /* Reset margin to remove any unwanted space */
-  padding: 0; /* Reset padding to remove any unwanted space */
-  display: flex; /* Use flex to control header items */
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
-}
-
-.profile-container {
-  max-width: 70px; /* Adjusted max-width for better visibility */
-  margin: 90px auto;
-  background-color: #383063;
-  padding: 200px;
-  border-radius: 50px;
-  box-shadow: 0 0 15px #ffffff;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh; /* Set a height to center vertically */
 }
 
 .profile-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-  color: #fff; /* Adjusted label color for better visibility */
-}
-
-input {
-  width: 150%; /* Adjust the width percentage as needed */
-  max-width: 300px; /* Set a maximum width if necessary */
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #000;
-  border-radius: 10px;
+  width: 50%; /* Adjust the width as needed */
+  padding: 20px;
   box-sizing: border-box;
 }
 
-/* Profile Page Styles */
+/* Add additional styling as needed */
 
-body {
+.profile-container {
+  max-width: 1200px; /* Adjusted max-width for better visibility */
+  margin: 80px auto;
+  background-color: transparent;
+  padding: 60px; /* Adjusted padding for better spacing */
+  border-radius: 20px; /* Adjusted border-radius */
+  display: flex;
+  flex-direction: column; /* Adjusted to column layout */
+  align-items: center; /* Center content horizontally */
+}
+
+.account-settings {
+  color: #ffffff;
+  text-align: center; /* Changed to center for vertical alignment */
+  margin-bottom: 30px;
+}
+
+.account-settings h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 18px;
-  background-color: #383063;
-  margin-top: 0;
-  padding: 0;
-}
-
-.header {
-  background-color: #fdfdfd; /* Change to your header color */
-  height: 120px;
-  margin: 0; /* Reset margin to remove any unwanted space */
-  padding: 0; /* Reset padding to remove any unwanted space */
-  display: flex; /* Use flex to control header items */
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
-}
-
-.profile-container {
-  max-width: 70px; /* Adjusted max-width for better visibility */
-  margin: 90px auto;
-  background-color: #ffffff;
-  padding: 200px;
-  border-radius: 50px;
-  box-shadow: 0 0 15px #383063;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60vh; /* Set a height to center vertically */
-}
-
-.profile-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-weight: bold;
+  font-size: 24px; /* Adjusted font-size */
+  margin-bottom: 20px; /* Adjusted margin for better spacing */
 }
 
 label {
-  display: block;
   margin-bottom: 10px;
-  color: #000000; /* Adjusted label color for better visibility */
+  color: #ffffff;
 }
 
 input {
-  width: 150%; /* Adjust the width percentage as needed */
-  max-width: 300px; /* Set a maximum width if necessary */
+  width: 100%; /* Adjusted width for better responsiveness */
+  max-width: px;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border: 1px solid #000;
   border-radius: 10px;
   box-sizing: border-box;
+  background-color: #f0f0f0; /* Add your desired background color here */
+  font-size: 25px;
 }
 
 button {
-  background-color:  #ffffff;
-  color: #000000; /* Adjusted button text color for better visibility */
-  padding: 15px 20px; /* Adjusted padding */
-  border: 1px solid #000000;
-  border-radius: 10px; /* Adjusted border-radius */
+  background-color: #ffffff;
+  color: #fffefe;
+  padding: 15px 20px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #8376c5;
+  background-color: #8476c7;
 }
 
 h3 {
   margin-top: 20px;
-  color: #fff; /* Adjusted heading color for better visibility */
-}
-
-p {
-  color: #000000; /* Adjusted paragraph color for better visibility */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .profile-container {
-    max-width: 100%;
-    margin: 20px;
-  }
-}
-
-
-button:hover {
-  background-color: #8376c5;
-}
-
-h3 {
-  margin-top: 20px;
-  color: #fff; /* Adjusted heading color for better visibility */
-}
-
-p {
-  color: #fff; /* Adjusted paragraph color for better visibility */
+  color: #fff;
 }
 
 /* Responsive Styles */
