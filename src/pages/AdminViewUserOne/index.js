@@ -85,7 +85,7 @@ const AdminViewUserOnePage = () => {
               <div className="button-border">
                 <button
                   className="styled-button large-font" 
-              onClick={() => navigate("/adminnew")}
+              onClick={() => navigate("/adminupdateuser")}
             >
               Update
             </button>
