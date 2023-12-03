@@ -27,9 +27,8 @@ const Login = React.lazy(() => import("pages/Login"));
 const LoginAsAdmin = React.lazy(() => import("pages/LoginAsAdmin"));
 const AdminNewOne = React.lazy(() => import("pages/AdminAddEstab"));
 const AdminViewUser = React.lazy(() => import("pages/AdminViewUser"));
-const AdminViewEstablishment = React.lazy(() => import("pages/AdminViewEstablishment"));
+
 const AdminNew = React.lazy(() => import("pages/AdminNew"));
-const AdminViewEstablishmentTwo = React.lazy(() => import("pages/AdminViewEstablishmentTwo"));
 const AdminViewUserOne = React.lazy(() => import("pages/AdminViewUserOne"));
 const AdminViewEstablishmentOne = React.lazy(() => import("pages/AdminViewEstablishmentOne"));
 const AdminHome = React.lazy(() => import("pages/AdminHome"));
@@ -73,15 +72,8 @@ const ProjectRoutes = () => {
             element={<AdminViewEstablishmentOne />}
           />
           <Route path="/adminviewuserone" element={<AdminViewUserOne />} />
-          <Route
-            path="/adminviewestablishmenttwo"
-            element={<AdminViewEstablishmentTwo />}
-          />
           <Route path="/adminnew" element={<AdminNew />} />
-          <Route
-            path="/adminviewestablishment"
-            element={<AdminViewEstablishment />}
-          />
+
           <Route path="/adminviewuser" element={<AdminViewUser />} />
           <Route path="/adminnewone" element={<AdminNewOne />} />
           <Route path="/dhiwise-dashboard" element={<Home />} />
