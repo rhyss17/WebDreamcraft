@@ -43,13 +43,14 @@ const AdminViewEstablishmentOnePage = () => {
               <Text
                 className="md:text-3xl sm:text-[28px] text-[32px] text-black-900 w-[216px]"
                 size="txtManropeBold32"
+                onClick={() => navigate("/adminhome")}
               >
                 Administrator
               </Text>
             </div>
             {/* space between the admin profile */}
             <div style={{ marginTop: '50px' }}></div> 
-            <h1 style={{ fontSize: '32px' }}>Data Table</h1> {/* Changing font size */}
+            <h1 style={{ fontSize: '32px' }}>Establishments</h1> {/* Changing font size */}
             <table style={{ borderCollapse: 'collapse', fontFamily: 'Arial, sans-serif', fontSize: '18px' }}>
               <thead>
                 <tr style={{ fontSize: '24px', borderBottom: '2px solid black' }}>

@@ -17,8 +17,7 @@ const WellnessCenter = React.lazy(() => import("pages/WellnessCenter"));
 const BeautySalon = React.lazy(() => import("pages/BeautySalon"));
 const Massage = React.lazy(() => import("pages/Massage"));
 const Home1 = React.lazy(() => import("pages/Home1"));
-const AdminFrame = React.lazy(() => import("pages/AdminFrame"));
-const AdminLogIn = React.lazy(() => import("pages/AdminLogIn"));
+
 const SignUp = React.lazy(() => import("pages/SignUp"));
 const AdminDashboard = React.lazy(() => import("pages/AdminDashboard"));
 const FIgmaStylicleSalonLandingPage = React.lazy(
@@ -26,7 +25,7 @@ const FIgmaStylicleSalonLandingPage = React.lazy(
 );
 const Login = React.lazy(() => import("pages/Login"));
 const LoginAsAdmin = React.lazy(() => import("pages/LoginAsAdmin"));
-const AdminNewOne = React.lazy(() => import("pages/AdminNewOne"));
+const AdminNewOne = React.lazy(() => import("pages/AdminAddEstab"));
 const AdminViewUser = React.lazy(() => import("pages/AdminViewUser"));
 const AdminViewEstablishment = React.lazy(() => import("pages/AdminViewEstablishment"));
 const AdminNew = React.lazy(() => import("pages/AdminNew"));
@@ -48,8 +47,8 @@ const ProjectRoutes = () => {
           <Route path="/admindashboard" element={<AdminDashboard />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/loginadmin" element={<LoginAsAdmin />} />
-          <Route path="/adminlogin" element={<AdminLogIn />} />
-          <Route path="/adminframe" element={<AdminFrame />} />
+          
+          
           <Route path="/home1" element={<Home1 />} />
           <Route path="/massage" element={<Massage />} />
           <Route path="/beautysalon" element={<BeautySalon />} />
