@@ -322,7 +322,7 @@ const CustomerReviewsPage = () => {
               size="xl"
               variant="outline"
             >
-              VIEW MORE STORIES
+              Write A Reviews
             </Button>
           </div>
         </div>
