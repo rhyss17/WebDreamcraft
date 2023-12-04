@@ -65,43 +65,47 @@ const AdminNewOnePage = () => {
           <div style={{ marginTop: '2in' }}></div> {/* Adding a large space */}
           <form onSubmit={handleSubmit} className="w-full flex flex-col items-center">
           <div className="flex flex-col mb-4 w-full max-w-[400px]">
-            <label htmlFor="name" className="mb-2">
-              Name:
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={establishmentData.name}
-                onChange={handleInputChange}
-                className="border rounded-md py-2 px-3 mt-1 w-full"
-              />
-            </label>
-          </div>
-          <div className="flex flex-col mb-4 w-full max-w-[400px]">
-         <label htmlFor="location" className="mb-2" style={{ fontSize: '24px' }}>
-              Location:
-              <input
-                type="text"
-                id="location"
-                name="location"
-                value={establishmentData.location}
-                onChange={handleInputChange}
-                className="border rounded-md py-2 px-3 mt-1"
-              />
-            </label>
-          </div>
-          {/* Add other input fields for establishment details */}
-          <Button type="submit">Submit</Button>
-
-        </form>
-        
-          <Button 
+        <label htmlFor="name" className="mb-2" style={{ fontSize: '24px' }}>
+          Name:
+        </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value={establishmentData.name}
+          onChange={handleInputChange}
+          className="border rounded-md py-2 px-3 mt-1 w-full"
+          style={{ fontSize: '24px' }} 
+        />
+      </div>
+      <div className="flex flex-col mb-4 w-full max-w-[400px]">
+        <label htmlFor="location" className="mb-2" style={{ fontSize: '24px' }}>
+          Location:
+        </label>
+        <input
+          type="text"
+          id="location"
+          name="location"
+          value={establishmentData.location}
+          onChange={handleInputChange}
+          className="border rounded-md py-2 px-3 mt-1 w-full"
+          style={{ fontSize: '24px' }} 
+        />
+      </div>
+      {/* Add other input fields for establishment details */}
+      <div className="flex justify-between w-full max-w-[400px]"> {/* Adjust max-width as needed */}
+        <Button type="submit">Submit
+        </Button>
+        <Button 
           type="submit"
           onClick={() => navigate("/adminviewestablishmentone")}
-          >Go back
-          </Button>
-        
+        >
+          Go back
+        </Button>
       </div>
+    </form>
+    <div style={{ marginTop: '2in' }}></div> {/* Adding another large space */}
+  </div>
     </>
   );
 };
