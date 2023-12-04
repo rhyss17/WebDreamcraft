@@ -62,8 +62,9 @@ const AdminNewOnePage = () => {
     <>
       <Header />
       <div className="flex flex-col font-manrope items-center justify-start mx-auto w-full max-w-[800px] px-4">
-        <form onSubmit={handleSubmit} className="mt-8 w-full">
-          <div className="flex flex-col mb-4">
+          <div style={{ marginTop: '2in' }}></div> {/* Adding a large space */}
+          <form onSubmit={handleSubmit} className="w-full flex flex-col items-center">
+          <div className="flex flex-col mb-4 w-full max-w-[400px]">
             <label htmlFor="name" className="mb-2">
               Name:
               <input
