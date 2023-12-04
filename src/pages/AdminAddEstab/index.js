@@ -73,12 +73,12 @@ const AdminNewOnePage = () => {
                 name="name"
                 value={establishmentData.name}
                 onChange={handleInputChange}
-                className="border rounded-md py-2 px-3 mt-1"
+                className="border rounded-md py-2 px-3 mt-1 w-full"
               />
             </label>
           </div>
-          <div className="flex flex-col mb-4">
-            <label htmlFor="location" className="mb-2">
+          <div className="flex flex-col mb-4 w-full max-w-[400px]">
+         <label htmlFor="location" className="mb-2" style={{ fontSize: '24px' }}>
               Location:
               <input
                 type="text"
