@@ -34,7 +34,7 @@ const Userhome = () => {
                   className="text-3xl text-black-900 mb-10"
                   size="txtManropeBold32"
                 >
-                  Hello User
+                  Hello 
                 </Text>
               </div>
               <div className="button-container">
