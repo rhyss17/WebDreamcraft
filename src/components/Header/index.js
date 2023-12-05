@@ -3,6 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Button, Img, Text } from "components";
+import "./Header.css";
 
 const Header = (props) => {
   const navigate = useNavigate();
