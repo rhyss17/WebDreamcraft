@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "components/Header";
+
 import { Button } from "components";
 
 const AdminNewPage = () => {
@@ -94,7 +95,7 @@ const AdminNewPage = () => {
     <>
       <Header />
       <div className="flex flex-col font-manrope items-center justify-start mx-auto w-full max-w-[800px] px-4">
-      <div style={{ marginTop: '1in' }}></div> {/* Adding a large space */}
+      <div style={{ marginTop: '2in' }}></div> {/* Adding a large space */}
         <form className="w-full flex flex-col items-center">
         <div className="flex flex-col mb-4 w-full max-w-[400px]">
         <label htmlFor="name" className="mb-2" style={{ fontSize: '24px' }}>
