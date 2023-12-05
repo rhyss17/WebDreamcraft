@@ -2,7 +2,7 @@
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 25px;
-  background-color: #383063;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
   color: #000000; /* Adjusted text color for better visibility */
@@ -38,7 +38,7 @@ body {
 }
 
 .account-settings {
-  color: #ffffff;
+  color: #000000;
   text-align: center; /* Changed to center for vertical alignment */
   margin-bottom: 30px;
 }
@@ -52,7 +52,7 @@ body {
 
 label {
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #000000;
 }
 
 input {
@@ -69,9 +69,9 @@ input {
 
 button {
   background-color: #ffffff;
-  color: #fffefe;
+  color: #000000;
   padding: 15px 20px;
-  border: 2px solid #ffffff;
+  border: 2px solid #000000;
   border-radius: 10px;
   cursor: pointer;
 }
