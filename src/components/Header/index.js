@@ -68,7 +68,7 @@ const Header = (props) => {
               <Button
                 className="cursor-pointer font-bold font-manrope min-w-[91px] rounded-[5px] text-base text-center"
                 shape="round"
-                onClick={() => navigate("/profile")}
+                onClick={() => navigate("/userhome")}
                 color="blue_gray_800"
                 size="md"
                 variant="outline"

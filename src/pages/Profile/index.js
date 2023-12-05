@@ -1,34 +1,52 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "components";
 import Header from "components/Header";
 import "./Profile.css";
 
 const Profile = () => {
-  // Initial state with dummy user data
   const [userData, setUserData] = useState({
-    firstName: 'John',
-    lastName: 'Doe',
-    email: 'john.doe@example.com',
-    password: 'securepassword',
+    firstname: "",
+    lastname: "",
+    email: "",
+    password: "",
   });
 
-  // State to manage form inputs
-  const [formData, setFormData] = useState({});
+  useEffect(() => {
+    // Fetch user data from localStorage when the component mounts
+    const storedUserData = localStorage.getItem("userData");
+    if (storedUserData) {
+      setUserData(JSON.parse(storedUserData));
+    }
+  }, []);
 
-  // Function to handle input changes
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('http://localhost:8092/User/updateUser/', {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(userData),
+      });
+
+      if (response.ok) {
+        console.log('User data updated successfully');
+      } else {
+        console.error('Failed to update user data');
+      }
+    } catch (error) {
+      console.error('Error updating user data:', error);
+    }
   };
 
-  // Function to handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Update user data with new form data
-    setUserData({ ...userData, ...formData });
-    // Reset form data
-    setFormData({});
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setUserData({
+      ...userData,
+      [name]: value,
+    });
   };
 
   return (
@@ -43,20 +61,20 @@ const Profile = () => {
             <label htmlFor="firstName">First Name:</label>
             <input
               type="text"
-              id="firstName"
-              name="firstName"
-              defaultValue={userData.firstName}
-              onChange={handleInputChange}
+              id="firstname"
+              name="firstname"
+              value={userData.firstname}
+              onChange={handleChange}
             />
           </div>
           <div>
             <label htmlFor="lastName">Last Name:</label>
             <input
               type="text"
-              id="lastName"
-              name="lastName"
-              defaultValue={userData.lastName}
-              onChange={handleInputChange}
+              id="lastname"
+              name="lastname"
+              value={userData.lastname}
+              onChange={handleChange}
             />
           </div>
           <div>
@@ -65,8 +83,8 @@ const Profile = () => {
               type="email"
               id="email"
               name="email"
-              defaultValue={userData.email}
-              onChange={handleInputChange}
+              value={userData.email}
+              onChange={handleChange}
             />
           </div>
           <div>
@@ -75,8 +93,8 @@ const Profile = () => {
               type="password"
               id="password"
               name="password"
-              defaultValue={userData.password}
-              onChange={handleInputChange}
+              value={userData.password}
+              onChange={handleChange}
             />
           </div>
           <button type="submit">Update personal information</button>

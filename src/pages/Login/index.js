@@ -15,7 +15,7 @@ const LoginPage = () => {
  //   },
  // });
 
-  const [formData, setFormData] = useState({
+const [/*userData,*/ formData, setFormData] = useState({
     email: "",
     password: "",
   });
@@ -47,6 +47,7 @@ const LoginPage = () => {
     if (response.ok) {
       const data = await response.text(); // Assuming the response is a text-based message
       if (data === "Login successful") {
+        //localStorage.setItem('userData', JSON.stringify(userData));
         // Login successful - navigate to home or dashboard
         navigate("/home1");
       } else {
