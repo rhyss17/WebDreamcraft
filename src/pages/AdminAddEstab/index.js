@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 import Header from "components/Header";
+import './add.css';
 
 import { Button, Img, Text } from "components";
 
@@ -94,14 +95,11 @@ const AdminNewOnePage = () => {
       </div>
       {/* Add other input fields for establishment details */}
       <div className="flex justify-between w-full max-w-[400px]"> {/* Adjust max-width as needed */}
-        <Button type="submit">Submit
-        </Button>
-        <Button 
-          type="submit"
-          onClick={() => navigate("/adminviewestablishmentone")}
-        >
-          Go back
-        </Button>
+      <button type="submit" className="submit-button">Submit
+        </button>
+        <button onClick={() => navigate("/adminviewestablishmentone")} 
+        className="goBack-button">Go back
+        </button>
       </div>
     </form>
     <div style={{ marginTop: '2in' }}></div> {/* Adding another large space */}
