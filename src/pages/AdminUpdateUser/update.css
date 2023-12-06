@@ -1,0 +1,25 @@
+.custom-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 13px;
+    font-size: 16px;
+  }
+  
+  /* Update */
+  .update-btn {
+    background-color: #000066; 
+    color: white;
+  }
+  
+  /* Delete */
+  .delete-btn {
+    background-color: #000066; 
+    color: white;
+  }
+  
+  /* Go back */
+  .go-back-btn {
+    background-color: #000066; 
+    color: white;
+  }
