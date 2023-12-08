@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "components/Header";
 import { Button } from "components";
+import './update.css';
+
 
 const AdminNewPage = () => {
   const navigate = useNavigate();
@@ -167,16 +169,15 @@ const AdminNewPage = () => {
             </label>
           </div>
           <div className="flex justify-between w-full max-w-[400px]">
-          <Button type="button" onClick={handleUpdate}>
-            Update
-          </Button>
-          <Button type="button" onClick={handleDelete}>
-            Delete
-          </Button>
-
-        <Button type="button" onClick={() => navigate("/adminviewuserone")}>
-          Go back
-        </Button>
+          <button className="custom-btn update-btn" type="button" onClick={handleUpdate}>
+          Update
+        </button>
+        <button className="custom-btn delete-btn" type="button" onClick={handleDelete}>
+          Delete
+        </button>
+        <button className="custom-btn go-back-btn" type="button" onClick={() => navigate("/adminviewestablishmentone")}>
+        Go back
+      </button>
         </div>
         </form>
         {showConfirmation && (
