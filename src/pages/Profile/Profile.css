@@ -2,11 +2,13 @@
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 25px;
-  background-color: #ffffff;
+  display: flex;
+  flex-direction: column; /* Adjusted to column layout */
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  padding: 0;
-  color: #000000; /* Adjusted text color for better visibility */
-}
+  }
+  
 
 .header {
   background-color: #ffffff; /* Change to your header color */

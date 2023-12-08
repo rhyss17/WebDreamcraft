@@ -61,9 +61,9 @@ const Userhome = () => {
                 <div className="button-border">
                   <button
                     className="styled-button large-font"
-                    onClick={() => navigate("/customerreviews")}
+                    onClick={() => navigate("/reviews")}
                   >
-                    Recent Customer Reviews
+                   Write A Reviews
                   </button>
                 </div>
               </div>

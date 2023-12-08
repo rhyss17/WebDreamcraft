@@ -11,6 +11,7 @@ const PersonalRecommendation = React.lazy(
 );
 const Profile = React.lazy(() => import("pages/Profile"));
 const Userhome = React.lazy(() => import("pages/userhome"));
+const Reviews = React.lazy(() => import("pages/Reviews/reviews"));
 const ContactUs = React.lazy(() => import("pages/ContactUs"));
 const AboutUs = React.lazy(() => import("pages/AboutUs"));
 const YOGASTUDIO = React.lazy(() => import("pages/YOGASTUDIO"));
@@ -58,6 +59,7 @@ const ProjectRoutes = () => {
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/userhome" element={<Userhome />} />
+          <Route path="/reviews" element={<Reviews />} />
 
           <Route
             path="/personalrecommendation"
