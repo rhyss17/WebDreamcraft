@@ -317,6 +317,7 @@ const CustomerReviewsPage = () => {
             </div>
             <Button
               className="!text-gray-900 cursor-pointer font-extrabold min-w-[250px] outline-[2px] text-center text-sm tracking-[1.68px] uppercase"
+              onClick={() => navigate("/reviews")}  
               shape="square"
               color="blue_gray_800"
               size="xl"
