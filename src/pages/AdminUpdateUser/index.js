@@ -175,7 +175,7 @@ const AdminNewPage = () => {
         <button className="custom-btn delete-btn" type="button" onClick={handleDelete}>
           Delete
         </button>
-        <button className="custom-btn go-back-btn" type="button" onClick={() => navigate("/adminviewestablishmentone")}>
+        <button className="custom-btn go-back-btn" type="button" onClick={() => navigate("/adminviewuserone")}>
         Go back
       </button>
         </div>
