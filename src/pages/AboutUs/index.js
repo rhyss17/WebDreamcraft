@@ -436,7 +436,7 @@ const AboutUsPage = () => {
                               className="mb-[11px] md:ml-[0] ml-[94px] md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
                               size="txtManropeBold32"
                             >
-                              Christzia Marie Ata
+                              Christzia Marie Atay
                             </Text>
                             <Text
                               className="mb-[11px] md:ml-[0] ml-[175px] md:text-3xl sm:text-[28px] text-[32px] text-white-A700"
