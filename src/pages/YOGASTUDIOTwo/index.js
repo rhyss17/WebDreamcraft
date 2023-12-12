@@ -2,6 +2,7 @@ import React from "react";
 
 import { useNavigate } from "react-router-dom";
 
+import Header from "components/Header";
 import { Button, Img, Line, Text } from "components";
 import HomeFooter from "components/HomeFooter";
 
@@ -10,16 +11,10 @@ const YOGASTUDIOTwoPage = () => {
 
   return (
     <>
+    <Header />
       <div className="bg-white-A700 flex flex-col font-playfairdisplay items-center justify-start mx-auto pb-5 pl-5 w-full">
         <div className="flex flex-col items-start justify-start max-w-[1920px] mb-[1099px] mx-auto md:px-5 w-full">
-          <div className="md:h-[649px] h-[737px] relative w-full">
-            <Img
-              className="common-pointer absolute h-[102px] left-[3%] object-cover top-[0] w-[18%]"
-              src="images/img_21.png"
-              alt="logo"
-              onClick={() => navigate("/home1")}
-            />
-            <div className="absolute bottom-[0] h-[649px] inset-x-[0] mx-auto w-full">
+            <div className="absolute bottom-[0] h-[750px] inset-x-[0] mx-auto w-full">
               <Img
                 className="h-[649px] m-auto object-cover w-full"
                 src="images/img_yogagirl_2.png"
@@ -31,8 +26,6 @@ const YOGASTUDIOTwoPage = () => {
               >
                 Find The Best Yoga Studio Nearby
               </Text>
-            </div>
-          </div>
           <div className="flex md:flex-col flex-row md:gap-5 items-end justify-start md:ml-[0] ml-[277px] mt-[31px] w-[67%] md:w-full">
             <Img
               className="h-[63px] mb-1 md:mt-0 mt-2.5 w-[63px]"
@@ -57,11 +50,13 @@ const YOGASTUDIOTwoPage = () => {
                 size="txtInterRegular24"
               >
                 Nov 9 2023 Nov 9 2023
-              </Text>
+              </Text> 
+            </div>
             </div>
           </div>
-          <Line className="bg-black-900 h-px ml-4 md:ml-[0] mt-7 w-[98%]" />
-          <div className="font-manrope md:h-[1265px] h-[1490px] sm:h-[933px] md:ml-[0] ml-[5px] mt-[47px] relative w-full">
+          </div>
+          <div className="bg-black-900 h-px ml-4 md:ml-[0] mt-1 w-[95%]"></div>
+          <div className="font-manrope md:h-[1265px] h-[745px] sm:h-[933px] md:ml-[0] ml-[5px] mt-[47px] relative w-full">
             <div className="bg-white-A700 flex flex-col h-full items-center justify-start ml-auto mr-[87px] outline outline-[1px] outline-black-900_3d p-[27px] sm:px-5 rounded-[24px] w-[43%]">
               <Img
                 className="h-[690px] md:h-auto object-cover rounded-[20px] w-[99%]"
@@ -69,15 +64,15 @@ const YOGASTUDIOTwoPage = () => {
                 alt="imageTwentyNine"
               />
             </div>
-            <div className="absolute flex flex-col md:gap-10 gap-[111px] h-full inset-[0] justify-center m-auto w-full">
+            <div className="absolute flex flex-col gap-1 h-full inset-0 justify-center m-auto w-full">
               <div className="bg-white-A700 flex flex-col gap-2.5 justify-start md:ml-[0] ml-[119px] mr-[980px] outline outline-[1px] outline-black-900_3d pr-[13px] py-[13px] rounded-[24px] w-[43%] md:w-full">
                 <div className="font-inter md:h-[289px] h-[635px] mr-0.5 relative w-full">
                   <div className="bg-orange-50 flex flex-col gap-[7px] h-full items-center justify-center ml-auto mr-[5px] mt-3.5 p-[9px] rounded-[20px] w-[37%]">
                     <div className="h-12 md:h-14 mt-2 relative w-full">
-                      <Text
-                        className="absolute h-full inset-[0] justify-center m-auto text-gray-900 text-xl w-[97%] sm:w-full"
-                        size="txtInterBold20"
-                      >
+                    <Text
+                    className="bg-white-A700 gap-2.5 justify-start ml-119px mr-980px outline outline-1 outline-black-900_3d pr-13px py-13px rounded-24px w-43% md:w-full font-inter md:h-289px h-635px mr-0.5 relative"
+                    size="txtInterBold20"
+  >
                         Dawata Wellness Yoga Studio{" "}
                       </Text>
                       <Line className="absolute bg-black-900 bottom-[8%] h-px inset-x-[0] mx-auto w-full" />
@@ -161,14 +156,14 @@ const YOGASTUDIOTwoPage = () => {
                   Back to homepage
                 </Button>
               </div>
-              <HomeFooter
+              {/* <HomePage
                 className="bg-cover bg-no-repeat flex flex-col h-[635px] md:h-auto items-start justify-start max-w-[1915px] w-full"
                 style={{ backgroundImage: "url('images/img_footer.png')" }}
-              />
+              /> */}
             </div>
           </div>
         </div>
-      </div>
+
     </>
   );
 };

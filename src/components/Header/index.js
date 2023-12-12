@@ -21,6 +21,7 @@ const Header = (props) => {
                 className="h-[105px] md:h-auto object-cover"
                 src="images/img_21.png"
                 alt="TwentyOne"
+                onClick={() => navigate("/home1")}
               />
             </div>
             <ul className="flex flex-row gap-[46px] sm:hidden items-center justify-end w-[444px] sm:w-full common-row-list">
