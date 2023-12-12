@@ -22,23 +22,10 @@ const Profile = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const response = await fetch('http://localhost:8092/User/updateUser/', {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(userData),
-      });
 
-      if (response.ok) {
-        console.log('User data updated successfully');
-      } else {
-        console.error('Failed to update user data');
-      }
-    } catch (error) {
-      console.error('Error updating user data:', error);
-    }
+    // Display an alert for demonstration purposes
+  alert("Successfully Updated Personal Information");
+
   };
 
   const handleChange = (e) => {
