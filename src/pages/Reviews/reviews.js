@@ -1,35 +1,58 @@
 import React, { useState } from "react";
+import axios from "axios"; // Import Axios library
 import Header from "components/Header";
 import "./reviews.css";
 
 const ReviewPage = () => {
-  const [comment, setComment] = useState('');
-  const [establishmentDate, setEstablishmentDate] = useState('');
-  const [establishmentName, setEstablishmentName] = useState('');
+  const [comment, setComment] = useState("");
+  const [date, setDate] = useState("");
+  const [rating, setRating] = useState("");
 
   const handleCommentChange = (e) => {
     setComment(e.target.value);
   };
 
   const handleDateChange = (e) => {
-    setEstablishmentDate(e.target.value);
+    setDate(e.target.value);
   };
 
-  const handleEstablishmentNameChange = (e) => {
-    setEstablishmentName(e.target.value);
+  const handleRatingChange = (e) => {
+    setRating(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    // Your logic to submit the review data (e.g., send it to a server)
-    console.log('Comment:', comment);
-    console.log('Date:', establishmentDate);
-    console.log('Establishment Name:', establishmentName);
-    
-    // Display an alert to notify the user
-    alert('Your Review Is Submitted');
+  
+    const formReview = {
+      comment: comment,
+      date: date,
+      rating: rating,
+    };
+  
+    try {
+      const response = await axios.post("http://localhost:8092/review/insertReview", formReview, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+  
+      if (response.status === 200) {
+        const data = await response.data; // Assuming the response is a JSON object
+        if (data === "Successfully Submited Review") 
+          // Successful review submission - redirect to the desired location
+          window.location.href = "/userhome"; // Replace with the desired path
+          alert("Succesfully Submited Review!")
+        
+      } else {
+        // Handle other HTTP errors if needed
+        console.error("An error occurred while submitting review. Status Code: " + response.status);
+      }
+    } catch (error) {
+      console.error("Error occurred during review:", error);
+      // Handle the error or log it if necessary
+    }
   };
+  
 
   return (
     <div>
@@ -52,18 +75,18 @@ const ReviewPage = () => {
             Date:
             <input
               type="date"
-              value={establishmentDate}
+              value={date}
               onChange={handleDateChange}
               required
             />
           </label>
 
           <label>
-            Establishment Name:
+            Rating:
             <input
               type="text"
-              value={establishmentName}
-              onChange={handleEstablishmentNameChange}
+              value={rating}
+              onChange={handleRatingChange}
               required
             />
           </label>
