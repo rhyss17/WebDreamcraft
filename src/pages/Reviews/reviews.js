@@ -52,7 +52,12 @@ const ReviewPage = () => {
       // Handle the error or log it if necessary
     }
   };
-  
+
+  const handleViewReviews = () => {
+    // Add logic to navigate to the page where you display customer reviews
+    // For example, window.location.href = "/customer-reviews";
+    alert("View Customer Reviews clicked!");
+  };
 
   return (
     <div>
@@ -92,6 +97,7 @@ const ReviewPage = () => {
           </label>
 
           <button type="submit">Submit Review</button>
+          <button type="button" onClick={handleViewReviews}>View Reviews</button>
         </form>
       </div>
     </div>
