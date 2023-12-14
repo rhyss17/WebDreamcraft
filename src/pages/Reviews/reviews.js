@@ -39,6 +39,9 @@ const ReviewPage = () => {
       if (response.status === 200) {
         const data = await response.data; // Assuming the response is a JSON object
         if (data === "Successfully Submited Review") 
+          setComment('');
+          setDate('');
+          setRating('');
           // Successful review submission - redirect to the desired location
           window.location.href = "/userhome"; // Replace with the desired path
           alert("Succesfully Submited Review!")
