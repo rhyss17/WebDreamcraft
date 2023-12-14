@@ -70,6 +70,18 @@ button {
   margin-right: auto; /* Center horizontally */
 }
 
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Align the buttons to the center */
+.button-container button {
+  flex: 1;
+  margin: 5px;
+}
+
 
 /* Optional: Add responsive styles */
 @media screen and (max-width: 600px) {

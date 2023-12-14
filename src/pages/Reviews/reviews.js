@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import axios from "axios"; // Import Axios library
 import Header from "components/Header";
 import "./reviews.css";
+import { useNavigate } from "react-router-dom";
 
 const ReviewPage = () => {
+  const navigate = useNavigate();
   const [comment, setComment] = useState("");
   const [date, setDate] = useState("");
   const [rating, setRating] = useState("");
@@ -95,9 +97,10 @@ const ReviewPage = () => {
               required
             />
           </label>
-
+          <div className="button-container">
           <button type="submit">Submit Review</button>
-          <button type="button" onClick={handleViewReviews}>View Reviews</button>
+          <button type="button" onClick={() => navigate("/customerreviews")}>View Reviews</button>
+          </div>
         </form>
       </div>
     </div>
