@@ -19,7 +19,7 @@ const WellnessCenter = React.lazy(() => import("pages/WellnessCenter"));
 const BeautySalon = React.lazy(() => import("pages/BeautySalon"));
 const Massage = React.lazy(() => import("pages/Massage"));
 const Home1 = React.lazy(() => import("pages/Home1"));
-
+const Booking = React.lazy(() => import("pages/Booking"))
 const SignUp = React.lazy(() => import("pages/SignUp"));
 const AdminDashboard = React.lazy(() => import("pages/AdminDashboard"));
 const FIgmaStylicleSalonLandingPage = React.lazy(
@@ -60,7 +60,7 @@ const ProjectRoutes = () => {
           <Route path="/profile" element={<Profile />} />
           <Route path="/userhome" element={<Userhome />} />
           <Route path="/reviews" element={<Reviews />} />
-
+          <Route path="/booking" element={<Booking />} />
           <Route
             path="/personalrecommendation"
             element={<PersonalRecommendation />}

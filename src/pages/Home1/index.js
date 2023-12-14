@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 
 import Header from "components/Header";
 import { Button, Img, Input, Line, List, Text } from "components";
@@ -10,7 +10,11 @@ import HomeFooter from "components/HomeFooter";
 import { CloseSVG } from "../../assets/images";
 
 const Home1Page = () => {
+
   const navigate = useNavigate();
+  const handleClick = (text) => {
+    navigate('/booking', { state: { textFromPage1: text } });
+  };
 
   const [frame1000004318value, setFrame1000004318value] = React.useState("");
   const [frameninetyonevalue, setFrameninetyonevalue] = React.useState("");
@@ -364,7 +368,8 @@ const Home1Page = () => {
                         </div>
                         <Button
                           className="border border-blue_gray-800 border-solid cursor-pointer font-bold h-[45px] leading-[normal] text-base text-center w-[255px]"
-                          onClick={() => navigate("/yogastudiothree")}
+                          //onClick={() => navigate("/yogastudiothree")}
+                          onClick={() => handleClick('Dawata Wellness Yoga Studio')}
                           shape="round"
                           color="blue_gray_800"
                           size="xs"
@@ -427,6 +432,7 @@ const Home1Page = () => {
                         <Button
                           className="border border-blue_gray-800 border-solid cursor-pointer font-bold h-[45px] leading-[normal] text-base text-center w-[255px]"
                           onClick={() => navigate("/yogastudiothree")}
+                          //onClick={() => handleClick('Bliss Yoga')}
                           shape="round"
                           color="blue_gray_800"
                           size="xs"
