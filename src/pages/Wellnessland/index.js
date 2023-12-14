@@ -8,6 +8,9 @@ import HomeFooter from "components/HomeFooter";
 
 const WellnesslandPage = () => {
   const navigate = useNavigate();
+  const handleClick = (text) => {
+    navigate('/booking', { state: { textFromPage1: text } });
+  };
 
   return (
     <>
@@ -97,7 +100,7 @@ const WellnesslandPage = () => {
                     </Button>
                     <Button
                       className="common-pointer border border-blue_gray-800 border-solid cursor-pointer font-bold font-playfairdisplay leading-[normal] mb-1.5 md:mt-0 mt-[267px] rounded-lg text-base text-center w-[178px]"
-                      onClick={() => navigate("/yogastudioone")}
+                      onClick={() => handleClick('Wellnessland Urban Center')}
                       shape="round"
                       color="blue_gray_800"
                       size="md"

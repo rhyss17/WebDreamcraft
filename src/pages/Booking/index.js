@@ -150,9 +150,7 @@
               <div className="flex justify-between w-full max-w-[400px]"> {/* Adjust max-width as needed */}
               <button type="submit" className="submit-button">Book
                 </button>
-                <button onClick={() => navigate("/adminviewbookone")} 
-                className="goBack-button">Go back
-                </button>
+
               </div>
             </form>
       <div style={{ marginTop: '2in' }}></div> {/* Adding another large space */}
