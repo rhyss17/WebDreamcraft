@@ -69,6 +69,22 @@
     return (
       <>
         <Header />
+        <div className="bg-white-A700 flex flex-col font-playfairdisplay items-center justify-start mx-auto pb-5 pl-5 w-full">
+        <div className="md:h-[649px] h-[737px] max-w-[1920px] mx-auto md:px-5 relative w-full">
+          <div className="absolute bottom-[0] h-[700px] inset-x-[0] mx-auto w-full">
+            <Img
+              className="h-[649px] m-auto object-cover w-full"
+              src="images/img_yogagirl_2.png"
+              alt="yogagirl"
+            />
+            <Text
+              className="absolute h-max inset-y-[0] leading-[115.00%] left-[3%] my-auto md:text-5xl text-[70px] text-lime-100 tracking-[-0.70px] w-[35%] sm:w-full"
+              size="txtPlayfairDisplayRomanBold70"
+            >
+              Find The Best Yoga Studio Nearby
+            </Text>
+          </div>
+        </div>
         <div className="flex flex-col font-manrope items-center justify-start mx-auto w-full max-w-[800px] px-4">
             <div style={{ marginTop: '2in' }}></div> {/* Adding a large space */}
             <form onSubmit={handleSubmit} className="w-full flex flex-col items-center">
@@ -140,6 +156,7 @@
               </div>
             </form>
       <div style={{ marginTop: '2in' }}></div> {/* Adding another large space */}
+    </div>
     </div>
       </>
     );

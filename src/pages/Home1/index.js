@@ -368,8 +368,8 @@ const Home1Page = () => {
                         </div>
                         <Button
                           className="border border-blue_gray-800 border-solid cursor-pointer font-bold h-[45px] leading-[normal] text-base text-center w-[255px]"
-                          //onClick={() => navigate("/yogastudiothree")}
-                          onClick={() => handleClick('Dawata Wellness Yoga Studio')}
+                          onClick={() => navigate("/dawatawellness")}
+                          // onClick={() => handleClick('Dawata Wellness Yoga Studio')}
                           shape="round"
                           color="blue_gray_800"
                           size="xs"
@@ -431,7 +431,7 @@ const Home1Page = () => {
                         </div>
                         <Button
                           className="border border-blue_gray-800 border-solid cursor-pointer font-bold h-[45px] leading-[normal] text-base text-center w-[255px]"
-                          onClick={() => navigate("/yogastudiothree")}
+                          onClick={() => navigate("/blissyoga")}
                           //onClick={() => handleClick('Bliss Yoga')}
                           shape="round"
                           color="blue_gray_800"
@@ -494,7 +494,7 @@ const Home1Page = () => {
                         </div>
                         <Button
                           className="border border-blue_gray-800 border-solid cursor-pointer font-bold h-[45px] leading-[normal] text-base text-center w-[255px]"
-                          onClick={() => navigate("/yogastudiothree")}
+                          onClick={() => navigate("/wellnessland")}
                           shape="round"
                           color="blue_gray_800"
                           size="xs"
@@ -556,7 +556,7 @@ const Home1Page = () => {
                         </div>
                         <Button
                           className="border border-blue_gray-800 border-solid cursor-pointer font-bold h-[45px] leading-[normal] text-base text-center w-[255px]"
-                          onClick={() => navigate("/yogastudiothree")}
+                          onClick={() => navigate("/bloomlane")}
                           shape="round"
                           color="blue_gray_800"
                           size="xs"
@@ -618,7 +618,7 @@ const Home1Page = () => {
                         </div>
                         <Button
                           className="border border-blue_gray-800 border-solid cursor-pointer font-bold h-[45px] leading-[normal] text-base text-center w-[255px]"
-                          onClick={() => navigate("/yogastudiothree")}
+                          onClick={() => navigate("/healingpoint")}
                           shape="round"
                           color="blue_gray_800"
                           size="xs"
@@ -707,7 +707,7 @@ const Home1Page = () => {
                 </div>
                 <Button
                   className="cursor-pointer font-bold leading-[normal] rounded-lg text-base text-center w-full"
-                  onClick={() => navigate("/yogastudiothree")}
+                  onClick={() => navigate("/anandamarga")}
                   shape="round"
                   color="blue_gray_800"
                   size="md"
@@ -770,10 +770,11 @@ const Home1Page = () => {
                 </div>
                 <Button
                   className="cursor-pointer font-bold leading-[normal] rounded-lg text-base text-center w-full"
+                  onClick={() => navigate("/megatherapeutic")}
                   shape="round"
                   color="blue_gray_800"
-                          size="md"
-                          variant="fill"
+                  size="md"
+                  variant="fill"
                 >
                   BOOK NOW
                 </Button>
@@ -831,10 +832,11 @@ const Home1Page = () => {
                 </div>
                 <Button
                   className="cursor-pointer font-bold leading-[normal] rounded-lg text-base text-center w-full"
+                  onClick={() => navigate("/lametisse")}
                   shape="round"
                   color="blue_gray_800"
-                          size="md"
-                          variant="fill"
+                  size="md"
+                  variant="fill"
                 >
                   BOOK NOW
                 </Button>
@@ -892,10 +894,11 @@ const Home1Page = () => {
                 </div>
                 <Button
                   className="cursor-pointer font-bold leading-[normal] rounded-lg text-base text-center w-full"
+                  onClick={() => navigate("/nuatthai")}
                   shape="round"
                   color="blue_gray_800"
-                          size="md"
-                          variant="fill"
+                  size="md"
+                  variant="fill"
                 >
                   BOOK NOW
                 </Button>
