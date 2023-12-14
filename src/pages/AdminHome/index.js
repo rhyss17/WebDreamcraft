@@ -24,41 +24,51 @@ const AdminHomePage = () => {
               </div>
             </div>
             <div className="flex items-center justify-center flex-col md:flex-row gap-10 w-full">
-              <div className="flex flex-col items-center justify-center gap-4 h-[151px] w-[421px] mt-4">
-                
-              <Img
-                  className="h-[120px] object-cover rounded-[71px] w-[142px]"
-                  src="images/img_radiobutton.png"
-                  alt="radiobutton"
-                />
-                <Text
-                  className="text-3xl text-black-900 mb-10"
-                  size="txtManropeBold32"
-                >
-                  Administrator
-                </Text>
+                <div className="flex flex-col items-center justify-center gap-4 h-[151px] w-[421px] mt-4">
+                  
+                <Img
+                    className="h-[120px] object-cover rounded-[71px] w-[142px]"
+                    src="images/img_radiobutton.png"
+                    alt="radiobutton"
+                  />
+                  <Text
+                    className="text-3xl text-black-900 mb-10"
+                    size="txtManropeBold32"
+                  >
+                    Administrator
+                  </Text>
+                </div>
+                <div className="button-container">
+                <div className="button-border">
+                  <button
+                    className="styled-button large-font" /* Added large-font class */
+                    onClick={() => navigate("/adminviewestablishmentone")}
+                  >
+                    View Establishment
+                  </button>
+                </div>
               </div>
               <div className="button-container">
-              <div className="button-border">
+                <div className="button-border">
                 <button
-                  className="styled-button large-font" /* Added large-font class */
-                  onClick={() => navigate("/adminviewestablishmentone")}
-                >
-                  View Establishment
-                </button>
+                    className="styled-button large-font" /* Added large-font class */
+                    onClick={() => navigate("/adminviewuserone")}               
+                  >
+                  View User
+                  </button>
+                  </div>
+              </div>
+              <div className="button-container">
+                <div className="button-border">
+                <button
+                    className="styled-button large-font" /* Added large-font class */
+                    onClick={() => navigate("/adminviewuserone")}               
+                  >
+                  View Booking details
+                  </button>
+                  </div>
               </div>
             </div>
-            <div className="button-container">
-              <div className="button-border">
-              <button
-                   className="styled-button large-font" /* Added large-font class */
-                  onClick={() => navigate("/adminviewuserone")}               
-                >
-                View User
-                </button>
-                </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
