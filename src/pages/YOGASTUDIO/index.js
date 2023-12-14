@@ -78,7 +78,7 @@ const YOGASTUDIOPage = () => {
                             className="text-2xl md:text-[22px] text-gray-900 sm:text-xl w-auto"
                             size="txtInterBold24"
                           >
-                            Dawata Wellness Yoga Studio{" "}
+                            Dawata Wellness <br />Yoga Studio{" "}
                           </Text>
                           <div className="flex flex-row font-manrope gap-2.5 items-start justify-start pb-2.5 px-2.5 w-[89%] md:w-full">
                             <Img
@@ -96,7 +96,7 @@ const YOGASTUDIOPage = () => {
                         </div>
                         <Button
                           className="common-pointer border border-blue_gray-800 border-solid cursor-pointer font-bold leading-[normal] rounded-lg text-base text-center w-full"
-                          onClick={() => navigate("/yogastudiothree")}
+                          onClick={() => navigate("/dawatawellness")}
                           shape="round"
                           color="blue_gray_800"
                           size="md"
