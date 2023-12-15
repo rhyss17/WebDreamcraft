@@ -37,6 +37,7 @@ const AnandaMarga = React.lazy(() => import("pages/AnandaMarga"));
 const MegaTherapeutic = React.lazy(() => import("pages/MegaTherapeutic"));
 const LaMetisse = React.lazy(() => import("pages/LaMetisse"));
 const NuatThai = React.lazy(() => import("pages/NuatThai"));
+const AdminViewBooking = React.lazy(() => import("pages/AdminViewBooking"));
 const ProjectRoutes = () => {
   return (
     <React.Suspense fallback={<>Loading...</>}>
@@ -81,6 +82,7 @@ const ProjectRoutes = () => {
           <Route path="/megatherapeutic" element={<MegaTherapeutic />} />
           <Route path="/lametisse" element={<LaMetisse />} />
           <Route path="/nuatthai" element={<NuatThai />} />
+          <Route path="/adminviewbooking" element={<AdminViewBooking />} />
         </Routes>
       </Router>
     </React.Suspense>

@@ -483,8 +483,7 @@ const AboutUsPage = () => {
                               size="txtManropeBold24"
                             >
                               <>
-                                &quot;If at first, you don&#39;t succeed,
-                                <br /> call it version 1.0.&quot;
+                                &quot;Never lose yourself along the way.&quot;
                               </>
                             </Text>
                           </div>

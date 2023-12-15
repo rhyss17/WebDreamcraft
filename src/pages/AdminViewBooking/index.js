@@ -50,7 +50,7 @@ const AdminViewEstablishmentOnePage = () => {
             </div>
             {/* space between the admin profile */}
             <div style={{ marginTop: '50px' }}></div> 
-            <h1 style={{ fontSize: '32px' }}>Establishments</h1> {/* Changing font size */}
+            <h1 style={{ fontSize: '32px' }}>Booking details</h1> {/* Changing font size */}
             <table style={{ borderCollapse: 'collapse', fontFamily: 'Arial, sans-serif', fontSize: '18px' }}>
               <thead>
                 <tr style={{ fontSize: '24px', borderBottom: '2px solid black' }}>
@@ -75,14 +75,7 @@ const AdminViewEstablishmentOnePage = () => {
       <div className="flex flex-col font-poppins items-start justify-start md:ml-[0] ml-[450px] mt-[74px] p-2.5 w-auto sm:w-full">
           <div className="flex sm:flex-col flex-row gap-1 items-start justify-start w-auto sm:w-full">
           <div className="button-container">
-              <div className="button-border">
-                <button
-                  className="styled-button large-font" 
-              onClick={() => navigate("/adminnewone")}
-            >
-              Add
-            </button>
-            </div>
+
             </div>
             <div className="button-container">
               <div className="button-border">

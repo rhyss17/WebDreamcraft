@@ -62,7 +62,7 @@ const AdminHomePage = () => {
                 <div className="button-border">
                 <button
                     className="styled-button large-font" /* Added large-font class */
-                    onClick={() => navigate("/adminviewuserone")}               
+                    onClick={() => navigate("/adminviewbooking")}               
                   >
                   View Booking details
                   </button>
