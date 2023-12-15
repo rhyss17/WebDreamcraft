@@ -315,16 +315,29 @@ const CustomerReviewsPage = () => {
                 </div>
               </div>
             </div>
-            <Button
-              className="!text-gray-900 cursor-pointer font-extrabold min-w-[250px] outline-[2px] text-center text-sm tracking-[1.68px] uppercase"
-              onClick={() => navigate("/reviews")}  
-              shape="square"
-              color="blue_gray_800"
-              size="xl"
-              variant="outline"
-            >
-              Write A Reviews
-            </Button>
+            <div style={{ display: 'flex', gap: '10px' }}>
+              <Button
+                className="!text-gray-900 cursor-pointer font-extrabold min-w-[250px] outline-[2px] text-center text-sm tracking-[1.68px] uppercase"
+                onClick={() => navigate("/reviews")}  
+                shape="square"
+                color="blue_gray_800"
+                size="xl"
+                variant="outline"
+              >
+                Write A Reviews
+              </Button>
+              
+              <Button
+                className="!text-gray-900 cursor-pointer font-extrabold min-w-[250px] outline-[2px] text-center text-sm tracking-[1.68px] uppercase"
+                onClick={() => navigate("/viewreviews")}  
+                shape="square"
+                color="blue_gray_800"
+                size="xl"
+                variant="outline"
+              >
+                More
+              </Button>
+            </div>
           </div>
         </div>
         <footer className="flex font-manrope items-center justify-center md:px-5 w-full">

@@ -114,6 +114,7 @@
                   name="user"
                   value={bookData.user}
                   onChange={handleInputChange}
+                  required
                   className="border rounded-md py-2 px-3 mt-1 w-full"
                   style={{ fontSize: '24px' }} 
                 />
@@ -128,6 +129,7 @@
                   name="type"
                   value={bookData.type}
                   onChange={handleInputChange}
+                  required
                   className="border rounded-md py-2 px-3 mt-1 w-full"
                   style={{ fontSize: '24px' }} 
                 />
@@ -137,11 +139,12 @@
                   Date:
                 </label>
                 <input
-                  type="text"
+                  type="date"
                   id="date"
                   name="date"
                   value={bookData.date}
                   onChange={handleInputChange}
+                  required
                   className="border rounded-md py-2 px-3 mt-1 w-full"
                   style={{ fontSize: '24px' }} 
                 />
