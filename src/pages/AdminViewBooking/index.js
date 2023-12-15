@@ -9,7 +9,7 @@ const AdminViewEstablishmentOnePage = () => {
   const navigate = useNavigate();
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:8092/Establishment/getAllEstablishments') // Replace with your backend URL
+    fetch('http://localhost:8092/Book/getAllBooks') // Replace with your backend URL
       .then(response => response.json())
       .then(data => {
         setData(data);
@@ -55,8 +55,10 @@ const AdminViewEstablishmentOnePage = () => {
               <thead>
                 <tr style={{ fontSize: '24px', borderBottom: '2px solid black' }}>
                   <th style={{ padding: '10px', textAlign: 'left' }}>ID</th>
-                  <th style={{ padding: '10px', textAlign: 'left' }}>Name</th>
-                  <th style={{ padding: '10px', textAlign: 'left' }}>Location</th>
+                  <th style={{ padding: '10px', textAlign: 'left' }}>Estblishment</th>
+                  <th style={{ padding: '10px', textAlign: 'left' }}>Username</th>
+                  <th style={{ padding: '10px', textAlign: 'left' }}>Service</th>
+                  <th style={{ padding: '10px', textAlign: 'left' }}>Date</th>
                   {/* Add more table headers as needed */}
                 </tr>
               </thead>
@@ -65,7 +67,9 @@ const AdminViewEstablishmentOnePage = () => {
                   <tr key={item.eid} style={{ borderTop: '1px solid #ddd' }}>
                     <td style={{ padding: '10px', textAlign: 'left' }}>{item.eid}</td>
                     <td style={{ padding: '10px', textAlign: 'left' }}>{item.name}</td>
-                    <td style={{ padding: '10px', textAlign: 'left' }}>{item.location}</td>
+                    <td style={{ padding: '10px', textAlign: 'left' }}>{item.user}</td>
+                    <td style={{ padding: '10px', textAlign: 'left' }}>{item.type}</td>
+                    <td style={{ padding: '10px', textAlign: 'left' }}>{item.date}</td>
                     {/* Render other data fields */}
                   </tr>
                 ))}
@@ -74,19 +78,8 @@ const AdminViewEstablishmentOnePage = () => {
 
       <div className="flex flex-col font-poppins items-start justify-start md:ml-[0] ml-[450px] mt-[74px] p-2.5 w-auto sm:w-full">
           <div className="flex sm:flex-col flex-row gap-1 items-start justify-start w-auto sm:w-full">
-          <div className="button-container">
 
-            </div>
-            <div className="button-container">
-              <div className="button-border">
-                <button
-                  className="styled-button large-font" 
-              onClick={() => navigate("/adminnew")}
-            >
-              Update
-            </button>
-            </div>
-        </div>
+
           </div>
         </div>
       </div>
