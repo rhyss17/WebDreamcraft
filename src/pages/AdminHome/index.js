@@ -38,8 +38,8 @@ const AdminHomePage = () => {
                     Administrator
                   </Text>
                 </div>
-                <div className="button-container">
-                <div className="button-border">
+                <div className="button-containerr">
+                <div className="button-borderr">
                   <button
                     className="styled-button large-font" /* Added large-font class */
                     onClick={() => navigate("/adminviewestablishmentone")}
@@ -48,8 +48,8 @@ const AdminHomePage = () => {
                   </button>
                 </div>
               </div>
-              <div className="button-container">
-                <div className="button-border">
+              <div className="button-containerr">
+                <div className="button-borderr">
                 <button
                     className="styled-button large-font" /* Added large-font class */
                     onClick={() => navigate("/adminviewuserone")}               
@@ -58,8 +58,8 @@ const AdminHomePage = () => {
                   </button>
                   </div>
               </div>
-              <div className="button-container">
-                <div className="button-border">
+              <div className="button-containerr">
+                <div className="button-borderr">
                 <button
                     className="styled-button large-font" /* Added large-font class */
                     onClick={() => navigate("/adminviewbooking")}               
