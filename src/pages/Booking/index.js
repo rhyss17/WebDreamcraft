@@ -53,6 +53,11 @@
             date: "",
             // Reset other fields as needed
           });
+          setTimeout(() => {
+            //setConfirmedDelete(false);
+            //setShowConfirmation(false);
+            navigate('/home1'); // Redirect to the update page after deletion
+          }, 500);
           // Show a success message using alert
           window.alert("Book added successfully!");
         } else {
@@ -151,7 +156,10 @@
               </div>
               {/* Add other input fields for book details */}
               <div className="flex justify-between w-full max-w-[400px]"> {/* Adjust max-width as needed */}
-              <button type="submit" className="submit-button">Book
+              <button type="submit" className="submit-button"
+              //onClick={() => navigate("/home1")}
+              //onClick={handleSubmit}
+              >Book
                 </button>
 
               </div>
