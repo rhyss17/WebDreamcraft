@@ -34,10 +34,10 @@ const Userhome = () => {
                   className="text-3xl text-black-900 mb-10"
                   size="txtManropeBold32"
                 >
-                  Hello 
+                  User
                 </Text>
               </div>
-              <div className="button-container">
+              {/*<div className="button-container">
                 <div className="button-border">
                   <button
                     className="styled-button large-font"
@@ -46,7 +46,7 @@ const Userhome = () => {
                     Account Settings
                   </button>
                 </div>
-              </div>
+              </div>*/}
               <div className="button-container">
                 <div className="button-border">
                   <button

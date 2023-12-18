@@ -640,7 +640,7 @@ const Home1Page = () => {
         </div>
         <Button
           className="common-pointer bg-transparent cursor-pointer font-bold font-playfairdisplay max-w-3xl ml-4 md:ml-[0] mt-[84px] sm:text-[35px] md:text-[41px] text-[45px] text-center text-gray-900 tracking-[-0.45px] w-full"
-          onClick={() => navigate("/personalrecommendation")}
+         // onClick={() => navigate("/personalrecommendation")}
           size="xs"
         >
           Personalized Recommendation
